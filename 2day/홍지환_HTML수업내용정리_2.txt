@@ -37,3 +37,31 @@ alt + w = 블록처리
 png는 해상도가 좋다
 
 alt + 클릭 = 다중 커서
+
+ul = 순서가 없는 목록 규칙성이 있음 ul = 부모 li = 자식 블록요소
+
+zen coding 
+단축코딩
+
+ol = 순서가 있는 목록
+type으로 a나 1 로마숫자로 표기 할 수 있다
+start로 시작 순서를 바꿀수있다
+
+list부터 depth가 나옴 2depth = 서브 메뉴 1depth = 주 메뉴
+Dom의 위계질서,  부모 자식의 관계
+{}를 쓰면 텍스트노드 사용가능
+
+정의형 목록 : dl, dt, dd
+dt는 dd이다 dt is dds
+
+Dom 객체 = Document Object Model
+Model = DB = 데이터
+Document = 문서
+객체 = Object
+객체 = 각각의 부품
+Dom에서의 객체는 태그
+dom = 트리구조
+> 부모자식 + 형제
+
+tr = 가로, x축
+td = 칸 나누기 table divide
