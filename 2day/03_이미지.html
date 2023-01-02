@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>이미지 사용</title>
+        <style>
+            body {
+                /* background-color: red; */
+            }
+            img {
+                width:320px; 
+                height:320px ;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 1. 로컬 컴퓨터에서 이미지 사용하기 -->
+            <img src="./img/first.jpg" alt="물방울" width="240" height="240">
+            <img src="./img/flower.jpg" alt="꽃" width="240" height="240">
+            <img src="./img/flowerboom.jpg" alt="꽃의 물방울">
+            <img src="./img/firework.jpg" alt="불꽃불꽃">
+            
+        <!-- 2. CDN 방식으로 이미지 불러오기 -->
+        <img src="https://cdn.pixabay.com/photo/2016/12/03/15/41/fireworks-1880042__340.jpg" alt="불꽃">
+        
+        <a href="https://www.daum.net" target="_blank">
+            <img src="http://m1.daumcdn.net/svc/image/U03/common_icon/5587C4E4012FCD0001" alt="다음로고">
+        </a>
+        
+        <!-- 3. 가상 이미지 불러오기 -->
+        <img src="http://place-hold.it/640x480" alt="가상이미지">
+        
+        <!-- 4. 투명배경사용 .png-->
+        <img src="./img/apple.png" alt="투명이미지애플로고">
+
+        <!-- 5. 벡터방식 .svg -->
+        <img src="./img/Apple Line.svg" alt="애플로고 svg">
+
+    </body>
+</html>
