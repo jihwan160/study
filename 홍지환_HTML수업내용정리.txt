@@ -1,0 +1,272 @@
+@22/12/30
+
+메일제출 : 
+이름_HTML수업내용정리
+
+브라우저는 무조건 크롬 기준
+korean
+live sever
+
+설정 : ctrl + ,
+주석 : ctrl + /
+여러줄 주석 : ctrl + shift + /
+shift + alt + 아래화살표 = 한줄복사
+alt + 아랫화살표 = 코드 위치이동
+ctrl + z = 실행취소
+-------------------------------------------------------------------------------------------
+
+MVC 패턴이 나오는 이유 -> 수정,유지보수를 하기위해서
+MVC : 각 역할하는 언어별로 파일을 분리
+HTML,CSS,JS
+
+코어기술만 알면된다
+Front = HTML,CSS,JS
+Back = JAVA
+
+HTML = 구조를 만든다(뼈대)
+CSS = 인테리어
+JS = 동작(동사와 관련) 
+
+웹 작동 방식
+C   -    S 방식
+     ->
+  request : 요청
+      <-
+  response : 응답
+
+C = Client = 브라우저
+S = Sever = 모든 Data가 있는 것
+
+http 통신규약
+
+브라우저의 모든 타입은 "문자열"
+
+코딩의 작동방식은 = top-down
+
+코드해석 방식 
+한줄씩 = 인터프린터
+전체 = 컴파일
+
+html 형식이 있음
+ html -> dom 객체
+
+문자열 = text node
+
+용어를 알아야 하는이유 : 구글링 기술문서 교재
+
+html = 요소(elements) | <html> = 태그
+속성명 = "속성값"
+attribute = value
+
+단일태그, 빈태그, 홀태그
+단일태그 = 종료 때 / 없음
+
+웹 접근성 -> 화면낭독기
+meta -> 문서전체를 나타내는 특징
+charcacter = 문자
+charset = 문자묶음
+
+영어 = 1byte
+한글 = 2bte
+
+<h> = heading(제목)
+
+블록요소 : 라인 하나를 다 쓰는 것
+태그 = 블록과 인라인
+
+*기본 텍스트의 폰트 크기 = 16px
+&nbsp = 1개당 1칸 띄어쓰기
+
+YOU & ME
+YOU &AMP; ME  <- 이렇게 쓰는거 추천
+
+h1 = 무조건 한번
+
+태그 중첩가능
+그룹핑 태그 = 특정영역을 묶어서 한번에 효과를 주기위해 나온 태그
+주로 css와 연동
+
+css,js = span에 ~를 ~하겠다
+heading, p , span, href  <- 네개 중요!
+href = host ref
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+@23/01/02
+
+UI = 사용자 인터페이스
+
+UX = 사용자 경험 (로그인 창)
+
+Front-end 기준
+*기획(50%) - 웹디자인(30%) - 웹퍼블리셔(20%)
+시행착오가 줄어들기 때문에 기획을 굉장히 오래함
+
+클론코딩을 한다 구조만 잘 짜도 좋다
+
+절대 경로와 상대 경로가 있다
+
+절대 경로 = 내 pc -> c드라이브 (잘 안씀) 절대 안변함
+상대 경로 = 상대가 나오면 무조건 어딘가에 기준이 있다. 기준값이있다
+
+참조 주소 방식 = 서버의 주소값을 참조해서 가져옴
+
+인라인 = a 하고 이미지
+src = 소스의 약자
+
+. => 현재의위치를 나타냄 (100_html), 실제 기준 = 내가 사용하고있는 html파일
+.. 은 산 꼭대기 즉 상위의
+/ = 경로를 나타내는 폴더
+alt = 대한 텍스트
+
+px = 사진의 단위
+
+이미지 관련 확장자 = *jpg, *png, *gif (여기까지 표준, 비트맵 방식, ex포토샵 해상도가 깨질수도있음)
+ *svg(벡터 방식, ex애니메이션, 해상도가 깨지지 않음)
+
+ CDN = content delievery network
+ 남의 서버의 정보를 가져옴
+
+1920x1280 = 1인치에 1980개가 들어있음
+
+alt + w = 블록처리
+png는 해상도가 좋다
+
+alt + 클릭 = 다중 커서
+
+ul = 순서가 없는 목록 규칙성이 있음 ul = 부모 li = 자식 블록요소
+
+zen coding 
+단축코딩
+
+ol = 순서가 있는 목록
+type으로 a나 1 로마숫자로 표기 할 수 있다
+start로 시작 순서를 바꿀수있다
+
+list부터 depth가 나옴 2depth = 서브 메뉴 1depth = 주 메뉴
+Dom의 위계질서,  부모 자식의 관계
+{}를 쓰면 텍스트노드 사용가능
+
+정의형 목록 : dl, dt, dd
+dt는 dd이다 dt is dds
+
+Dom 객체 = Document Object Model
+Model = DB = 데이터
+Document = 문서
+객체 = Object
+객체 = 각각의 부품
+Dom에서의 객체는 태그
+dom = 트리구조
+> 부모자식 + 형제
+
+tr = 가로, x축
+td = 칸 나누기 table divide
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+@23/01/03
+
+지식, 기술, 태도 3가지로 평가
+
+대문자는 중요하기 때문에 표현함
+
+[]는 속성명=속성값을 넣을 수 있다
+
+span은 효과를 편히 넣기 위해있는 영역표시이다
+
+ border-collapse: collapse;
+ 테이블 2줄을 한줄로 합치는 것
+
+ 웹 = A~Z 까지 돌아가는게 명쾌하지 않다
+
+ 브라우저의 기본방식은 top-down
+ css 똑같은 속성이 있으면 밑에 있는 것이 적용됨
+
+ 태그에는 성격이 있다 with 혈액형
+ 테이블 = 테이블성격
+ colspan = 가로로 합치기 x축
+ rowspan = 세로로 합치기 y축
+
+ caption = 표제목 | 중앙정렬
+
+ th = 테이블 제목
+
+ tr>th{$}*3 
+
+     <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+    </tr>
+
+ figure>figcaption | 중앙정렬 안됨
+
+ colgroup
+ style 편하게 하기 위해 사용
+
+ thead 제목
+ tbody 내용
+ tfoot 결과
+
+*구조라는 말이 나오면 중요!
+시멘틱 = 시멘트 | 정형화 되어있는, 의미있는
+
+본문이 되면 head => header, body => main, foot => footer로 바뀐다
+header = 로고, GNB
+main = section, article | role="main" 을써야함
+section = 영역, 부분 | 앨범의 1집 2집 3집 
+article = 기사 | 앨범의 1집에 들어가는 곡명
+section, article에는 heading 태그가 하나씩 들어가있어야함
+
+span = 인라인요소의 그룹핑 태그
+div = divaide 블록요소의 그룹핑 태그
+id = 이름표 중복x | ex주민등록번호
+상속 = inheritance
+
+리셋 = 브라우저에 적용되어있는 css를 초기화 시킨다
+
+* = all
+# = id를 사용할 떄
+
+아래 3개 중요!! box modeling 3속성
+
+박스 경계 = border
+경계랑 콘텐츠 사이 = padding
+박스와 박스 사이 간격 = margin
+
+기본 리셋 5가지
+
+ * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1,h2,h3,h4,h5,h6 {
+            font-size: 16px; 폰트 16px
+            font-weight: normal; 
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        li {
+            list-style: none;
+        }
+        img {
+            vertical-align: top;
+        }
+
+1.구조 html
+2.css
+3.js
+4.servlet/jsp
+
+margin border padding 값을 4개를 가진다(상top, 하bot,좌left, 우right)
+값이 들어가는 순서는 top이 기준이고 시계방향으로 들어간다
+margin 0 auto; | auto를 쓰면 좌우 값을 잡아준다
+
+컬러 = rgb (빛의 3원색) = 포토샵
+#ffffff = 16진수로 표현한 것 
+#000 = black
+#fff = white
+
+aside = 쇼핑몰 본문 말고 옆에 최근본상품 같이 따라 다니는 것
+
+margin 0 auto = 박스 바깥의 영역
+text-align: center  박스의 내용물만 움직임

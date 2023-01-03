@@ -1,0 +1,108 @@
+지식, 기술, 태도 3가지로 평가
+
+대문자는 중요하기 때문에 표현함
+
+[]는 속성명=속성값을 넣을 수 있다
+
+span은 효과를 편히 넣기 위해있는 영역표시이다
+
+ border-collapse: collapse;
+ 테이블 2줄을 한줄로 합치는 것
+
+ 웹 = A~Z 까지 돌아가는게 명쾌하지 않다
+
+ 브라우저의 기본방식은 top-down
+ css 똑같은 속성이 있으면 밑에 있는 것이 적용됨
+
+ 태그에는 성격이 있다 with 혈액형
+ 테이블 = 테이블성격
+ colspan = 가로로 합치기 x축
+ rowspan = 세로로 합치기 y축
+
+ caption = 표제목 | 중앙정렬
+
+ th = 테이블 제목
+
+ tr>th{$}*3 
+
+     <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+    </tr>
+
+ figure>figcaption | 중앙정렬 안됨
+
+ colgroup
+ style 편하게 하기 위해 사용
+
+ thead 제목
+ tbody 내용
+ tfoot 결과
+
+*구조라는 말이 나오면 중요!
+시멘틱 = 시멘트 | 정형화 되어있는, 의미있는
+
+본문이 되면 head => header, body => main, foot => footer로 바뀐다
+header = 로고, GNB
+main = section, article | role="main" 을써야함
+section = 영역, 부분 | 앨범의 1집 2집 3집 
+article = 기사 | 앨범의 1집에 들어가는 곡명
+section, article에는 heading 태그가 하나씩 들어가있어야함
+
+span = 인라인요소의 그룹핑 태그
+div = divaide 블록요소의 그룹핑 태그
+id = 이름표 중복x | ex주민등록번호
+상속 = inheritance
+
+리셋 = 브라우저에 적용되어있는 css를 초기화 시킨다
+
+* = all
+# = id를 사용할 떄
+
+아래 3개 중요!! box modeling 3속성
+
+박스 경계 = border
+경계랑 콘텐츠 사이 = padding
+박스와 박스 사이 간격 = margin
+
+기본 리셋 5가지
+
+ * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1,h2,h3,h4,h5,h6 {
+            font-size: 16px; 폰트 16px
+            font-weight: normal; 
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        li {
+            list-style: none;
+        }
+        img {
+            vertical-align: top;
+        }
+
+1.구조 html
+2.css
+3.js
+4.servlet/jsp
+
+margin border padding 값을 4개를 가진다(상top, 하bot,좌left, 우right)
+값이 들어가는 순서는 top이 기준이고 시계방향으로 들어간다
+margin 0 auto; | auto를 쓰면 좌우 값을 잡아준다
+
+컬러 = rgb (빛의 3원색) = 포토샵
+#ffffff = 16진수로 표현한 것 
+#000 = black
+#fff = white
+
+aside = 쇼핑몰 본문 말고 옆에 최근본상품 같이 따라 다니는 것
+
+margin 0 auto = 박스 바깥의 영역
+text-align: center  박스의 내용물만 움직임
