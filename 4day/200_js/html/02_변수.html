@@ -50,10 +50,41 @@
 
         document.write("계산의 결괏값은 <strong>" + result2 + "</strong>입니다<br><br>");
        
-       
+
+        //논리형 데이터(Boolean) = true, false
+        var bool = true; // 1과 같음
+        var bool2 = false; // 0과 같음
+        var result3 =  bool == 1;
+
+        console.log("논리형데이터 값 : " + result3 + " 입니다.");
+
+        //데이터 형변환
+        var com1 = 10;
+        var com2 = 20;
+        var com3 = "30";
+        var com4 = "40";
+        var com5 = true;
+        var com6 = false;
+        // com1, com2를 연산하여 결과값이 30이 나오도록 (도큐먼트 출력)
+        // [형식]com1과 com2의 합은 ??? 입니다. 브라우저캡쳐/넘버링
+        var result4 = com1 + com2;
+        document.write("com1과 com2의 합은 " + result4 + " 입니다.<br><br>");
+
+        //(중요) +연산시 데이터형이 하나라도 문자열일 경우 (무조건) 문자열 결합으로 연산
+        var hap = com2 + com4;
+        document.write("문자열 결합의 결과 " + hap + "입니다<br><br>");
         
+        //데이터 형변환 : 문자형 -> 숫자형
+        //com3의 데이터타입을 콘솔에 출력하세요 캡쳐/넘버링
+        com3 = Number(com3);
+        console.log(typeof(com3));
+        com4 = Number(com4);
+        var hap2 = com2 + com4;
+        document.write("형변환 후 결과값 " + hap2 + "입니다<br><br>");
+
+
         
-        </script>
+    </script>
 </head>
 <body>
     

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrap {
+            width: 960px;
+            margin: 0 auto;
+        }
+        figure {
+            font-weight: bold;
+            color: red;
+            text-align: center;
+        }
+        video {
+            width: 100%;
+        }
+        figcaption {
+            background-color: rgb(91, 244, 234);
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <figure>
+            <figcaption>First MP4</figcaption>
+            
+            <main role="main">
+                <video muted autoplay loop controls>
+                    <source src="/4day/media/cars.mp4">
+                </video>
+            
+
+            <figcaption>Second MP4</figcaption>
+                
+                <video muted autoplay loop controls>
+                    <source src="/4day/media/flame.mp4">
+                </video>
+            </figure>
+
+            </main>
+    </div>
+</body>
+</html>
