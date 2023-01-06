@@ -5,41 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>연습</title>
+    <style>
+        .cen {
+            width: 600px;
+            margin: 0 auto;
+        }
+    </style>
     <script>
-        // var a = "<";
-        // var b = "h";
-        // var c = "1";
-        // var d = ">";
-        // var e = "/";
-        // var result = null;
-
-
-        // document.write(a+b+c+d+ "웹퍼블리싱 과정" + a+e+b+c+d);
-
-        // var a = prompt("당신의 이름은 무엇입니까");
-        // var b = prompt("당신의 키는 몇입니까");
-        // b = Number(b);
-        // var c = prompt("당신의 몸무게는 몇입니까");
-        // c = Number(c);
-
-        // var d = 100;
-        // var e = 0.9;
-        // result = (b-d)*0.9;
-        // document.write("접속자의 이름은 " + a +" 입니다<br>");
-        // document.write("접속자의 키는 <b>" + b +"</b>cm입니다<br>");
-        // document.write("접속자의 몸무게는 " + c +"kg입니다<br>");
-        // document.write("접속자의 적정몸무게 " + result +"kg입니다<br>");
-
-        //입력받은 키, 몸무게, 나이를 테이블에 넣고 각각 5명 평균을 구하시오
-
-        
-        var table = '<table border="1" width = "600">';
+        var table = '<div class="cen"> <table border="1" width = "600">';
         table += '<tr><th>이름</th><th>키</th><th>몸무게</th><th>나이</th></tr>';
 
         var result1;
         var result2;
         var result3;
-        
+
+        var sum = 0;
+        var sum2 = 0;
+        var sum3 = 0;
+
+            // document.write(mid);
             for(var i = 0; i < 2; i++) {
                 var name;
                 name = prompt("이름 입력");
@@ -55,40 +39,26 @@
             
                 table += "<tr><td>" + name + "</td><td>" + tall + "</td><td>" + weight + "</td><td>" + old + "</td></tr>";
                 tall = Number(tall);
-                tall += tall;
+                sum += tall;
 
                 weight = Number(weight);
-                weight += weight;
+                sum2 += weight;
 
                 old = Number(old);
-                old += old;
-
+                sum3 += old;
 
                 
             }
-            table += '</table>'
-
-            result1 = (tall%2);
-            document.write(result1 + "<br>");
-
-            result2 = (weight%2);
-            document.write(result2+ "<br>");
-
-            result3 = (old%2);
-            document.write(result3 + "<br>");
-
+            table += '</table>';
             document.write(table);
+            
+            document.write("<h2>평균 : " +sum / 2 + "</h2>");
+            document.write("<h2>평균 : " +sum2 / 2 + "</h2>");
+            document.write("<h2>평균 : " +sum3 / 2 + "</h2></div>");
 
     </script>
 </head>
 <body>
-<!-- <table border="1" width = "600">
-<tr><th>이름</th><th>키</th><th>몸무게</th><th>나이</th></tr>
-<tr><td>name</td><td>2</td><td>3</td><td>4</td></tr>
-<tr><td>name</td><td>2</td><td>3</td><td>4</td></tr>
-<tr><td>name</td><td>2</td><td>3</td><td>4</td></tr>
-<tr><td>name</td><td>2</td><td>3</td><td>4</td></tr>
-<tr><td>name</td><td>2</td><td>3</td><td>4</td></tr>
-</table> -->
+
 </body>
 </html>

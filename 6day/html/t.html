@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
+    <style>
+      #wrap {
+        width: 960px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <form action="#" method="post">
+        
+          <select name="a_select" id="a_select">
+            <option value="menu">
+              <ul>
+                <li>1번</li>
+              </ul>
+            </option>
+  
+            <option value="menu2">
+              <ul>
+                <li>2번</li>
+              </ul>
+            </option>
+  
+            <option value="menu3">
+              <ul>
+                <li>3번</li>
+              </ul>
+            </option>
+            <input type="button" id="btn" value="누르기" />
+          </select>
+        
+      </form>
+    </div>
+  </body>
+
+  <script>
+    var sel;
+    sel = document.getElementById("a_select");
+
+
+    var btn1;
+    btn1 = document.getElementById("btn");
+    console.log(btn1);
+    btn1.addEventListener("click", clickevent);
+    function clickevent() {
+        console.log(sel);
+    }
+  </script>
+</html>
