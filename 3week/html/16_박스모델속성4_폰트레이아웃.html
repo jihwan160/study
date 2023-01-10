@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model 실습 : 폰트레이아웃</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        #wrap {
+            width: 480px;
+            margin: 0 auto;
+            
+        }
+        #content {
+            background-color: rgb(15, 62, 132);
+            text-align: center;
+            
+        }
+        .box1 {
+            background-color: #7cde51;
+            width: 240px;
+            height: 240px;
+            
+        }
+        h2 {
+            padding-top: 90px;
+            line-height: 1.5em;
+        }
+        p {
+            line-height: 1.5em;
+        }
+
+        .box2 {
+            background-color: #b9de33;
+            width: 240px;
+            height: 240px;
+        }
+        .box3 {
+            background-color: skyblue;
+            width: 240px;
+            height: 240px;
+        }
+        .box4 {
+            background-color: #7cde51;
+            width: 240px;
+            height: 240px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="content">
+            
+            <div class="box1">
+                <h2 class="oswald">Oswald</h2>
+                <p class="notomono">NOTOMONO</p>
+            </div>
+
+            <div class="box2">
+                <h2 class="notodisplay">NOTODISPLAY</h2>
+                <p class="lato">LATO</p>
+            </div>
+
+            <div class="box3">
+                <h2 class="roboto">ROBOTO</h2>
+                <p class="montserrat">Montserrat</p>
+            </div>
+
+            <div class="box4">
+                <h2 class="raleway">Raleway</h2>
+                <p class="poppin">poppin</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

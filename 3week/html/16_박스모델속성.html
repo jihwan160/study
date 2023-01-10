@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model : 기본속성</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        body {
+            width: 1000px;
+            height: 1000px;
+            border: 1px solid #000;
+        }
+        /* 블록레벨요소 */
+        p {
+            width: 200px;
+            height: 200px;
+            
+        }
+        .box1 {
+            background-color: yellow;
+            padding: 20px;
+            border: 4px solid #000;
+            margin-bottom: 40px;
+            width: 152px;
+            height: 152px;
+        }
+        .box2 {
+            background-color: blue;
+            padding: 10px;
+            border: 4px solid #000;
+            margin-bottom: 40px;
+            width: 172px;
+            height: 172px;
+        }
+        .box3 {
+            background-color: pink;
+            padding: 15px;
+            border: 4px solid #000;
+            margin-bottom: 80px;
+            width: 162px;
+            height: 162px;
+        }
+        /* INBOX */
+        span {
+            width: 200px;
+            height: 200px;
+        }
+        .txt_1 {
+            background-color: yellowgreen;
+            margin: 20px;
+            display: block;
+        }
+        .txt_2 {
+            background-color: cyan;
+            margin-bottom: 30px;
+            display: inline-block;
+        }
+        .txt_3 {
+            background-color: purple;
+            margin: 32px;
+            display: inline-block;
+        }
+        .txt_4 {
+            background-color: silver;
+            display: inline-block;
+            margin-left: 48px;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- p.box${BOX$}*3 -->
+    <!-- 블록레벨요소 -->
+
+    <p class="box1">BOX1</p>
+    <p class="box2">BOX2</p>
+    <p class="box3">BOX3</p>
+
+    <!-- span.txt_${INBOX$}*4 -->
+    <!-- INBOX -->
+
+    <span class="txt_1">INBOX1</span>
+    <span class="txt_2">INBOX2</span>
+    <span class="txt_3">INBOX3</span>
+    <span class="txt_4">INBOX4</span>
+  </body>
+</html>
