@@ -1,0 +1,178 @@
+* {
+        box-sizing: border-box;
+      }
+      #wrap {
+        width: 1300px;
+        margin: 0 auto;
+      }
+      body {
+        background-color: rgb(235, 236, 238);
+      }
+      h1 {
+        font-size: 32px;
+        font-weight: bold;
+        color: aqua;
+      }
+      .top {
+        text-align: center;
+      }
+      .ez {
+        color: aquamarine;
+      }
+      .img {
+        width: 244px;
+        height: 244px;
+        background-image: url(../images/resume.png);
+        background-size: auto;
+        background-position: center center;
+        margin: 0 auto;
+      }
+      .img2 {
+        width: 200px;
+        height: 100px;
+        background-image: url(../images/ps_ability.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        display: inline-block;
+        margin-right: 120px;
+      }
+
+      .img3 {
+        width: 200px;
+        height: 100px;
+        background-image: url(../images/ai_ability.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        display: inline-block;
+        margin-right: 120px;
+      }
+
+      .img4 {
+        width: 200px;
+        height: 100px;
+        background-image: url(../images/id_ability.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        display: inline-block;
+        margin-right: 120px;
+      }
+
+      .img5 {
+        width: 200px;
+        height: 100px;
+        background-image: url(../images/pr_ability.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        display: inline-block;
+        margin-right: 120px;
+      }
+      
+      .img6 { 
+        width: 200px;
+        height: 100px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        display: inline-block;
+        padding-left: 160px;
+        background-image: url(../images/hobby_01.png);
+        margin-right: 40px;
+      }
+
+      .img7 { 
+        width: 200px;
+        height: 100px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        display: inline-block;
+        padding-left: 160px;
+        background-image: url(../images/hobby_02.png);
+        margin-right: 40px;
+      }
+
+      .img8 { 
+        width: 200px;
+        height: 100px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        display: inline-block;
+        padding-left: 160px;
+        background-image: url(../images/hobby_03.png);
+        margin-right: 40px;
+      }
+
+      .img9 { 
+        width: 200px;
+        height: 100px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        display: inline-block;
+        padding-left: 160px;
+        background-image: url(../images/hobby_04.png);
+        margin-right: 40px;
+        
+      }
+
+      .img10 { 
+        width: 200px;
+        height: 100px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        display: inline-block;
+        padding-left: 160px;
+        background-image: url(../images/hobby_05.png);
+        margin-right: 40px;
+      }
+
+      .box1_txt {
+        color: orange;
+        margin-bottom: 20px;
+      }
+      .box2_txt {
+        color: orange;
+        margin-bottom: 20px;
+      }
+      .seymour_txt {
+        color: orange;
+        margin-bottom: 20px;
+      }
+      .box4_txt {
+        color: orange;
+        margin-bottom: 20px;
+      }
+      .box5_txt {
+        color: orange;
+        margin-bottom: 20px;
+      }
+      span {
+        font-weight: bold;
+        padding-right: 15px;
+      }
+      .roboto {
+        padding-bottom: 50px;
+      }
+      .oswald {
+        padding-bottom: 50px;
+      }
+      .rubik {
+        padding-bottom: 50px;
+      }
+      .box4 {
+        padding-bottom: 50px;
+      }
+      .copy {
+        padding-top: 40px;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .mc {
+        color: green;
+      }
