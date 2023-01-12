@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <style>
+        body {
+            background-color: lightgray;
+        }
+        #wrap {
+            width: 960px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #wrap header {
+            border: 1px solid #000;
+            width: 960px;
+            height: 100px;
+            line-height: 100px;
+            background-color: #fff;
+        }
+        #wrap header ul li {
+            display: inline-block;
+            margin-right: 30px;
+        }
+        #wrap header ul li a:hover {
+            background-color: #f00;
+            color: aqua;
+            
+        }
+        article {
+            margin-bottom: 30px;
+        }
+        section {
+            margin-bottom: 30px;
+            background-color: #fff;
+            padding: 5px;
+        }
+        section h2 {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.75;
+        }
+        .section1 {
+            width: 960px;
+            border: 1px solid #000;
+        }
+        .form {
+            width: 960px;
+        }
+        fieldset {
+            width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+        fieldset ul li:nth-child(2){
+            margin-bottom: 10px;
+        }
+        img {
+            width: 100%;
+            height: 200px;
+        }
+        footer {
+            border: 1px solid #000;
+            background-color: #fff;
+            height: 50px;
+            line-height: 50px;
+        }
+        button {
+            width: 70px;
+            height: 30px;
+            border-radius: 15px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <header>
+          <ul>
+            <li><a href="#">MENU1</a></li>
+            <li><a href="#">MENU2</a></li>
+            <li><a href="#">MENU3</a></li>
+            <li><a href="#">MENU4</a></li>
+          </ul>
+        </header>
+
+        <main role="main">
+
+            <article class="image">
+              <img src="../images/bg4.jpg" alt="이미지" />
+            </article>
+    
+            <section class="section1">
+              <h2>섹션영역</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+                ipsam cupiditate ut, dicta, commodi nisi ullam beatae aperiam cumque
+                nostrum explicabo unde consequatur est veritatis quibusdam quod quas
+                quia minus!
+              </p>
+            </section>
+
+            <section class="form">
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>개인정보</legend>
+                        <ul>
+                            <li>
+                                <label for="a_name">이름</label>
+                            </li>
+                            <li>
+                                <input type="text" name="a_name" id="a_name" size="100%" required>
+                            </li>
+                            <li>
+                                <label for="a_tel">연락처</label>
+                            </li>
+                            <li>
+                                <input type="tel" name="a_tel" id="a_tel" size="100%">
+                            </li>
+                        </ul>
+
+                    </fieldset>
+    
+                        <button type="submit">제출</button>
+                </form>
+            </section>
+
+            <footer>
+                <p>Copyright All Rights Reserved., 2022</p>
+            </footer>
+
+        </main>
+    </div>
+</body>
+</html>

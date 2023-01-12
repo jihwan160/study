@@ -1,15 +1,146 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>전체실습</title>
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/font.css">
-    style
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/font.css" />
+    <style>
+        body {
+            font-size: 0.8rem;
+            line-height: 1.4;
+            color: #999;
+        }
+        #wrap {
+            width: 960px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        /* 1. Header */
+        img {
+            width: 240px;
+        }
+        .menu ul li {
+            display: inline-block;
+        }
+        .menu ul li a:hover {
+            color: red;
+            background-color: yellow;
+        }
+        /* 2. Contents */
+        section h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 3rem;
+            margin: 50px 0 50px 0;
+        }
+        fieldset {
+            width: 600px;
+            padding: 20px;
+            margin: 20px auto;
+        }
+        /* 3. Footer */
+        footer {
+            height: 240px;
+            padding: 10px 0 50px 0;
+            background-image: url(../images/bg2.jpg);
+            background-size: cover;
+        }
+        footer p {
+            padding-top: 100px;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- 1. Header -->
+      <header>
+        <h1>
+          <img src="../images/apple.png" alt="이미지" />
+          <nav class="menu">
+            <ul>
+              <li><a href="#">MENU1</a></li>
+              <li><a href="#">MENU2</a></li>
+              <li><a href="#">MENU3</a></li>
+              <li><a href="#">MENU4</a></li>
+              <li><a href="#">MENU5</a></li>
+            </ul>
+          </nav>
+        </h1>
+      </header>
+      <!-- 1. Header -->
+      <!-- 2. Contents -->
+      <main role="main">
+        <section>
+          <h2>2023-01-12</h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+          architecto quia accusamus odio possimus praesentium libero debitis
+          ducimus beatae tempora, blanditiis dolor odit vitae eum repellat
+          perferendis harum, obcaecati et!
+        </section>
+        <section>
+            <h2>Form List</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Log-In Infotmation</legend>
+                    <ul>
+                        <li>
+                            <label for="a_id">ID : </label>
+                            <input type="text" id="a_id" size="12" autofocus>
+                        </li>
+
+                        <li>
+                            <label for="a_pw">PASSWORD : </label>
+                            <input type="password" id="a_pw" maxlength="8">
+                        </li>
+
+                        <li>
+                            <label for="a_pw2">PASSCHECK : </label>
+                            <input type="password" id="a_pw2" maxlength="8">
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Department</legend>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="check1" value="web" checked>Web Publishing
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="check2" value="app">App Developer
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="check3" value="planner">Web Planner
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <p>
+                    <a href="http://www.daum.net" target="_blank">
+                        <input type="button" value="OK Google" id="google">
+                    </a>
+                </p>
+            </form>
+        </section>
+        <aside>
+            <a href="#"><input type="button" value="Top"></a>
+        </aside>
+      </main>
+      <!-- 2. Contents -->
+      <!-- 3. Footer -->
+      <footer>
+        <p>
+            Copyright All Rights Reserved., MCSSAM
+        </p>
+      </footer>
+      <!-- 3. Footer -->
+    </div>
+  </body>
 </html>
