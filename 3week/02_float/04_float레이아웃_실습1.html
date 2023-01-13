@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <style>
+        #wrap {
+            width: 960px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #wrap::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .box1 {
+            width: 960px;
+            line-height: 100px;
+            background-color: skyblue;
+        }
+        .box2 {
+            width: 300px;
+            line-height: 200px;
+            background-color: yellow;
+            float: left;
+        }
+        .box3 {
+            width: 660px;
+            line-height: 200px;
+            background-color: blue;
+            float: left;
+            color: #fff;
+        }
+        .box4 {
+            width: 960px;
+            line-height: 100px;
+            background-color: black;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="wrap">
+        <section class="box1">
+            <p>GNB메뉴</p>
+        </section>
+
+        <section class="box2">
+            <p>LNB메뉴</p>
+        </section>
+
+        <section class="box3">
+            <p>Contents</p>
+        </section>
+
+        <section class="box4">
+            <p>Copy</p>
+        </section>
+    </div>
+</body>
+</html>

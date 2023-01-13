@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <style>
+        #wrap {
+            width: 1000px;
+            margin: 0 auto;
+        }
+        header {
+            line-height: 30px;
+            margin-top: 20px;
+        }
+        header img {
+            float: left;
+        }
+        li {
+            width: 100px;
+            background-color: red;
+            padding: 5px;
+            text-align: center;
+            margin-left: 20px;
+            color: white;
+            float: right;
+        }
+        li a:hover {
+            color: black;
+        }
+        main article img {
+            margin-top: 10px;
+        }
+        section {
+            margin-top: 20px;
+        }
+        .box1 {
+            width: 300px;
+            height: 200px;
+            background-color: red;
+            float: left;
+        }
+        .box2 {
+            width: 300px;
+            height: 200px;
+            background-color: white;
+            float: left;
+        }
+        .box3 {
+            width: 400px;
+            height: 200px;
+            background-color: blue;
+            float: left;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+        footer span {
+            color: red;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <article>
+                <img src="https://via.placeholder.com/95x40" alt="img1">
+            </article>
+            <ul>
+                <li><a href="#">comunity</a></li>
+                <li><a href="#">service</a></li>
+                <li><a href="#">product</a></li>
+                <li><a href="#">company</a></li>
+            </ul>
+        </header>
+
+        <main role="main">
+            <article>
+                <img src="https://via.placeholder.com/1000x600" alt="img2">
+            </article>
+
+            <section class="cf">
+                <p class="box1"></p>
+                <p class="box2"></p>
+                <p class="box3"></p>
+            </section>
+        </main>
+
+        <footer>
+            <p>
+                copy <span>mcssam</span>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

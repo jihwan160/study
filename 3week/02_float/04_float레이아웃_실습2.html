@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습2</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <style>
+        #wrap {
+            width: 960px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h2 {
+            font-size: 20px;
+            color: #fff;
+        }
+        .hed::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .box1 {
+            width: 300px;
+            height: 90px;
+            line-height: 90px;
+            background-color: rgb(133, 133, 9);
+            float: left;
+        }
+        .box2 {
+            width: 660px;
+            height: 90px;
+            line-height: 90px;
+            background-color: silver;
+            float: right;
+        }
+        .sec1::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .box3 {
+            width: 480px;
+            height: 90px;
+            line-height: 90px;
+            background-color: silver;
+            float: left;
+        }
+        .box4 {
+            width: 480px;
+            height: 90px;
+            line-height: 90px;
+            background-color: rgb(8, 73, 8);
+            float: right;
+        }
+        .sec2::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .box5 {
+            width: 300px;
+            height: 90px;
+            line-height: 90px;
+            background-color: red;
+            float: left;
+        }
+        .box6 {
+            width: 500px;
+            height: 90px;
+            line-height: 90px;
+            background-color: rgb(21, 179, 21);
+            float: left;
+        }
+        .box7 {
+            width: 160px;
+            height: 90px;
+            line-height: 90px;
+            background-color: rgb(44, 44, 172);
+            float: right;
+        }
+        footer {
+            height: 90px;
+            line-height: 90px;
+            background-color: rgb(164, 164, 9);
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+
+        <header class="hed">
+            <h2 class="box1">
+                로고영역
+            </h2>
+            <h2 class="box2">
+                GNB영역
+            </h2>
+        </header>
+
+        <main role="main">
+            <section class="sec1">
+                <h2 class="box3">
+                    슬라이드 왼쪽
+                </h2>
+                <h2 class="box4">
+                    슬라이드 오른쪽
+                </h2>
+            </section>
+
+            <section class="sec2">
+                <h2 class="box5">
+                    섹션 왼쪽
+                </h2>
+
+                <h2 class="box6">
+                    섹션 가운데
+                </h2>
+
+                <h2 class="box7">
+                    섹션 오른쪽
+                </h2>
+            </section>
+
+        </main>
+        <footer>
+            <h2 class="box8">
+                하단메뉴
+            </h2>
+        </footer>
+
+    </div>
+</body>
+</html>
