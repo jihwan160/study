@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/font.css">
+  <style>
+    body {
+      background-color: #000;
+    }
+    #wrap {
+      width: 1000px;
+      margin: 0 auto;
+    }
+    header {
+      margin-top: 15px;
+    }
+    header article {
+      float: left;
+    }
+    nav ul {
+      float: right;
+    }
+    nav ul li {
+      width: 100px;
+      background-color: red;
+      padding: 5px;
+      text-align: center;
+      color: #fff;
+      margin: 5px 0 0 15px;
+      float: left;
+    }
+    main article {
+      margin: 15px 0;
+    }
+    main section {
+      margin: 15px 0;
+    }
+    .box1 {
+      width: 300px;
+      height: 200px;
+      background-color: red;
+      float: left;
+    }
+    .box2 {
+      width: 300px;
+      height: 200px;
+      background-color: silver;
+      float: left;
+    }
+    .box3 {
+      width: 400px;
+      height: 200px;
+      background-color: blue;
+      float: right;
+    }
+    footer {
+      text-align: center;
+      color: #fff;
+    }
+    footer span {
+      color: red;
+      font-weight: 700;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <header class="cf">
+        <article><img src="https://via.placeholder.com/95x40" alt="image"></article>
+
+        <nav>
+          <ul>
+            <li><a href="#">COMUNITY</a></li>
+            <li><a href="#">SERVICE</a></li>
+            <li><a href="#">PRODUCT</a></li>
+            <li><a href="#">COMPANY</a></li>
+          </ul>
+        </nav>
+
+
+    </header>
+
+    <main role="main">
+
+      <article>
+        <img src="https://via.placeholder.com/1000x600" alt="image2">
+      </article>
+
+      <section class="cf">
+       <form action="#" method="post">
+          <h2 class="box1">
+            <ul>
+              <li>
+                <label for="a_name">이름 : </label>
+                <input type="text" name="a_name" id="a_name" size="12" required autofocus>
+              </li>
+
+              <li>
+                <label for="a_tel">
+                  <label for="a_tel">연락처 : </label>
+                  <input type="tel" name="a_tel" id="a_tel">
+                </label>
+              </li>
+              
+            </ul>
+            
+          </h2>
+          <h2 class="box2">
+            <ul>
+              <li>
+                <label>
+                  <input type="radio" name="rd" value="radio1" checked>가나다라
+                 </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="rd" value="radio2">마바사
+                 </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="rd" value="radio3">아자차카
+                 </label>
+              </li>
+            </ul>
+           
+          </h2>
+          <h2 class="box3">
+            <ul>
+              <li>
+                <label>
+                  <input type="checkbox" name="cb" value="check1" checked>ABCD
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="cb" value="check1">EFG
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="cb" value="check1">HIJK
+                </label>
+              </li>
+            </ul>
+          </h2>
+       </form>
+      </section>
+
+    </main>
+    <footer>
+      <p>
+        Copyright All Rights Reserved., <span>MCSSAM</span>
+      </p>
+    </footer>
+
+  </div>
+</body>
+</html>
