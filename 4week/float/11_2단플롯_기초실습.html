@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2단 플롯 기초 실습</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/font.css" />
+    <style>
+        #wrap {
+            width: 850px;
+            margin: 0 auto;
+            background-color: aqua;
+            padding: 15px;
+        }
+        header::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        header {
+            background-color: #ff0;
+            margin-bottom: 15px;
+            padding: 5px;
+        }
+        header h2 {
+            font-size: 32px;
+            font-weight: 700;
+            float: left;
+        }
+        ul {
+            float: right;
+        }
+        header nav ul li {
+            margin: 0 20px 0 20px;
+            padding-top: 10px;
+            float: left;
+        }
+        main::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .main1 {
+            width: 550px;
+            background-color: rgb(78, 154, 230);
+            padding: 15px;
+            float: left;
+        }
+        .side {
+            width: 200px;
+            padding: 15px;
+            float: right;
+            background-color: #fff;
+        }
+        footer {
+            background-color: silver;
+            margin-top: 15px;
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <h2>사이트 제목</h2>
+        <nav>
+          <ul>
+            <li><a href="#">MENU1</a></li>
+            <li><a href="#">MENU2</a></li>
+            <li><a href="#">MENU3</a></li>
+            <li><a href="#">MENU4</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main role="main">
+        <section class="main1">
+          <h2>본문</h2>
+          <p>
+            HTML (Hypertext Markup Language,하이퍼텍스트 마크업 언어)는
+            프로그래밍언어는 아니고, 우리가 보는 웹페이지가 어떻게 구조화 되어
+            있는지 브라우저로 하여금 알 수 있도록 하는 마크업 언어입니다.
+          </p>
+        </section>
+
+        <section class="side">
+            <h2>사이드바</h2>
+            <p>
+                Html 요소는 대소문자를 구분하지 않습니다.(소문자사용 추천)
+            </p>
+        </section>
+      </main>
+      <footer>
+        <p>
+            Copyright MCSSAM., All Right Reserved.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

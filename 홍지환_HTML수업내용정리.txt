@@ -755,3 +755,119 @@ float를 할때 부모자식을 만들어야한다
 
 **float : right를 하면 순서가 바뀌어서 나오는데
 ul 에다가 float : right를 사용하고 li에 float : left를 사용하면 순서가 바뀌지않고 나온다
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+@23/01/16
+
+플롯의 기본 = 형제끼리의 플롯을 준다
+header 아래 자식으로 h1, nav 가있고 h1의 float:left nav의 float:right를 주고 header에서 플롯해제를 한다
+li에서 플롯을 사용하고 부모인 nav에서 플롯을 사용하면 li의 플롯은 자동으로 해제가 된다
+이미지가 width값을 가져서 따로 width값을 안줘도 된다
+
+2단플롯은 길상백호만 기억하면된다
+
+a -> b 중간과정이 없다
+원래있던박스가 b로 변하는것을 트랜스폼이라 한다
+접두어를 붙어주어야한다
+
+값이 양수면 가운데로
+값이 음수면 반대로
+
+X축, Y축 이동
+transform: translate(10px,20px)
+
+크기변환
+transform: scale(0.8)
+
+회전
+ transform: rotate(-20deg);
+양수면 시계방향으로 돈다 | 음수면 시계반대방향으로 돈다
+
+위에 3개만 알면된다
+
+기울이기(왜곡)
+transform: skew(30deg,0)
+
+트랜지션은 애니메이션이랑 구분만 할줄 알면 된다
+트랜지션 = a -> b
+동그라미에서 네모로 바꾸는 트랜지션을 걸면 중간과정을 브라우저에서 해준다
+트랜지션도 시간이있어야한다
+
+ /* transition 시킬 CSS 속성명 */
+transition-property: width,height,background-color;
+
+/* transition 시킬 시간 */
+transition-duration: 1s;
+
+/* 한줄표기법 */
+transition: all 1s;
+
+애니메이션은 제약이없다
+애니메이션은 무조건 시간이있어야한다
+
+property = 속성
+
+/* 1. linear : 같은 속도로 트랜지션 진행 */
+        .linear {
+            transition: all 1.5s linear;
+        }
+        /* 2. ease : 처음에는 천천히 시작, 점점 빨라진 후 마지막에 천천히 트랜지션 진행 (기본값) */
+        .ease {
+            transition: all 1.5s ease;
+        }
+        /* 3. ease-in : 처음에는 천천히 시작 */
+        .ease-in {
+            transition: all 1.5s ease-in;
+        }
+        /* 4.ease-out : 끝은 천천히 함 */
+        .ease-out {
+            transition: all 1.5s ease-out;
+        }
+        /* 5. ease-in-out : 끝을 천천히 함 */
+        .ease-in-out {
+            transition: all 1.5s ease-in-out;
+        }
+        /* hover 시 높이값이 적용되면서 트랜지선 실행 */
+        #tr_speed:hover div {
+            height: 200px;
+        }
+
+쇼핑몰에서 물건 글자크기 두께 컬러 위계질서가있다
+상품명을 쓸때는 2줄쓰기
+
+위치잡기
+구조 = float flex + position
+position = 박스를 겹쳐보이게하는 기술
+
+position: absolute;  
+left: 0;                = 기본
+top: 0;
+
+조건이 하나있다  = 위치 기준값을 정해줘야한다
+position: relative; = 위치 기준값이 부모한테 잡힌다
+
+포지션들끼리 겹치고 내가 보여주고 싶은걸 보여줄떄 z-index: 1;를 사용한다
+
+opacity: 1; = 투명도 조정하는 것
+
+
+/* 트랜지션 효과 */
+        .prod_list .caption {
+            width: 300px;
+            height: 200px;
+            padding-top: 20px;
+            background-color: rgba(0, 0, 0, 0.4);
+            /* 포지션 */
+            position: absolute;
+            left: 0;
+            top: -200px;
+            z-index: 1;
+            opacity: 0;
+            /* 트랜지션 */
+            transition: all 0.2s linear;
+        }
+        /* 트랜지션 호버시 동작(여기가 핵심) */
+        .prod_list li:hover .caption {
+            transform: translateY(200px);
+            opacity: 1;
+        }

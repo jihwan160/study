@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/font.css" />
+    <style>
+      #wrap {
+        width: 1000px;
+        margin: 100px auto;
+        background-color: #50b5ea;
+        padding: 20px;
+      }
+      header::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      header {
+        background-color: #2b51b5;
+        margin-bottom: 20px;
+      }
+      header h1 {
+        font-size: 32px;
+        padding-top: 8px;
+        float: left;
+      }
+      header nav {
+        float: right;
+      }
+      header .gnb li {
+        padding: 20px;
+        float: left;
+      }
+      #container::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      #contents {
+        width: 620px;
+        background-color: #50eaea;
+        margin-bottom: 20px;
+        padding: 20px;
+        float: left;
+        
+      }
+      #sidebar {
+        width: 220px;
+        background-color: #eee;
+        margin-bottom: 20px;
+        padding: 20px;
+        float: right;
+      }
+      footer {
+        background-color: silver;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <h1>사이트 제목</h1>
+
+        <nav>
+          <ul class="gnb">
+            <li><a href="#">MENU1</a></li>
+            <li><a href="#">MENU2</a></li>
+            <li><a href="#">MENU3</a></li>
+            <li><a href="#">MENU4</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main role="main">
+        <section id="container">
+          <article id="contents">
+            <h2>본문</h2>
+            <p>
+              HTML (Hypertext Markup Language,하이퍼텍스트 마크업 언어)는
+              프로그래밍언어는 아니고, 우리가 보는 웹페이지가 어떻게 구조화 되어
+              있는지 브라우저로 하여금 알 수 있도록 하는 마크업 언어입니다.
+            </p>
+          </article>
+          <aside id="sidebar">
+            <h2>사이드바</h2>
+            <p>Html 요소는 대소문자를 구분하지 않습니다.(소문자사용 추천)</p>
+          </aside>
+        </section>
+
+        
+      </main>
+      <footer>
+        <p>Copyright MCSSAM., All Right Reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
