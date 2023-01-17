@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경이미지 포지션 실습</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+        #wrap {
+            width: 1200px;
+            margin: 30px auto;
+            position: relative;
+        }
+        #wrap img {
+            width: 1200px;
+            height: 800px;
+            padding: 10px;
+            box-shadow: 1px 1px 1px 1px;
+        }
+        #wrap p {
+            font-size: 900%;
+            font-family: 'Anton', sans-serif;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            z-index: 1;
+            transform: translate(-45%,-60%);
+            opacity: 0.5;
+            line-height: 1.5;
+            text-shadow:
+            -1px 0px rgb(165, 164, 164),
+            0px 1px rgb(165, 164, 164),
+            1px 0px rgb(165, 164, 164),
+            0px -1px rgb(165, 164, 164);
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <p>AVENGERS</p>
+        <img src="./images/avgers.jpg" alt="이미지">
+    </div>
+</body>
+</html>
