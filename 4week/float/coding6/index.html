@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3단플롯</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <style>
+        body {
+            background-color: #a9a9a9;
+        }
+        #wrap {
+            width: 960px;
+            margin: 0 auto;
+            background-color: #fefefe;
+        }
+        #wrap header {
+            background-color: #fea900;
+            text-align: center;
+        }
+        #wrap header h1 {
+            font-size: 120px;
+            font-weight: 700;
+            line-height: 1.5;
+            color: #fff;
+        }
+        #wrap header h3 {
+            font-size: 22px;
+            font-weight: 600;
+            color: #fff;
+        }
+        #wrap header h4 {
+            font-size: 14px;
+            background-color: #cbcbcb;
+            padding: 5px;
+        }
+        #wrap header h4 span {
+            font-weight: 700;
+            color: #0000fe;
+        }
+        main::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        main .cover {
+            float: left;
+        }
+        main .left_side {
+            width: 240px;
+            float: left;
+        }
+        main .left_side h2 {
+            background-color: #980000;
+            padding: 15px;
+            font-weight: 700;
+            font-size: 24px;
+            color: #fff;
+        }
+        main .left_side li {
+            margin: 20px 5px;
+        }
+        main .left_side li a {
+            margin-left: 10px;
+            border-bottom: dashed;
+        }
+        main .mid {
+            width: 480px;
+            background-color: #dcdcdc;
+            float: right;
+        }
+        main .mid article h2 {
+            background-color: #123456;
+            font-size: 22px;
+            font-weight: 700;
+            padding: 10px;
+            color: #fff;
+            margin: 30px;
+        }
+        main .mid article h3 {
+            font-weight: 700;
+            font-size: 20px;
+            color: #123456;
+            margin: 30px;
+        }
+        main .mid article p {
+            margin: 30px;
+        }
+        main .right_side {
+            width: 240px;
+            float: right;
+            padding: 10px;
+        }
+        main .right_side ul li:first-child {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        main .right_side ul li:nth-child(2) {
+            font-size: 24px;
+            font-weight: 700;
+            color: #fea900;
+        }
+        main .right_side ul li a {
+            border-bottom: solid;
+        }
+
+        main .right_side ul li:last-child {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        main .right_side p {
+            margin-top: 20px;
+            font-weight: 600;
+        }
+        footer {
+            background-color: #123456;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        footer span {
+            color: #941d45;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <section>
+                <h1>Musee d'Orsa</h1>
+            </section>
+
+            <section>
+                <h3>
+                    Musee d'OrsaMusee d'OrsaMusee d'OrsaMusee d'OrsaMusee d'OrsaMusee d'Orsa
+                </h3>
+            </section>
+
+            <section>
+                <h4>
+                    Royal Academy of Arts, <span>THE REAL VANGOGH</span> THE ARTIST AND HIS LETTERS
+                </h4>
+            </section>
+        </header>
+        <main role="main">
+
+            <section class="cover">
+                <section class="left_side">
+                    <h2>ARTIST</h2>
+                    <nav>
+                        <ul>
+                            <li><a href="#">작가의 작품</a></li>
+                            <li><a href="#">작가의 시대</a></li>
+                            <li><a href="#">작가의 일생</a></li>
+                        </ul>
+                    </nav>
+                </section>
+    
+                <section class="mid">
+                    <article>
+                        <h2>피리부는 소년</h2>
+                        <h3>에두아르마</h3>
+                        <p>1866 Musee d'OrsaMusee d'Orsa 161*97cm</p>
+                    </article>
+        
+                    <article>
+                        <h2>반고흐의 방</h2>
+                        <h3>에두아르마</h3>
+                        <p>1866 Musee d'OrsaMusee d'Orsa 161*97cm</p>
+                    </article>
+        
+                    <article>
+                        <h2>황색 그리스도가 있는 화가의 자화상</h2>
+                        <h3>에두아르마</h3>
+                        <p>1866 Musee d'OrsaMusee d'Orsa 161*97cm</p>
+                    </article>
+        
+                    <article>
+                        <h2>오페라좌의 관현악단</h2>
+                        <h3>에두아르마</h3>
+                        <p>1866 Musee d'OrsaMusee d'Orsa 161*97cm</p>
+                    </article>
+        
+                    <article>
+                        <h2>만종</h2>
+                        <h3>에두아르마</h3>
+                        <p>1866 Musee d'OrsaMusee d'Orsa 161*97cm</p>
+                    </article>
+        
+                    <article>
+                        <h2>제비꽃 장식을 단 베르트모리조</h2>
+                        <h3>에두아르마</h3>
+                        <p>1866 Musee d'OrsaMusee d'Orsa 161*97cm</p>
+                    </article>
+                </section>
+                
+            </section> <!-- cover -->
+                
+            <section class="right_side">
+                <ul>
+                    <li><a href="#">전 세계인에게</a></li>
+                    <li><a href="#">제일 사랑받는</a></li>
+                    <li>서양 미술사 시대</li>
+                </ul>
+                <p>
+                    work shop Go<br>
+                    Life drawing workshop<br><br>
+                    Summer Exhibition<br>
+                    Summer Exhibition<br><br>
+                    RA Collection<br>
+                    RA Collection
+                </p>
+            </section>
+
+        </main>
+        <footer>
+            <em>2022 Musee d'OrsaMusee All Rights Reserver.<span>admin@OrsaMusee.com</span>Legal status</em>
+        </footer>
+    </div>
+</body>
+</html>
