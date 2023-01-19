@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플렉스 레이아웃 실습</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <style>
+        #wrap {
+            width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+        }
+        #wrap header {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        #wrap header h2 {
+            height: 50px;
+            background-color: red;
+        }
+        #wrap header li {
+            height: 80px;
+            background-color: orange;
+        }
+        main {
+            width: 100%;
+        }
+        main section {
+            display: flex;
+        }
+        main section h2 {
+            width: 100%;
+            height: 200px;
+            background-color: green;
+        }
+        main section h2+h2 {
+            width: 100%;
+            height: 200px;
+            background-color: yellow;
+        }
+        main article {
+            display: flex;
+        }
+        main article h2 {
+            width: 100%;
+            height: 200px;
+            background-color: darkgreen;
+        }
+        main article h2+h2 {
+            width: 100%;
+            height: 200px;
+            background-color: blue;
+        }
+        main article h2+h2+h2 {
+            width: 100%;
+            height: 200px;
+            background-color: purple;
+        }
+        footer {
+            display: flex;
+        }
+        footer h2 {
+            width: 100%;
+            height: 50px;
+            background-color: rgb(231, 97, 213);
+        }
+        aside {
+            width: 80px;
+            height: 150px;
+            background-color: skyblue;
+            position: absolute;
+            left: 1000px;
+            top: 0;
+            z-index: 1;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h2>SNB메뉴</h2>
+            <nav>
+                <ul>
+                    <li>GNB메뉴</li>
+                </ul>
+            </nav>
+        </header>
+        <main role="main">
+            <section>
+                    <h2>슬라이드영역1</h2>
+                    <h2>슬라이드영역2</h2>
+            </section>
+            <article>
+                <h2>콘텐츠영역1</h2>
+                <h2>콘텐츠영역2</h2>
+                <h2>콘텐츠영역3</h2>
+            </article>
+            <aside>
+                <p>퀵메뉴</p>
+            </aside>
+        </main>
+        <footer>
+            <h2>푸터메뉴</h2>
+        </footer>
+    </div>
+</body>
+</html>
