@@ -249,39 +249,82 @@ flex-wrap:wrap
 display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+@23/01/20
+
+플렉스 아이템 주축방향배치(justify-contnet) = [부모박스]에 설정
+        : 플렉스 아이템 주축의 시작점부터 배치
+        # 속성명 : justify-contnet
+        # 속성값 : flex-start[기본값], flex-end, center, space-between, space-around
 
 
+justify-content: flex-start; 왼쪽끝에 붙음
+
+justify-content: flex-end; 오른쪽 끝에 붙음
+
+justify-content: center; 박스들을 가운데로 배치한다 margin 0 auto;랑 비슷하다
+
+justify-content: space-around; 박스하나당 좌우에 똑같은 간격을 갖는다
+
+justify-content: space-between; **제일 많이 쓴다 
+첫번쨰 박스하고 마지막박스는 부모박스 양쪽에 무조건 붙고
+나머지 박스들은 공평하게 브라우저가 딱 나누어준다
 
 
+플렉스 아이템 교차축방향배치(align-items) => [부모박스]에 설정
+        : 주축(row일때 X축, column일때 Y축)의 수직방향으로 플렉스 아이템 배치
+        # 속성명 : align-items
+        # 속성값 : stretch[기본값], flex-start, flex-end, center, baseline
 
 
+height에  min = ~이상 max= ~이하
+mix max = 가변이랑 관련있는 접두어
 
 
+기본으로 쓴다
+display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
 
 
+align-items: stretch; = 기본값
+
+align-items: flex-start; 해당라인에 시작선부터 나옴
+
+align-items: flex-end; 해당라인에 끝선부터 나옴
+
+align-items: center; 축의 가운데에 나옴
+
+align-items: baseline; 폰트기준으로 박스가 잡힌다
 
 
+플렉스 아이템 교차축방향 개별 배치(align-self) => [플렉스 아이템]에 설정
+        : 교차축 방향으로 플렉스 아이템에 개별적 배치
+        # 속성명 : align-self
+        # 속성값 : flex-start, flex-end, center ...
+
+부모에서 플렉스아이템을 상속받기 싫으면 개별적으로
+자식들에게 align-self 를 사용한다
+
+height : auto; 기본값
+
+플렉스아이템 순서 바꾸기(order) => [플렉스 아이템]에 설정 : HTML 코딩이나
+      탭 순서와 상관없이 화면에 보이는 순서에만 영향을 줌 => 구조에는 영향을
+      못끼침 # 속성명 : order # 속성값 : nth, n=숫자
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+플렉스아이템 너비확대축소(flex) => [플렉스 아이템]에 설정
+        : 플렉스 아이템의 너비를 설정하는 것
+            증가너비 [기본값 0] | # 속성명 = flex-grow,
+            감소너비 [기본값 1] | # 속성명 = flex-shrink,
+            기본너비 [기본값 auto] | # 속성명 = flex-basis
+        
+    코드예시
+        선택자 {
+            flex: 1 1 0; //증가너비 감소너비 기본너비
+            flex : 1 0; //증가너비 감소너비
+            flex : 1 20px; //증가너비 기본너비(단위를 사용하면 기본너비가 적용)
+        }
 
 
 

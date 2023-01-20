@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+#wrap {
+    width: 1400px;
+    margin: 0 auto;
+    padding: 38px 140px 44px 140px;
+}
+#wrap .left_field {
+    width: 40%;
+    background-color: skyblue;
+    float: left;
+}
+#wrap header {
+    margin-bottom: 16px;
+}
+/* 이름 */
+#wrap header h1 {
+    font-size: 36px;
+    margin: 12px 0 40px 5px;
+}
+
+/* 연락처 */
+#wrap .left_field .tel {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    font-size: 12px;
+}
+
+/* 이메일 */
+#wrap .left_field .email {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    font-size: 12px;
+}
+/* 이미지 */
+#wrap .left_field img {
+    width: 14px;
+    height: 14px;
+    margin-left: 2px;
+    margin-right: 9px;
+    padding-bottom: 2px;
+}
+#wrap main .content {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left: 2px;
+    margin-bottom: 24px;
+}
+#wrap main .github {
+    height: 113px;
+    margin-left: 2px;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+}
+#wrap main .github h2 {
+    font-size: 10px;
+    margin-top: 28px;
+}
+#wrap main .github p {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    font-size: 13px;
+    margin-top: 15px;
+}
+#wrap main .avility {
+    height: 190px;
+    margin-left: 2px;
+    margin-top: 28px;
+    border-bottom: 1px solid #666;
+}
+#wrap main .avility h2 {
+    margin-bottom: 12px;
+}
+#wrap main .avility button {
+    margin-bottom: 21px;
+}
+
+
+
+
+/* 오른쪽필드 */
+#wrap .right_field {
+    width: 55%;
+    background-color: yellow;
+    float: right;
+}
+#wrap .right_field .college {
+    height: 182px;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+}
