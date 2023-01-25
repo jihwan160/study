@@ -87,8 +87,85 @@
     background-color: yellow;
     float: right;
 }
+/* 학력 */
 #wrap .right_field .college {
     height: 182px;
-    border-top: 1px solid #666;
-    border-bottom: 1px solid #666;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    display: flex;
 }
+
+#wrap .right_field .college .c_edu {
+    margin-top: 30px;
+    margin-left: 26px;
+    font-size: 17px;
+    margin-bottom: 24px;
+}
+#wrap .right_field .college .c_date {
+    margin-left: 26px;
+    font-size: 13px;
+    margin-right: 48px;
+}
+#wrap .right_field .college .c_name {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+#wrap .right_field .college .c_major {
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+#wrap .right_field .college .c_grade {
+    font-size: 12px;
+}
+/* 업무경험 */
+#wrap .right_field .experience {
+    height: 300px;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    display: flex;
+}
+#wrap .right_field .experience .e_edu {
+    margin-top: 30px;
+    margin-left: 26px;
+    font-size: 17px;
+    margin-bottom: 24px;
+}
+#wrap .right_field .experience .e_date {
+    margin-left: 26px;
+    font-size: 13px;
+    margin-right: 48px;
+    margin-bottom: 12px;
+}
+#wrap .right_field .experience .e_date2 {
+    margin-left: 26px;
+    font-size: 13px;
+    margin-right: 48px;
+}
+#wrap .right_field .experience .e_name {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+#wrap .right_field .experience .e_secondbox button {
+    margin-bottom: 17px;
+}
+
+#wrap .right_field .experience .e_secondbox .e_li {
+    font-size: 16px;
+    font-weight: 700;
+    list-style: disc;
+}
+#wrap .right_field .experience .e_secondbox .e_li2, .e_li3 {
+    list-style: circle;
+    font-weight: normal;
+    line-height: 1.5;
+    margin-left: 13px;
+}
+
