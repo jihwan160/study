@@ -87,7 +87,7 @@
     float: right;
 }
 /* 학력 */
-#wrap .right_field .college {
+.right_field .college {
     height: 182px;
     border-top: 1px solid #ebebeb;
     border-bottom: 1px solid #ebebeb;
@@ -96,33 +96,33 @@
     display: flex;
 }
 
-#wrap .right_field .college .c_edu {
+.right_field .college .c_edu {
     margin-top: 30px;
     margin-left: 26px;
     font-size: 17px;
     margin-bottom: 24px;
 }
-#wrap .right_field .college .c_date {
+.right_field .college .c_date {
     margin-left: 26px;
     font-size: 13px;
     margin-right: 48px;
 }
-#wrap .right_field .college .c_name {
+.right_field .college .c_name {
     font-size: 20px;
     font-weight: 700;
     margin-top: 70px;
     margin-bottom: 20px;
     color: #104555;
 }
-#wrap .right_field .college .c_major {
+.right_field .college .c_major {
     margin-bottom: 12px;
     font-size: 14px;
 }
-#wrap .right_field .college .c_grade {
+.right_field .college .c_grade {
     font-size: 12px;
 }
 /* 업무경험 */
-#wrap .right_field .experience {
+.right_field .experience {
     height: 260px;
     border-top: 1px solid #ebebeb;
     border-bottom: 1px solid #ebebeb;
@@ -130,50 +130,50 @@
     margin-bottom: 40px;
     display: flex;
 }
-#wrap .right_field .experience .e_edu {
+.right_field .experience .e_edu {
     margin-top: 30px;
     margin-left: 26px;
     font-size: 17px;
     margin-bottom: 24px;
 }
-#wrap .right_field .experience .e_date {
+.right_field .experience .e_date {
     margin-left: 26px;
     font-size: 13px;
     margin-right: 48px;
     margin-bottom: 12px;
 }
-#wrap .right_field .experience .e_date2 {
+.right_field .experience .e_date2 {
     margin-left: 26px;
     font-size: 13px;
     margin-right: 48px;
 }
-#wrap .right_field .experience .e_name {
+.right_field .experience .e_name {
     font-size: 20px;
     font-weight: 700;
     margin-top: 70px;
     margin-bottom: 20px;
     color: #104555;
 }
-#wrap .right_field .experience .e_secondbox button {
+.right_field .experience .e_secondbox button {
     margin-bottom: 17px;
     color: #93969d;
 }
 
-#wrap .right_field .experience .e_secondbox .e_li {
+.right_field .experience .e_secondbox .e_li {
     font-size: 16px;
     font-weight: 600;
     list-style: disc;
     line-height: 2;
     color: #484148;
 }
-#wrap .right_field .experience .e_secondbox .e_li2, .e_li3 {
+.right_field .experience .e_secondbox .e_li2, .e_li3 {
     list-style: circle;
     font-weight: normal;
     line-height: 1.5;
     margin-left: 13px;
 }
 /* 자격증 */
-#wrap .right_field .license {
+.right_field .license {
     height: 160px;
     border-top: 1px solid #ebebeb;
     border-bottom: 1px solid #ebebeb;
@@ -181,23 +181,51 @@
     margin-bottom: 40px;
     display: flex;
 }
-#wrap .right_field .l_name {
+.right_field .l_name {
     margin-top: 30px;
     margin-left: 26px;
     font-size: 17px;
     margin-bottom: 24px;
 }
-#wrap .right_field .l_date {
+.right_field .l_date {
     margin-left: 26px;
     font-size: 13px;
     margin-right: 48px;
     margin-bottom: 12px;
 }
-#wrap .right_field .l_name2 {
+.right_field .l_name2 {
     font-size: 20px;
     font-weight: 700;
     margin-top: 70px;
     margin-bottom: 20px;
     margin-left: 70px;
+    color: #104555;
+}
+/* 활동 */
+.right_field .activity {
+    height: 160px;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    display: flex;
+}
+.right_field .a_name {
+    margin-top: 30px;
+    margin-left: 26px;
+    font-size: 17px;
+    margin-bottom: 24px;
+}
+.right_field .a_date {
+    margin-left: 26px;
+    font-size: 13px;
+    margin-right: 48px;
+    margin-bottom: 12px;
+}
+.right_field .a_name2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 70px;
+    margin-bottom: 20px;
     color: #104555;
 }
