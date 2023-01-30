@@ -7,8 +7,6 @@
 
 #wrap {
     width: 100%;
-    margin: 0 auto;
-    
 }
 /* 헤더 */
 header .logo_gnb {
@@ -131,14 +129,17 @@ main .m3{
     background-repeat: no-repeat;
     background-size: cover;
     height: 560px;
-    position: relative;
+    
 }
 main .m3 .movie_clip {
     width: 1060px;
     height: 560px;
+    position: relative;
+}
+main .m3 .movie_clip img {
     position: absolute;
-    left: 400px;
-    top: 300px;
+    left: 0;
+    top: 310px;
     z-index: 1;
 }
 /* m4 */
@@ -214,7 +215,15 @@ footer .foot .f_fourbox dl {
     float: right;
     margin-right: 20px;
 }
+footer .underline {
+    margin-top: 25px;
+    border-bottom: 1px solid #fff;
+}
 
+footer .copyright {
+    text-align: center;
+    color: #fff;
+}
 
 
 
