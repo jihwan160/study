@@ -33,6 +33,8 @@ header .search {
 }
 header {
     background-image: url(../images/slide_back_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 700px;
 }
 header .text_1 {
@@ -64,6 +66,7 @@ header .text_1 .yellow_box {
     font-weight: 600;
 }
 /* 메인 */
+/* m1 */
 main .m1 {
     background-color: #b4b4b4;
     height: 558px;
@@ -106,6 +109,7 @@ main .c_text2 {
 main .c_text2 img {
     margin-right: 25px;
 }
+/* m2 */
 main .m2 {
     background-color: #fff;
     height: 872px;
@@ -118,4 +122,109 @@ main .m2 .m2_text {
     text-align: center;
     margin-top: 100px;
     margin-bottom: 61px;
+    font-size: 25px;
+    line-height: 1.5;
 }
+/* m3 */
+main .m3{
+    background-image: url(../images/mov_back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 560px;
+    position: relative;
+}
+main .m3 .movie_clip {
+    width: 1060px;
+    height: 560px;
+    position: absolute;
+    left: 400px;
+    top: 300px;
+    z-index: 1;
+}
+/* m4 */
+main .m4 {
+    height: 1000px;
+    background-color: #fff;
+}
+
+main .m4 .why img{
+    width: 1280px;
+    height: 500px;
+    margin-bottom: 70px;
+    margin-top: 400px;
+}
+/* m5 */
+main .m5 {
+    background-color: #dcdcdc;
+}
+main .m5 .m5_faq {
+    height: 692px;
+    padding-top: 100px;
+}
+/* m6 */
+main .m6 {
+    background-color: #ffcc33;
+    padding-left: 20px;
+}
+/* footer */
+footer {
+    background-color: #000;
+    height: 550px;
+}
+footer .foot dt{
+    font-weight: 600;
+    font-style: 20px;
+    padding-bottom: 10px;
+}
+footer .foot dd {
+    padding-bottom: 10px;
+    font-size: 13px;
+}
+
+footer .foot .f_firstbox {
+    padding-top: 130px;
+    margin-right: 215px;
+    float: left;
+    margin-left: 20px;
+}
+footer .foot .f_firstbox img {
+    margin-bottom: 25px;
+    margin-right: 20px;
+}
+footer .foot .f_firstbox p{
+    color: #fff;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    font-size: 13px;
+}
+footer .foot .f_secondbox dl {
+    padding-top: 150px;
+    margin-right: 215px;
+    color: #fff;
+    float: left;
+}
+footer .foot .f_thirdbox dl {
+    padding-top: 150px;
+    color: #fff;
+    float: left;
+}
+footer .foot .f_fourbox dl {
+    padding-top: 150px;
+    color: #fff;
+    float: right;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
