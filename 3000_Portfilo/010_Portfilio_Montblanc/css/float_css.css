@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+.w1320 {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+#wrap {
+    width: 100%;
+    margin: 0 auto;
+    
+}
+/* 헤더 */
+header .logo_gnb {
+    width: 1170px;
+    float: left;
+    margin-left: 20px;
+}
+
+header article img{
+    float: left;
+}
+header nav ul li{
+    color: #fff;
+    float: right;
+    margin-left: 27px;
+    line-height: 58px;
+}
+header .search {
+    float: right;
+    margin-top: 10px;
+    margin-right: 26px;
+}
+header {
+    background-image: url(../images/slide_back_img.png);
+    height: 700px;
+}
+header .text_1 {
+    margin-top: 200px;
+}
+header .text_1 h2{
+    color: #fff;
+    font-size: 55px;
+    font-weight: 700;
+    margin-left: 68px;
+    padding: 10px 0;
+}
+header .text_1 p {
+    color: #999999;
+    margin-left: 68px;
+    font-size: 10px;
+    margin-top: 14px;
+    padding: 10px 0;
+}
+header .text_1 .yellow_box {
+    width: 152px;
+    height: 48px;
+    background-color: #ffcc33;
+    margin-left: 68px;
+    margin-top: 18px;
+    text-align: center;
+    line-height: 48px;
+    font-size: 15px;
+    font-weight: 600;
+}
+/* 메인 */
+main .m1 {
+    background-color: #b4b4b4;
+    height: 558px;
+}
+main .cardbox {
+    width: 400px;
+    height: 500px;
+    position: relative;
+}
+main .cardbox .card1 {
+    position: absolute;
+    right: 430px;
+    bottom: 80px;
+    z-index: 1;
+}
+main .cardbox .card2 {
+    position: absolute;
+    left: 0;
+    bottom: 80px;
+    z-index: 1;
+}
+main .cardbox .card3 {
+    position: absolute;
+    left: 430px;
+    bottom: 80px;
+    z-index: 1;
+}
+main .c_text1 {
+    margin-left: 25px;
+    color: #878686;
+    float: left;
+}
+main .c_text1 span{
+    color: #3f3e3e;
+}
+main .c_text2 {
+    color: #878686;
+    float: right;
+}
+main .c_text2 img {
+    margin-right: 25px;
+}
+main .m2 {
+    background-color: #fff;
+    height: 872px;
+}
+main .m2 img {
+    width: 1280px;
+    height: 500px;
+}
+main .m2 .m2_text {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 61px;
+}

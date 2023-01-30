@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수 기초폼 실습</title>
+    
+    <script>
+        // 실습1. 익명함수를 만들고,
+        //     로딩시 (경고창)"자바스크립트 수업"
+        // var noName =  function () {
+        //     alert("자바스크립트 수업");
+        // }
+        // noName();
+
+        // 실습2. 선언적함수를 만들고,
+        //     로딩시 (브라우저)"자바스크립트 개념정리"
+        // function script() {
+        //     document.write("자바스크립트 개념정리");
+        // } 
+        // script();
+
+        // 실습3. 버튼1을 클릭했을때 => (경고창)"안녕하세요"
+        //         버튼2를 클릭했을때 => (경고창)"반갑습니다."
+        //         매개변수 사용
+
+        function mouseClick(text) {
+            alert(text);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="mouseClick('안녕하세요');">버튼1</button>
+    <button onclick="mouseClick('반갑습니다');">버튼2</button>
+</body>
+</html>
