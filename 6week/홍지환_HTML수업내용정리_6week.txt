@@ -27,21 +27,81 @@ ps
 
 ctrl + 썸네일 
 ctrl + c
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+@23/01/31
+
+object = 객체
+
+ var num = 3.283434;
+        var maxNum = Math.max(10,8,21,40); //40
+        document.write("최댓값 : " + maxNum + "<br>");
+        var minNum = Math.min(10,8,21,40); //8
+        document.write("최솟값 : " + minNum + "<br>");
+        var roundNum = Math.round(num); // 3
+        document.write("반올림 : " + roundNum + "<br>");
+        // 암기
+        var ceilNum = Math.ceil(num); // 4
+        document.write("올림 : " + ceilNum + "<br>");
+        var floorNum = Math.floor(num); // 3
+        document.write("내림 : " + floorNum + "<br>");
+        var randomNum = Math.random(); // 0~1사이의 랜덤수(난수)를 발생시켜 리턴
+        document.write("랜덤 : " + randomNum + "<br>");
+
+생성 = new = 
+생성자 함수 = 값을 초기화하면서 값을 할당받는다
+
+// 1. 날짜 객체 생성
+        var today = new Date();
+        console.log(today);
+        var thisMonth = today.getMonth()+1; //월(0~11)
+        var thisDate = today.getDate();// 날짜
+        var thisDay = today.getDay();// 요일 = 일요일(0) ~ 토요일(6)
+        var thisHour = today.getHours(); //시간
+        var thisMin = today.getMinutes(); // 분
+        var thisSec = today.getSeconds(); //초
+        var thisMillSec = today.getMilliseconds() //밀리세컨
+
+        //1970년 1월 1일부터 밀리세컨으로 경과된 시간
+        var thisTime = today.getTime();
 
 
+생성과동시에 각 텍스트들이 배열요소에 들어감
+last가 들어가면 오른쪽에서 부터이다
 
+        // 문자열에서 인덱스 번호에 해당하는 문자를 반환
+        document.write(str.charAt(10) + "<br>"); //k
+        //문자열에서 왼쪽부터 찾을 문자와 제일 먼저 일치하는 문자의[인덱스 번호]를 반환(암기)
+        document.write(str.indexOf("you") + "<br>"); //12
+        //문자열에서 왼쪽부터 찾을 문자와 제일 먼저 일치하는 문자의[인덱스 번호]를 반환
+        document.write(str.lastIndexOf("you") + "<br>"); //29
+        //문자열에서 왼쪽부터 찾을 문자와 일치하는 문자를 찾아, 제일먼저 일치하는 문자를 반환
+        document.write(str.match("luck"), "<br>"); //luck
+        //문자열에서 왼쪽부터 바꿀 문자와 일치하는 문자를 찾아, 제일 먼저 찾는 문자를 새문자로 치환(암기)
+        document.write(str.replace("you", "me"), "<br>"); // you -> me
+        //문자열에서 왼쪽부터 찾을 문자와 제일 먼저 찾는 문자의 인덱스 번호를 반환
+        document.write(str.search("you"), "<br>"); //12
+        //문자열에서 문자를 자른후, 남는 문자를 치환(암기) = 인덱스번호 3부터 7이전까지 추출
+        document.write(str.slice(3,7), "<br>");
+        //문자열에서 문자 갯수만큼 문자열 반환(암기)= 인덱스번호 21부터 4글자 추출
+        document.write(str.substr(21,4), "<br>"); //luck
+        //문자열에서 영문 대문자를 모두 소문자로 치환(암기)
+        document.write(str.toLowerCase(), "<br>");
+        //문자열에서 영문 소문자를 모두 대문자로 치환(암기)
+        document.write(str.toUpperCase(), "<br>");
+        //문자열 갯수반환(암기)
+        document.write(str.length, "<br>");
+        //문자열의 앞 또는 뒤에 공백 문자열 삭제
+        document.write(str.trim());
 
+substring
 
+phone.length-4
+전화번호를 구할떄 앞에 몇자리던 상관없이 뒷자리 4자리 뺴고 가져옴
 
+var result2 = phone.substring(0,phone.length-4)+"<span>****</span>";
+가져온 번호 맨 뒷자리 4자리를 ****로 만듦
 
-
-
-
-
-
-
-
-
+이메일 유효성 검사를 할때 indexOf를 사용한다
 
 
 

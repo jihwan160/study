@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자열 실습</title>
+    <style>
+        strong {
+            color: red;
+            font-size: 24px;
+        }
+        span {
+            color: red;
+            font-size: 24px;
+        }
+    </style>
+    <script>
+        // 실습1.(프롬프트)비밀번호를 입력받아,
+        //     (경고창)8자 미만이면 "8자 이상으로 다시 입력하시오"
+        //     (브라우저)8자 이상이면 "비밀번호 ???자가 입력되었습니다."
+        //     소스캡쳐,캡쳐 넘버링
+        // var pw = prompt("비밀번호 입력");
+        // if(pw.length < 8) {
+        //     alert("8자 이상 입력하시오");
+        //     location.reload();
+        // }else{
+        //     document.write("비밀번호 <strong>" + pw.length + "</strong>자가 입력되었습니다.")
+        // }
+        // 실습2. (프롬프트) 이름을 영문소문자로 입력받아, 대문자로 치환
+        //     (브라우저)"입력한 이름은 ??? 입니다."
+        //     캡쳐, 넘버링
+
+        // var str = prompt("영어로 이름입력");
+        // str = str.toUpperCase();
+        // document.write("입력한 이름은 : " +str+ "입니다");
+
+        // 실습3. (프롬프트)영문 이름 입력받아, 대문자입력시 소문자로 치환
+        //     (도큐먼트) 입력받은 이름은 ??? 입니다.
+        //     (프롬프트) 전화번호 입력받아, 끝 네자리를 "****"로 치환 = substr(),replace()
+        //     (도큐먼트) 전화번호는 0101234**** 입니다.
+        //     소스캡쳐,캡쳐 넘버링
+
+        //내가 한 것
+        // var str = prompt("이름입력");
+        // str = str.toLowerCase();
+
+        // var tel = prompt("전화번호입력");
+        // var tel2 = tel.substr(7,4);
+        // var tel3 = tel.replace(tel2,"****");
+
+        // document.write("이름은 " + str + " 입니다<br>");
+        // document.write("전화번호는 " + tel3 + "입니다")
+
+        //선생님이 한 것
+        // var name = prompt('영문입력');
+        // var lower = name.toLowerCase();
+        // document.write("입력받은 이름은 " + lower + "입니다<br>");
+
+        var phone = prompt("전화번호 입력");
+        // 방법1. replace(), substr()사용
+        // var result = phone.replace(phone.substr(7,4), "<span>****</span>");
+        // document.write(result);
+
+        // 방법2. substring(시작인데스, 끝인덱스전까지) 리턴해옴
+        var result2 = phone.substring(0,phone.length-4)+"<span>****</span>";
+        document.write(result2);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

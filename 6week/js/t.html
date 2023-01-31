@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // // 1~100까지 수중 하나를 입력하고 그 입력한 수 아래 3의배수 구하기
+        // var num = Number(prompt('숫자 입력',1));
+        // if (num >= 1 && num <=100) {
+        //     for(var i = 1; i <= num; i++){
+        //         if(i%3==0) {
+        //             console.log(i);
+        //         }
+        //     }
+        // }else {
+        //     alert('숫자가 아니거나 숫자 범위를 벗어남');
+        //     location.reload();
+        // }
+
+        var now = new Date();
+        var nowYear = now.getFullYear();
+        var dDay = new Date(nowYear,6,29);
+        console.log(dDay);
+        var birth = dDay.getTime() - now.getTime();
+        console.log(birth);
+        var day = birth/86400000;
+        
+        day = Math.ceil(day);
+        document.write(day);
+    </script>
+</head>
+<body>
+    
+</body>
+<script>
+    
+
+</script>
+</html>

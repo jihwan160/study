@@ -94,11 +94,11 @@ main .cardbox .card3 {
 }
 main .c_text1 {
     margin-left: 25px;
-    color: #878686;
+    color: #807f7f;
     float: left;
 }
 main .c_text1 span{
-    color: #3f3e3e;
+    color: #373636;
 }
 main .c_text2 {
     color: #878686;
@@ -120,9 +120,17 @@ main .m2 .m2_text {
     text-align: center;
     margin-top: 100px;
     margin-bottom: 61px;
-    font-size: 25px;
+    font-size: 17px;
     line-height: 1.5;
 }
+main .m2 .m2_text p {
+    padding-bottom: 20px;
+    color: #807f7f;
+}
+main .m2 .m2_text p:nth-child(3) {
+    padding-bottom: 0;
+}
+
 /* m3 */
 main .m3{
     background-image: url(../images/mov_back.jpg);
@@ -174,14 +182,14 @@ footer {
 }
 footer .foot dt{
     font-weight: 600;
-    font-style: 20px;
+    font-size: 20px;
     padding-bottom: 10px;
 }
 footer .foot dd {
     padding-bottom: 10px;
     font-size: 13px;
 }
-
+/* firstbox */
 footer .foot .f_firstbox {
     padding-top: 130px;
     margin-right: 215px;
@@ -193,22 +201,28 @@ footer .foot .f_firstbox img {
     margin-right: 20px;
 }
 footer .foot .f_firstbox p{
-    color: #fff;
+    color: #b2b2b2;
     line-height: 1.5;
     margin-bottom: 30px;
     font-size: 13px;
 }
+/* secondbox */
 footer .foot .f_secondbox dl {
     padding-top: 150px;
     margin-right: 215px;
     color: #fff;
     float: left;
 }
+footer .foot .f_secondbox dl span{
+    color: #d1a728;
+}
+/* thirdbox */
 footer .foot .f_thirdbox dl {
     padding-top: 150px;
     color: #fff;
     float: left;
 }
+/* fourbox */
 footer .foot .f_fourbox dl {
     padding-top: 150px;
     color: #fff;
@@ -216,13 +230,14 @@ footer .foot .f_fourbox dl {
     margin-right: 20px;
 }
 footer .underline {
-    margin-top: 25px;
+    margin-top: 80px;
     border-bottom: 1px solid #fff;
 }
 
 footer .copyright {
     text-align: center;
     color: #fff;
+    margin-top: 40px;
 }
 
 

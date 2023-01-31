@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>날짜정보객체</title>
+    <style>
+        strong {
+            font-size: 24px;
+            color: red;
+        }
+    </style>
+    <script>
+        // 1. 날짜 객체 생성
+        var today = new Date();
+        console.log(today);
+        var thisMonth = today.getMonth()+1; //월(0~11)
+        var thisDate = today.getDate();// 날짜
+        var thisDay = today.getDay();// 요일 = 일요일(0) ~ 토요일(6)
+        var thisHour = today.getHours(); //시간
+        var thisMin = today.getMinutes(); // 분
+        var thisSec = today.getSeconds(); //초
+        var thisMillSec = today.getMilliseconds() //밀리세컨
+
+        //1970년 1월 1일부터 밀리세컨으로 경과된 시간
+        var thisTime = today.getTime();
+        
+
+        document.write("해당월은 : <strong>" + thisMonth + "</strong>월 입니다<br>");
+        document.write("해당일은 : <strong>" + thisDate + "</strong>일 입니다<br>");
+        document.write("해당요일은 : <strong>" + thisDay + "</strong>요일 입니다<br>");
+        document.write("해당시간은 : <strong>" + thisHour + "</strong>시 입니다<br>");
+        document.write("해당분은 : <strong>" + thisMin + "</strong>분 입니다<br>");
+        document.write("해당초는 : <strong>" + thisSec + "</strong>초 입니다<br>");
+        document.write("해당밀리초는 : <strong>" + thisMillSec + "</strong>밀리초 입니다<br>");
+        document.write("현재getTime은 : <strong>" + thisTime + "</strong>밀리초 입니다<br>");
+
+        // 실습. switch~case문을 이용하여 해당 요일을 
+        //     (도큐먼트) 해당요일은 ??? 요일 입니다.
+        switch(thisDay) {
+            case 0 :
+                document.write("해당요일은 : 일요일 입니다");
+                break;
+            case 1 :
+                document.write("해당요일은 : 월요일 입니다");
+                break;
+            case 2 :
+                document.write("해당요일은 : 화요일 입니다");
+                break;
+            case 3 :
+                document.write("해당요일은 : 수요일 입니다");
+                break;
+            case 4 :
+                document.write("해당요일은 : 목요일 입니다");
+                break;
+            case 5 :
+                document.write("해당요일은 : 금요일 입니다");
+                break;
+            case 6 :
+                document.write("해당요일은 : 토요일 입니다");
+                break;
+            default :
+                document.write("요일이 아닙니다");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
