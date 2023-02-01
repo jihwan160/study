@@ -30,6 +30,7 @@ ctrl + c
 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
 @23/01/31
 
+js
 object = 객체
 
  var num = 3.283434;
@@ -102,6 +103,89 @@ var result2 = phone.substring(0,phone.length-4)+"<span>****</span>";
 가져온 번호 맨 뒷자리 4자리를 ****로 만듦
 
 이메일 유효성 검사를 할때 indexOf를 사용한다
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+@23/02/01
+
+브라우저 객체
+현재 주소를 보는 메서드 = location.href
+
+프로토콜 = 통신 규약 = 약속
+
+서버의 ip주소가 있음
+
+127.0.0.1:5500
+    ip     포트번호
+
+이것만 알면 된다 => 운영체제 종합정보 = navigator.userAgent
+정해져 있는 것들은 속성으로 준다
+
+method chaining 기법
+.연산자로 이어서 쓴다
+
+userAgent = 버전에 따라 다운로드를 다르게 할때
+
+screen.availWidth = UI 영역을 제외한 너비
+screen.availHeight = UI 영역을 제외한 높이
+screen.width = UI 영역을 포함한 너비
+screen.height =UI 영역을 포함한 높이
+
+if(browerW <= 375) {
+            document.write("모바일사용자");
+        }else {
+            document.write("pc사용자")
+        }
+많이 사용한다
+
+window.onload
+Dom을 먼저 메모리에 올린다
+
+addEventListener
+인자가 2개가 온다
+첫번쨰는 이벤트 종류 onclick 같은 것
+두번쨰는 이벤트 리스너 명 = 함수명
+
+contents.innerHTML = "내가 설정한것";
+클릭하는 순간 글자가 내가 설정한 것으로 바뀐다
+
+ // 이벤트 리스너 제거
+btn.removeEventListener('click', whenClick1);
+
+// 3-1. 단일 이벤트 연결
+btn.onclick = whenClick1; 
+
+인라인방식
+onclick = "함수이름"
+function 함수이름(매개변수)
+
+document.querySelector("#result") 
+아이디값에 #을 붙여준다
+클래스값이면 .을 붙여준다
+
+setInterval() 중요함
+interval = 시간의 텀을 주는것,시간끄는것
+setInterval = 새로고침을 시간주고 일정시간동안 새로고침하는 것
+
+setInterval(function(){},초) <= 이것은 setInterval 함수 기본틀
+
+// 3초마다 addNum 1씩 증가
+        setInterval(function(){
+            addNum++;
+            console.log(addNum);
+        },3000);
+
+clearInterval = setInterval로 재생되는 것을 멈춤
+
+setTimeout = 딱 한번만 출력된다.
+
+
+
+
+
+
+
+
+
 
 
 

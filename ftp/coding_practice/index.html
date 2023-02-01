@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이력서</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/practice.css">
+    <style>
+        #wrap {
+            width: 675px;
+            height: 722px;
+            margin: 0 auto;
+            background-color: #cbaaa1;
+            border-radius: 10px;
+        }
+        header h2 {
+            font-size: 18px;
+            padding-top: 21px;
+            padding-left: 19px;
+        }
+        header p {
+            margin-top: 13px;
+            font-size: 12px;
+            padding-left: 19px;
+        }
+        header nav li{
+            margin-top: 19px;
+            float: left;
+            font-size: 13px;
+        } 
+        header nav li span{
+            width: 1px;
+            height: 11px;
+            color: #d5bbb4;
+            padding: 0 15px;
+        }
+        header nav ul li:first-child {
+            padding-left: 19px;
+        }
+        /* 메인 */
+        main .firstbox {
+            width: 652px;
+            height: 580px;
+            background-color: #fff;
+            margin-left: 10px;
+            border-radius: 10px;
+            margin-top: 26px;
+        }
+        main .firstbox h2 {
+            font-weight: 600;
+        }
+        main .firstbox .secondbox {
+            margin-left: 30px;
+            margin-right: 9px;
+            font-size: 13px;
+            color: #808080;
+            float: left;
+        }
+        main .firstbox .secondbox dt {
+            padding-bottom: 12px;
+        }
+        main .firstbox .secondbox dd {
+            padding-bottom: 12px;
+        }
+        main .firstbox .thirdbox {
+            font-size: 10px;
+            color: #424242;
+            float: left;
+        }
+        main .firstbox .thirdbox dt {
+            font-weight: 600;
+            padding-bottom: 15px;
+        }
+        main .firstbox .thirdbox dd {
+            font-weight: 600;
+            padding-bottom: 15px;
+        }
+        .dl_list {
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="firstbox">
+                <header>
+                    <h2>카리나</h2>
+                    <p>KARINA &nbsp;&nbsp;<span>|&nbsp;&nbsp;</span>가수</p>
+                    <nav>
+                        <ul class="cf">
+                            <li><a href="#">전체</a></li>
+                            <li><a href="#"><span>|</span>최근소식</a></li>
+                            <li><a href="#"><span>|</span>스케줄</a></li> 
+                            <li><a href="#"><span>|</span>노래</a></li>
+                            <li><a href="#"><span>|</span>작품활동</a></li>
+                            <li><a href="#"><span>|</span>프로필</a></li>
+                            <li><a href="#"><span>|</span>함께 들은 아티스트</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <main role="main">
+                    <section class="firstbox cf">
+                        <h2>프로필</h2>
+                        <!-- dl_list -->
+                        <section class="dl_list">
+                            <dl class="secondbox">
+                                <dt>다른이름</dt>
+                                <dd>출생</dd>
+                                <dd>나이</dd>
+                                <dd>소속그룹</dd>
+                                <dd>소속사</dd>
+                            </dl>
+                            <dl class="thirdbox">
+                                <dt>KARINA</dt>
+                                <dd>2000. 4. 11. 양자리, 용띠</dd>
+                                <dd>24, 만22세</dd>
+                                <dd><a href="#">에스파, 갓 더 비트</a></dd>
+                                <dd><a href="#">SM엔터테인먼트</a></dd>
+                            </dl>
+                        </section>
+                        <!-- /dl_list -->
+
+                    </section>
+
+                </main>
+            </div>
+        </header>
+    </div>
+</body>
+</html>
