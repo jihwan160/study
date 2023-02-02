@@ -178,19 +178,51 @@ clearInterval = setInterval로 재생되는 것을 멈춤
 
 setTimeout = 딱 한번만 출력된다.
 
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+@23/02/02
+
+스크립트 = 이벤트를 위해서 사용
+노드 = 나뭇가지
+Element = 요소
+document의 최상위 부모는 body
+append = 추가하다
+
+createElement = 요소노드를 생성 ex)h1
+createTextNode = 텍스트 노드를 생성 ex)안녕하세요
+
+document.body.appendChild = 다른요소들을 바디에 띄우는 것
+
+속성을 바꾸는 것 = setAttribute
+
+getElementsByName() : 문자열과 일치하는 name속성을 가져옴
+같은 name은 배열로 들어간다
+
+getElementsByTagName() : 태그네임과 일치하는 문서객체를 가져옴
+요소를 가져옴
+
+문서객체 제거 : 부모 노드로 가서 자식 노드 제거가 원칙
+            var heading1 = document.getElementById("heading1");
+            heading1.parentNode.removeChild(heading1);
+부모로 가서 자식을 없애야 한다 heading1 이 사라진다
+
+a영역에 이벤트를 걸 때 제거 안하고 하면 링크된 곳으로 간다
+
+removeAttribute = 속성 제거
 
 
+document.querySelectorAll(".small") = .small 클래스의 모든 애들을 가져온다
+
+for(i = 0; i < smallPic.length; i++) {
+            smallPic[i].addEventListener("click",changePic);
+        }
+smallPic에 .small 클래스로 된 애들을 다 가지고 온 뒤
+i는 0부터 smallPic의 길이(3)까지 for문을 돌리고
+smallPic의[i]번째 값에 addEventListener("click",changePic)을 다 넣어준다
 
 
+*이벤트 this = 이벤트 선택자의 모든 정보가 this에 담긴다
 
-
-
-
-
-
-
-
-
-
-
-
+var newPic = this.src;
+newPic 변수에 src의 모든정보를 담는다
+bigPic.setAttribute("src",newPic);
+bigPic의 속성을 변경한다, src의 속성을 ,newPic의 담겨있는 정보로
