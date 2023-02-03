@@ -9,152 +9,6 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/practice.css">
-    <style>
-        #wrap {
-            width: 675px;
-            height: 722px;
-            margin: 0 auto;
-            background-color: #cbaaa1;
-            border-radius: 10px;
-        }
-        header {
-            color: #fff;
-        }
-        header h2 {
-            font-size: 18px;
-            padding-top: 21px;
-            padding-left: 19px;
-        }
-        header p {
-            margin-top: 13px;
-            font-size: 12px;
-            padding-left: 19px;
-        }
-        header nav li{
-            margin-top: 19px;
-            float: left;
-            font-size: 13px;
-        }
-        header nav li a:hover {
-            padding: 5px;
-            background-color: #976251;
-        }
-        header nav li span{
-            width: 1px;
-            height: 11px;
-            color: #d5bbb4;
-            padding: 0 15px;
-        }
-        header nav ul li:first-child {
-            padding-left: 19px;
-        }
-        /* 메인 */
-        main .info {
-            width: 652px;
-            height: 580px;
-            background-color: #fff;
-            margin-left: 10px;
-            border-radius: 10px;
-            margin-top: 26px;
-        }
-        main .info .info_name {
-            font-weight: 600;
-            color: #424242;
-            font-size: 18px;
-            padding-top: 21px;
-            padding-left: 19px;
-        }
-        main .dl_list .cover {
-            float: left;
-        }
-        main .info .secondbox {
-            margin-left: 30px;
-            margin-right: 9px;
-            font-size: 13px;
-            color: #808080;
-            float: left;
-        }
-        main .info .secondbox dt {
-            padding-bottom: 12px;
-        }
-        main .info .secondbox dd {
-            padding-bottom: 12px;
-        }
-        main .info .thirdbox {
-            font-size: 12px;
-            color: #424242;
-            float: right;
-        }
-        main .info .thirdbox a {
-            color: #0c43b7;
-        }
-        main .info .thirdbox dt {
-            font-weight: 600;
-            padding-bottom: 13px;
-        }
-        main .info .thirdbox dd {
-            font-weight: 600;
-            padding-bottom: 13px;
-        }
-        main .info .dl_list {
-            margin-top: 25px;
-            width: 100%;
-        }
-        main img {
-            margin-right: 15px;
-            margin-top: 25px;
-            float: right;
-            height: 107px;
-        }
-        main .i_listen {
-            background-color: #fafbfc;
-        }
-        main .i_listen .i_youtube{
-            width: 488px;
-            height: 40px;
-            text-align: center;
-            vertical-align: middle;
-            line-height: 40px;
-            font-size: 12px;
-            border: 1px solid #e3e6e8;
-            border-radius: 5px;
-            margin-left: 15px;
-            margin-right: 6px;
-            float: left;
-        }
-        .i_cover {
-            float: left;
-        }
-        main .i_listen .i_heart {
-            width: 82px;
-            height: 40px;
-            text-align: center;
-            vertical-align: middle;
-            line-height: 40px;
-            font-size: 12px;
-            border: 1px solid #e3e6e8;
-            border-radius: 5px;
-            margin-right: 6px;
-            float: left;
-        }
-        main .i_listen .i_share {
-            width: 40px;
-            height: 40px;
-            text-align: center;
-            vertical-align: middle;
-            line-height: 40px;
-            font-size: 12px;
-            border: 1px solid #e3e6e8;
-            border-radius: 5px;
-            float: right;
-            margin-right: 15px;
-        }
-        .hr {
-            margin-left: 20px;
-            margin-right: 15px;
-            border-bottom: 1px solid #f2f4f6;
-        }
-    </style>
 </head>
 <body>
     <div id="wrap">
@@ -204,45 +58,51 @@
                         <section class="i_listen">
                             <article class="cf">
                                 <div class="i_cover cf">
-                                    <p class="i_youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i>Youtube에서듣기</p>
-                                    <p class="i_heart"><i class="fa fa-heart-o" aria-hidden="true"></i>15,947</p>
+                                    <p class="i_youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i><a href="https://www.youtube.com/" target="_blank">Youtube에서듣기</a></p>
+                                    <p class="i_heart"><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>15,947</p>
                                 </div>
-                                <p class="i_share"><i class="fa fa-share-square-o" aria-hidden="true"></i></p>
+                                <p class="i_share"><a href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i></a></p>
                             </article>
                         </section>
                         <!-- /i_listen -->
                         <br>
                         <div class="hr"></div>
-                        <h2>사이트</h2>
-                        <div>
-                            <p><i class="fa fa-instagram" aria-hidden="true"></i>인스타그램</p>
-                            <p>-</p>
+                        <div class="sns">
+                            <h2>사이트<i class="fa fa-info-circle" aria-hidden="true"></i></h2>
+                            <div class="sns_1 cf">
+                                <p><i class="fa fa-instagram" aria-hidden="true"></i><a href="https://www.instagram.com/aespa_official/" target="_blank">인스타그램</a></p>
+                                <p>-</p>
+                            </div>
+                            <div class="hr"></div>
+    
+                            <div class="sns_2 cf">
+                                <p><i class="fa fa-twitter" aria-hidden="true"></i><a href="https://twitter.com/aespa_official" target="_blank">트위터</a></p>
+                                <p>3.4백만</p>
+                            </div>
+                            <div class="hr"></div>
+    
+                            <div class="sns_3 cf">
+                                <p><i class="fa fa-facebook-official" aria-hidden="true"></i><a href="https://www.facebook.com/aespa.official" target="_blank">페이스북</a></p>
+                                <p>-</p>
+                            </div>
+                            <div class="hr"></div>
+    
+                            <div class="sns_4 cf">
+                                <p><i class="fa fa-youtube-play" aria-hidden="true"></i><a href="https://www.youtube.com/channel/UC9GtSLeksfK4yuJ_g1lgQbg" target="_blank">유튜브</a></p>
+                                <p>4.2백만</p>
+                            </div>
+                            <div class="hr"></div>
+    
+                            <div class="sns_5 cf">
+                                <p><i class="fa fa-globe" aria-hidden="true"></i><a href="https://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=https%3A%2F%2Fweibo.com%2Faespa%3Fis_all%3D1&domain=.weibo.com&sudaref=https%3A%2F%2Fsearch.naver.com%2Fsearch.naver%3Fwhere%3Dnexearch%26sm%3Dtop_hty%26fbm%3D1%26ie%3Dutf8%26query%3D%25EC%25B9%25B4%25EB%25A6%25AC%25EB%2582%2598%2B%25ED%2594%2584%25EB%25A1%259C%25ED%2595%2584&ua=php-sso_sdk_client-0.6.36&_rand=1675406006.1321" target="_blank">웨이보</a></p>
+                                <p>-</p>
+                            </div>
+                            <div class="hr"></div>
+                            <div class="fix">
+                                <p>본인 또는 대리인이 직접 관리하는 정보입니다</p>
+                                <p>본인참여 2022.07.18.<i class="fa fa-info-circle" aria-hidden="true"></i></p>
+                            </div>
                         </div>
-                        <div class="hr"></div>
-
-                        <div>
-                            <p><i class="fa fa-twitter" aria-hidden="true"></i>트위터</p>
-                            <p>3.4백만</p>
-                        </div>
-                        <div class="hr"></div>
-
-                        <div>
-                            <p><i class="fa fa-facebook-official" aria-hidden="true"></i>페이스북</p>
-                            <p>-</p>
-                        </div>
-                        <div class="hr"></div>
-
-                        <div>
-                            <p><i class="fa fa-youtube-play" aria-hidden="true"></i>유튜브</p>
-                            <p>4.2백만</p>
-                        </div>
-                        <div class="hr"></div>
-
-                        <div>
-                            <p><i class="fa fa-globe" aria-hidden="true"></i>웨이보</p>
-                            <p>-</p>
-                        </div>
-                        <div class="hr"></div>
                     </section> <!-- info -->
                     
 

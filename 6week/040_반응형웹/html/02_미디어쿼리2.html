@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        미디어쿼리 작성시 주의사항
+            a. and 구문 앞, 뒤에서는 [반드시] 공백 한칸
+            b. (조건문){실행문} 사이는 붙여서 코딩
+            c. min-/max- 접두어 사용시,
+                min-접두어 : [반드시] 미디어쿼리 너비 크기가 작은것에서 큰것 순서로 코딩(모바일퍼스트)
+                max-접두어 : [반드시] 미디어쿼리 너비 크기가 큰것에서 작은것 순서로 코딩(PC퍼스트)
+    </title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        #wrap {
+            height: 500px;
+            border: 1px solid #000;
+            margin: 0 auto;
+        }
+        /* 모바일 미디어쿼리 360px 이상 */
+        @media screen and (min-width:360px){
+            #wrap {
+                width: 30%;
+                background-color: aqua;
+            }
+            h1 {
+                color: #000;
+                font-size: 0.75rem;
+            }
+            img {
+                width: 100%;
+            }
+        }
+        /* 태블릿 미디어쿼리 768px 이상 */
+        @media screen and (min-width:768px){
+            #wrap {
+                width: 60%;
+                background-color: pink;
+            }
+            h1{
+                color: red;
+                font-size: 1rem;
+            }
+            img {
+                width: 100%;
+            }
+
+        }
+        /* PC 미디어쿼리 1024px 이상 */
+        @media screen and (min-width:1024px){
+            #wrap {
+                width: 90%;
+                background-color: orange;
+            }
+            h1 {
+                color: blue;
+                font-size: 0.75rem;
+            }
+            img {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>반응형 웹사이트</h1>
+        <img src="../images/img3.jpg" alt="구멍가게">
+    </div>
+</body>
+</html>
