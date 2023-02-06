@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="JiHwan">
+    <meta name="description" content="포트폴리오">
+    <title>Portfolio Flex Kasa</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+    <link rel="shortcut icon" href="./images/favjh32.png">
+    <link rel="apple-touch-icon=precomposed" href="./images/favjh180.png">
+    <!-- 기본 코딩 JS 파일 -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <!-- 기본 코딩 CSS 파일 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/notosans_kr_CDN.css">
+    <link rel="stylesheet" href="./css/flex.css">
+    <style>
+        .w1300 {
+            /* 1300/1920 * 100 = 67.70833333333334 */
+            width: 67.70833333333334%;
+            margin: 0 auto;
+        }
+        #wrap {
+            /* (1920px) */
+            width: 100%;
+            margin: 0 auto;
+        }
+        header .h_firstbox {
+            background-color: #1d1c2e;
+            color: #fff;
+            /* 36/1300 * 100 = 2.769230769230769 */
+            padding: 2.769230769230769%;
+        }
+        header .h_firstbox .fb_box {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            position: relative;
+        }
+        header .h_firstbox h1 {
+            /* 40/1300 * 100 = 3.076923076923077 */
+            margin-right: 3.076923076923077%;
+        }
+        header .h_firstbox p {
+            /* 17/1300 * 100 = 1.3076923076923077 */
+            margin-right: 1.3076923076923077%;
+        }
+        header .h_firstbox .redbox_1 {
+            background-color: red;
+            /* 14/1300 * 100 = 1.0769230769230769 */
+            width: 1.0769230769230769%;
+            height: 14px;
+            
+        }
+
+        header .h_firstbox .redbox_2 {
+            background-color: red;
+            width: 1.0769230769230769%;
+            height: 14px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 1;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header class="cf">
+            <!-- h_firstbox -->
+            <section class="h_firstbox">
+                <div class="fb_box w1300">
+                    <h1>로그인하면 확인되는 차별화된 회원가!</h1>
+                    <p>혜택확인하기</p>
+                    <div class="redbox_1"></div>  
+                    <div class="redbox_2"></div>
+                </div>   
+            </section>
+            <!-- /h_firstbox -->
+
+            <!-- h_secondbox -->
+            <section class="h_secondbox">
+                <div>128x23</div>
+                <section class="sb_box">
+                    <div>1x1</div>
+                    <div>1x1</div>
+                    <p>로그인</p>
+                    <p>회원가입</p>
+                </section>
+            </section>
+            <!-- /h_secondbox -->
+
+            <!-- h_thirdbox -->
+            <section class="h_thirdbox">
+                <h1>logo</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">ReFA</a></li>
+                        <li><a href="#">CAXA UP</a></li>
+                        <li><a href="#">SIXPAD</a></li>
+                        <li><a href="#">PAO</a></li>
+                        <li><a href="#">Sytle</a></li>
+                    </ul>
+                </nav>
+                <hr>          
+                <nav>
+                    <ul>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">미디어</a></li>
+                        <li><a href="#">기업소개</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <!-- /h_thirdbox -->
+        </header>
+    </div>
+</body>
+</html>
