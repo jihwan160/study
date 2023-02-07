@@ -6,6 +6,8 @@ body {
 
 #wrap {
     width: 960px;
+    /* (960px) */
+    width: 90%;
     margin: 0 auto;
     background-color: red;
 }
@@ -48,9 +50,12 @@ article p {
 /* Contents */
 #gallery img{
     padding: 10px 0;
-    width: 220px;
+    /* 220/960 * 100 = 22.916666666666664 */
+    width: 22.916666666666664%;
     height: 220px;
-    margin: 10px;
+    /* 10/960 * 100 = 1.0416666666666665 */
+    margin: 1.0416666666666665%;
+    border-radius: 5px;
     /* 플롯 */
     float: left;
 }

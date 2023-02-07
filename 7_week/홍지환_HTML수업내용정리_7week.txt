@@ -22,16 +22,107 @@ px이랑 병행해서 사용해도 상관없다
 중요
 고정형(px) => 가변형(%) => 반응형
 
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+@23/02/07
+
+HTML
+
+햄버거 메뉴 = 가로줄 3개짜리 메뉴
+
+폰트어썸 cdn = <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+포지션에서 무조건 위에 먼저 보이게 하고 싶으면 z값을 9999를 준다
+
+display : none; 구조에서 없어지는 것 중요함
+
+/* display: none; 의 반대*/
+        display: block;
+---------------------------------------------------------------------------------------------------------
+
+jQuery
+
+자바스크립트의 lib(library)
+JS는 코어기술(안없어짐)
+
+브라우저에서 동적인 것을 얻기 위해서 사용
+이벤트 쓰기 위해서 사용
+
+선택자 선택하고 이벤트 이용이 제일 쉬운게 jQuery
+
+선택자를 사용할 떄 $()를 사용
+
+$(document).ready(function(){}); = 기본
+
+CDN = content delievery network
+
+document = body = 브라우저
+$(document) = body에 있는애를 돔객체에 올리고 사용
+
+메서드 체이닝 = .으로 계속 이어서 사용 할 수 있다.
+
+// 1. 전체 선택자
+            $("*").css("color","red");
+*로 전체 선택을 한뒤 css라는 속성을 사용하고 안에는 인자값을 문자열로 사용하면 된다.
+
+// 2. 요소명 선택자
+            $("h3").css("color","green");
+
+// 3. 클래스 선택자
+            $(".author").css("color","blue");
+
+$(".author").css({color:'blue',backgroundColor:"yellow",'font-size':'24px'})
+여러줄을 사용할려면 {} 를 사용해서 쓴다 구분은 ,로 한다
+
+{} = 객체
+객체의 데이터형식 = 키 : 밸류
+
+-를 사용하는 것과 단위는 '' "" 이것을 넣고 사용해야한다
+
+카멜표기법을 사용하면 "",'' 인용구 안에 사용안하고 쓸수 있다
+
+ $('ul').children() = 자식을 선택할수 있는 속성 children();
+{}안에 사용하면 단위 안써줘도 된다
+
+$('li').parent() = li기준으로 부모를 선택
+
+$('ul').siblings() = 형제 선택자 ul의 형제를 선택해주는 속성
 
 
+//div 태그에 #a인 요소만 선택
+            $('div#a')
+
+부트스트랩 : 클래스화 해서 css적용 시키는 것
+card-body 부트스트랩 클래스 중 하나
+
+// 1. 자식선택자
+            $("#one>div").css('color','orange');
+            // 2. 인접 형제 선택자
+            $('#one+div').css('border','5px solid gray');
+            #one에 인접하는 div형제선택
+            // 3. 형제 선택자
+            $('#one~div').css('color','green');
+            #one에 div라는 모든 형제 선택
+
+thead tbody tfoot 중요
+ // table 선택 = 모던 브라우저에서 <tbody>자동 추가 = 자식 선택자 사용시 반드시 포함시켜 줘야함
+            $('#foods>tbody>tr').css('color','gray');
 
 
+// 짝수에 배경색칠하기 tr:even
+            $('#foods>tbody>tr:even').css('background-color','darkgray');
+// 홀수에 배경색칠하기 tr:odd
+            $('#foods>tbody>tr:odd').css('background-color','gray');
 
+원하는 것 만 골라 내는 것 : 필터
 
+필터선택자의기본은 :
 
-
-
-
+//인덱스 번호로 선택
+            $('#foods tr:eq(2)').css({backgroundColor:'orange',color:'white'});
+            $('#foods tr').eq(2).css({backgroundColor:'orange',color:'white'});
+//less than ~미만, greater than ~초과
+            $('#foods_two tr:lt(3)').css('background-color','gray');
+            $('#foods_two tr:gt(3)').css('background-color','lightgray');
 
 
 
