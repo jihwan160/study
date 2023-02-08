@@ -124,6 +124,75 @@ thead tbody tfoot 중요
             $('#foods_two tr:lt(3)').css('background-color','gray');
             $('#foods_two tr:gt(3)').css('background-color','lightgray');
 
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+@23/02/08
+
+eq(-1) = last-child랑 같다 마지막꺼 부터 선택
+
+
+초기값 중요
+background : 초기값이 none; 
+backgroundColor : 초기값이 transparent(투명)
+둘이 섞어서 쓰면 초기값을 생각하고 사용해야함
+상속을 안받음, 흰색이 나오는 것이 아니라 투명색이 보이는 것이다
+브라우저 기본값이 화이트라서 그렇게 보이는 것이다
+반응형 실습에서 물어볼꺼임
+
+eq()와find()를 제일 많이 사용한다 외워야한다
+
+is()가 붙어 있으면 물어보는 것이다 있는지 없는지(boolean형)
+
+addClass = 제이쿼리에서만 사용가능
+
+1. filter() : 기본 선택자를 사용해도 되지만, 배열과 관련된 DOM객체에서 특정 문서객체를 걸러내서 선택할 목적 포함
+2. eq() : 요소들의 인덱스번호(0부터 시작)를 이욯하여 선택
+3. first(), last() : 요소의 맨 처음과 맨 마지막을 선택
+4. find() : 선택된 DOM객체의 후손문서객체를 선택
+5.is() : 주어진 매개변수와 하나라도 일치하면 true값 리턴
+
+
+// 1. addClass() : 선택 DOM객체에 지정된 클래스 추가
+            $('h5').eq(0).addClass('change_01');
+            $('h5').eq(1).addClass('change_02');
+            // 2. removeClass() : 선택 DOM객체에 지정된 클래스 삭제
+            $('h5').eq(1).removeClass('change_02');
+
+            // 3. attr() : DOM객체의 속성값을 확인하거나, 속성을 추가
+            //             매개변수가 2개일 경우 값을 변경하는 것(속성명:속성값;)
+            $('img').attr('width',300);
+            $('img').attr('height',300);
+
+html() : 선택 DOM객체의 첫번쨰 요소 문자열 반환, html태그 인식함
+
+text() : 선택 DOM객체의 모든 문자열을 묶어서 반환, html태그 인식못함
+
+
+appendTo() = 매개변수의 맨 마지막 자식요소로 태그 생성
+remove() : 선택 DOM객체 제거 = 매개변수 없음 = 태그자체를 삭제
+empty() : 자식노드를 제거(텍스트노드도 삭제)
+$(document).ready(function() {}); => $(function(){});  축약해서 사용가능
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
