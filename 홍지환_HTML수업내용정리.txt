@@ -1179,3 +1179,13 @@ display : none; 구조에서 없어지는 것 중요함
 
 /* display: none; 의 반대*/
         display: block;
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+@23/02/09
+
+header .gnb li a:focus 실무할 때 써야함
+
+KEY_VISUAL
+한 페이지에 시선을 끄는 것들
+
+letter-spacing : 자간 영어는 -값주는것이 좋다
