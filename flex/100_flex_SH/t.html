@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <style>
+        #wrap {
+            width: 100%;
+            height: 1200px;
+            margin: 0 auto;
+            background-image: url(./images/main_back.png);
+            background-repeat: no-repeat;
+            background-size: 1920px 1280px;
+            background-position: center;
+        }
+        #container {
+            padding: 80px;
+        }
+        header{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+        header h1 {
+            
+            width: 13.541666666666666%;
+        }
+        nav { 
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            width: 76.04166666666666%;
+        }
+        .gnb {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+        }
+        .gnb li {
+            padding-left: 78px;
+        }
+        .icon {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-end;
+        }
+        .icon li {
+            padding-left: 38px;
+        }
+        article {
+            position: relative;
+        }
+        article .key {
+            position: absolute;
+            left: 65.625%;
+            top: -35px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="container">
+            <header>
+                <h2>aaaaa</h2>
+                <nav>
+                    <ul class="gnb">
+                        <li><a href="#">bbb</a></li>
+                        <li><a href="#">ccc</a></li>
+                        <li><a href="#">ddd</a></li>
+                        <li><a href="#">eee</a></li>
+                    </ul>
+                    <ul class="icon">
+                        <li><a href="#"><img src="./images/search.png" alt="검색"></a></li>
+                        <li><a href="#"><img src="./images/icon_X.png" alt="x"></a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main role="main">
+                <section class="m_text">
+                    <h2>
+                        abcd<br>
+                        efgh
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, itaque<br>
+                        officiis? Perspiciatis aut labore quod quas qui, iste, fugiat ipsam, ducimus<br>
+                        necessitatibus culpa voluptatum ad magni. Hic repellendus reiciendis deleniti!
+                    </p>
+                </section>
+            </main>
+            <article>
+                <h2 class="key">
+                    <img src="./images/key_visual.png" alt="설현">
+                </h2>
+            </article>
+            <footer>
+                <p>
+                    copyright copyright copyright copyright copyright copyright copyright
+                </p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
