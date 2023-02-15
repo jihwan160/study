@@ -19,245 +19,8 @@
     <!-- 기본 코딩 CSS 파일 -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/notosans_kr_CDN.css">
-    <link rel="stylesheet" href="./css/flex.css">
-    <style>
-        .w1300 {
-            /* 1300/1920 * 100 = 67.70833333333334 */
-            width: 67.70833333333334%;
-            margin: 0 auto; 
-        }
-        #wrap {
-            /* (1920px) */
-            width: 100%;
-            margin: 0 auto;
-        }
-        header .h_firstbox {
-            background-color: #1d1c2e;
-            color: #fff;
-            /* 36/1300 * 100 = 2.769230769230769 */
-            padding: 2.769230769230769%;
-        }
-        header .h_firstbox .fb_box {
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: center;
-            position: relative;
-        }
-        header .h_firstbox h1 {
-            /* 40/1300 * 100 = 3.076923076923077 */
-            margin-right: 3.076923076923077%;
-        }
-        header .h_firstbox p {
-            /* 17/1300 * 100 = 1.3076923076923077 */
-            margin-right: 1.3076923076923077%;
-        }
-        header .h_firstbox .redbox_1 {
-            background-color: red;
-            /* 14/1300 * 100 = 1.0769230769230769 */
-            width: 1.0769230769230769%;
-            height: 14px;
-            
-        }
+    <link rel="stylesheet" href="./css/casa_flex.css">
 
-        header .h_firstbox .redbox_2 {
-            background-color: red;
-            width: 1.0769230769230769%;
-            height: 14px;
-            position: absolute;
-            right: 0;
-            top: 0;
-            z-index: 1;
-            /* 48/1300 * 100 = 3.6923076923076925 */
-            margin-right: 3.6923076923076925%;
-        }
-
-        /* h_secondbox */
-        header .h_secondbox {
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-between;
-            padding: 29px 0 24px 0;
-        }
-        .sb_box1 {
-            width: 128px;
-            height: 23px;
-            background-color: #000;
-            display: flex;
-            flex-flow: row nowrap;
-            
-            margin: 0 auto;
-        }
-        .sb_box2 {
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: flex-end;
-        }
-        .sb_box2 div {
-            margin: 0 12px 0 12px;
-        }
-        .sb_box2 p:last-child {
-            margin-left: 13px;
-        }
-        .under_line {
-            height: 1px;
-            background-color: #c9c9c9;
-            text-decoration: underline;
-        }
-        /* h_thirdbox */
-        .h_thirdbox {
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .gnb ul {
-            display: flex;
-            flex-flow: row nowrap;
-        }
-        .gnb ul li {
-            font-weight: bold;
-            margin-right: 52px;
-        }
-        .sub_gnb ul {
-            display: flex;
-            flex-flow: row nowrap;
-        }
-        .sub_gnb ul li {
-            font-weight: bold;
-            margin-left: 29px;
-        }
-        /* main-m_1 */
-        .m_1>div {
-            width: 100%;
-            height: 600px;
-            background-color: #000;
-            margin-bottom: 142px;
-        }
-        main article>div:first-child {
-            width: 620px;
-            height: 480px;
-            background-color: #000;
-            margin-bottom: 151px;
-        }
-        main article {
-            position: relative;
-        }
-        main article>div:nth-child(2) {
-            width: 172px;
-            height: 24px;
-            background-color: #00ff00;
-            position: absolute;
-            right: 224px;
-            top: 35px;
-            z-index: 1;
-        }
-        main article>div:last-child {
-            width: 130px;
-            height: 32px;
-            background-color: #848484;
-            position: absolute;
-            right: 0;
-            bottom: -1px;
-            z-index: 999;
-        }
-        .art_threebox {
-            display: flex;
-            flex-flow: row nowrap;
-            position: absolute;
-            right: 0;
-            top: 91px;
-            z-index: 999;
-        }
-        .art_threebox div {
-            margin-right: 10px;
-        }
-        .art_threebox div:first-child {
-            width: 240px;
-            height: 330px;
-            background-color: pink;
-        }
-        .art_threebox div:nth-child(2) {
-            width: 240px;
-            height: 330px;
-            background-color: #e6d1d0;
-        }
-        .art_threebox div:last-child {
-            width: 240px;
-            height: 330px;
-            background-color: #224891;
-        }
-        /* main-m_2 */
-        .m_2 {
-            width: 100%;
-            height: 626px;
-            background-color: #f5f5f5;
-            padding: 88px 90px 88px 100px;
-        }
-        .m_2_firstbox {
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-between;
-        }
-        .m_2 h2 {
-            width: 234px;
-            height: 80px;
-            margin-bottom: 40px;
-            background-color: #000;
-        }
-        .m_2_leftbox {
-            width: 234px;
-            padding-top: 34px;
-            text-align: center;
-        }
-        .m_2_leftbox p {
-            margin-bottom: 30px;
-        }
-        .m_2_leftbox p:nth-child(5) {
-            margin-bottom: 72px;
-        }
-        .m_2_rightbox div {
-            width: 800px;
-            height: 450px;
-            background-color: #000;
-        }
-        .m_3 {
-            padding: 124px 81px 106px 81px;
-        }
-        .m_3_rightbox {
-            display: flex;
-            flex-flow: row wrap;
-        }
-        .m_3>div:first-child {
-            width: 260px;
-            height: 24px;
-            background-color: #000;
-            margin: 0 auto;
-        }
-        .m_3_leftbox div:nth-child(1),
-        .m_3_leftbox div:nth-child(2),
-        .m_3_rightbox div {
-            width: 185px;
-            height: 185px;
-            background-color: red;
-            margin-bottom: 5px;
-        }
-        .big_box {
-            width: 375px;
-            height: 375px;
-            background-color: skyblue;
-        }
-        .m_3_leftcover {
-            display: flex;
-            flex-flow: row nowrap;
-        }
-        .m_3 .cover {
-            display: flex;
-            flex-flow: row nowrap;
-        }
-        .m_3 .cover section div {
-            /* margin-right: 5px; */
-        }
-    </style>
 </head>
 <body>
     <div id="wrap">
@@ -312,21 +75,21 @@
             <!-- /h_thirdbox -->
             <div class="under_line"></div>
         </header>
-        <!-- header -->
+        <!-- /header -->
         <!-- Contents -->
         <main role="main">
             <!-- m_1 -->
             <section class="m_1">
-                <div>black</div>
+                <div></div>
                 <article class="w1300">
-                    <div>black</div>
-                    <div>green</div>
+                    <div></div>
+                    <div></div>
                     <section class="art_threebox">
-                        <div>1</div>
-                        <div>2</div>
-                        <div class="no_mr">3</div>
+                        <div></div>
+                        <div></div>
+                        <div class="no_mr"></div>
                     </section>
-                    <div>gray</div>
+                    <div></div>
                 </article>
             </section>
             
@@ -347,34 +110,89 @@
                     </div>
                 </div>
             </section>
-
+            
             <!-- m_3 -->
             <section class="m_3 w1300">
-                <div>1</div>
-
+                <div></div>
                 <div class="cover">
-                    <section class="m_3_leftcover">
-                        <section class="m_3_leftbox">
-                            <div>2</div>
-                            <div>3</div>
-                        </section>
-                        <div class="big_box">4</div>
-                    </section >
-    
-                    <section class="m_3_rightbox">
+                    <div class="m3_firstBox">
+                        <div>1</div>
+                        <div>2</div>
+                    </div>
+                    <div class="m3_secondBox">
+                        <div>3</div>
+                    </div>
+                    <div class="m3_thirdBox">
+                        <div>4</div>
                         <div>5</div>
+                    </div>
+                    <div class="m3_fourBox">
                         <div>6</div>
-                        <div class="no_mr">7</div>
+                        <div>7</div>
+                    </div>
+                    <div class="m3_fiveBox">
                         <div>8</div>
                         <div>9</div>
-                        <div class="no_mr">0</div>
-                    </section>
+                    </div>
                 </div>
-
+                <section class="lastBox">
+                    <div class="m_3_lastBox"></div>
+                </section>
             </section>
-
         </main>
         <!-- /Contents -->
+        <!-- footer -->
+        <footer>
+            <div class="f_firstbox w1300">
+
+                <section class="f_leftBox">
+                    <h2>
+                        이용약관&nbsp;|&nbsp;쇼핑몰 이용안내&nbsp;|&nbsp;개인정보처리방침&nbsp;|&nbsp;고객센터&nbsp;|&nbsp;1:1문의&nbsp;|&nbsp;매장안내&nbsp;|
+                    </h2>
+                    <br>
+                    <p>
+                        주식회사엠씨웹&nbsp;|&nbsp;대표이사&nbsp;:&nbsp;MCSSAM&nbsp;|<br>
+                        사업자등록번호&nbsp;:&nbsp;120-21-05435&nbsp;|&nbsp;통신판매업신고번호&nbsp;:&nbsp;제&nbsp;2021-서울강남-00810호<br>
+                        주소&nbsp;:&nbsp;서울특별시&nbsp;강남구&nbsp;아차산로&nbsp;123&nbsp;|&nbsp;대표전화&nbsp;:&nbsp;02-3424-3432&nbsp;|&nbsp;팩스&nbsp;:&nbsp;02-446-7323
+                    </p>
+                    <br><br>
+                    <div class="textbox_cover">
+                        <p>
+                            고객님의&nbsp;안전거래를&nbsp;위해&nbsp;현금&nbsp;결제시,<br>
+                            구매안전&nbsp;서비스를&nbsp;이용하실&nbsp;수&nbsp;있습니다&nbsp;[가입사실확인]
+                        </p>
+                        <div class="tc_blackbox"></div>
+                    </div>
+                    <br><br>
+                    <p>
+                        CopyRight&nbsp;&copy;&nbsp;2022&nbsp;MCWEB.,&nbsp;Ltd.&nbsp;All&nbsp;Rights&nbsp;Reserved
+                    </p>
+                </section>
+
+                <section class="f_rightBox">
+                    <div class="rb_firstBox">
+                        <h2>
+                            고객만족센터<br>
+                            080-555-9812
+                        </h2>
+                        <p>
+                            평일&nbsp;09:00&nbsp;~&nbsp;18:00&nbsp;|&nbsp;점심&nbsp;13:00&nbsp;~&nbsp;14:00
+                        </p>
+                    </div>
+                    <br><br>
+                    <div class="rb_secondBox">
+                        <h2>
+                            BANK&nbsp;INFO<br>
+                            <span>국민은행&nbsp;801-32-323236-39</span>
+                        </h2>
+                        <p>
+                            예금주:(주)엠씨웹
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </footer>
+        <!-- /footer -->
     </div>
 </body>
 </html>
