@@ -89,7 +89,7 @@ eq(-1) = last-child랑 같다 마지막꺼 부터 선택
 
 
 초기값 중요
-background : 초기값이 none; 
+background : 초기값이 none;
 backgroundColor : 초기값이 transparent(투명)
 둘이 섞어서 쓰면 초기값을 생각하고 사용해야함
 상속을 안받음, 흰색이 나오는 것이 아니라 투명색이 보이는 것이다
