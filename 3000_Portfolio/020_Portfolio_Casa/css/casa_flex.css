@@ -82,6 +82,9 @@ header .h_secondbox {
 .sb_box2 div {
     margin: 0 12px 0 12px;
 }
+.sb_box2 p {
+    color: #8c8a8c;
+}
 .sb_box2 p:last-child {
     margin-left: 13px;
 }
