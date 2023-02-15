@@ -218,6 +218,8 @@ main article>div:last-child {
     text-align: center;
 }
 .m_2_leftbox p {
+    font-size: 15px;
+    color: #393939;
     margin-bottom: 30px;
 }
 .m_2_leftbox p:nth-child(5) {
