@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+body {
+  font-family: 'Noto Sans KR',sans-serif;
+}
+#wrap {
+  width: 640px;
+  margin: 0 auto;
+  padding: 40px;
+  margin-top: 8px;
+  border: 1px solid #999;
+}
+main>h2 {
+  float: left;
+  margin-right: 16px;
+  margin-bottom: 20px;
+}
+.right_filed {
+  float: right;
+}
+.rf_top>h2 {
+  padding-bottom: 32px;
+  font-weight: bold;
+}
+.rf_top span {
+  color: red;
+  font-size: 20px;
+}
+.rf_top p:nth-child(2) {
+  padding-bottom: 12px;
+  font-size: 12px;
+}
+.rf_top p:nth-child(3) {
+  padding-bottom: 28px;
+}
+.under_line {
+  background-color: #000;
+  height: 1px;
+  text-decoration: underline;
+}
+.right_filed div:nth-child(2) {
+  margin-bottom: 28px;
+}
+.cover {
+  margin-bottom: 60px;
+}
+.cover h2 {
+  float: left;
+  margin-right: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.cover p {
+  float: left;
+  font-size: 12px;
+  font-weight: 700;
+}
+.cover_2 {
+  margin-bottom: 36px;
+}
+.cover_2 h2 {
+  float: left;
+  margin-right: 36px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.cover_2 p {
+  float: left;
+  font-size: 14px;
+  font-weight: 700;
+}
+select {
+  width: 300px;
+  height: 35px;
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+#dep {
+  font-weight: bold;
+}
+button {
+  width: 146px;
+  height: 48px;
+  background-color: blue;
+  color: #fff;
+  font-size: 17px;
+  margin-top: 24px;
+  cursor: pointer;
+}
+.brand {
+  font-weight: bold;
+  text-decoration: underline;
+}
