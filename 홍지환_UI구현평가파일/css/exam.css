@@ -128,6 +128,7 @@ footer {
     padding: 20px 0;
 }
 
+/* 미디어 쿼리 768px이하 */
 @media screen and (max-width:768px){
     .contents_2 {
         flex-flow: row wrap;
