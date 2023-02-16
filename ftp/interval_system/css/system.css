@@ -25,6 +25,7 @@ main>h2 {
 .rf_top span {
   color: red;
   font-size: 20px;
+  font-weight: bold;
 }
 .rf_top p:nth-child(2) {
   padding-bottom: 12px;
@@ -83,11 +84,14 @@ button {
   height: 48px;
   background-color: blue;
   color: #fff;
-  font-size: 17px;
   margin-top: 24px;
   cursor: pointer;
 }
 .brand {
   font-weight: bold;
   text-decoration: underline;
+  margin-top: 7px;
+}
+.office {
+  margin-top: 4px;
 }
