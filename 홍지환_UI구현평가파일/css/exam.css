@@ -1,7 +1,8 @@
 @charset "utf-8";
 
 .w1280 {
-    width: 1280px;
+    /* 1280/1440*100 = 88.88888888888889 */
+    width: 88.88888888888889%;
     margin: 0 auto;
 }
 body {
@@ -9,6 +10,7 @@ body {
 }
 #wrap {
     width: 1440px;
+    width: 100%;
     margin: 0 auto;
 }
 /* header */
@@ -27,8 +29,10 @@ header {
     background-color: slateblue;
 }
 nav {
-    width: 400px;
-    margin-right: 80px;
+    /* 400/1440*100 = 27.77777777777778 */
+    width: 27.77777777777778%;
+    /* 80/1440*100 = 5.555555555555555 */
+    margin-right: 5.555555555555555%;
 }
 .gnb {
     display: flex;
@@ -66,11 +70,13 @@ nav {
     justify-content: space-between;
 }
 .weare_1 {
+    width: 320px;
     text-align: center;
     margin-bottom: 80px;
 }
 .weare_1 h2 {
-    margin: 20px 0;
+    /* 20/1440*100 = 1.3888888888888888 */
+    margin: 1.3888888888888888% 0;
 }
 /* under_line */
 .under_line {
@@ -86,16 +92,65 @@ nav {
     margin-bottom: 60px;
 }
 .w_box {
+    width: 1440px;
+    width: 100%;
     display: flex;
     flex-flow: row nowrap;
-    text-align: center;
+    justify-content: center;
 }
-.w_box>div>p {
-    width: 25%;
+
+.w_firstBox p:nth-child(1),
+.w_firstBox p:nth-child(2),
+.w_secondBox p:nth-child(1),
+.w_secondBox p:nth-child(2),
+.w_thirdBox p:nth-child(1),
+.w_thirdBox p:nth-child(2),
+.w_fourBox p:nth-child(1),
+.w_fourBox p:nth-child(2) {
+    width: 100%;
+    height: 360px;
+}
+.w_firstBox p:nth-child(1) img,
+.w_firstBox p:nth-child(2) img,
+.w_secondBox p:nth-child(1) img,
+.w_secondBox p:nth-child(2) img,
+.w_thirdBox p:nth-child(1) img,
+.w_thirdBox p:nth-child(2) img,
+.w_fourBox p:nth-child(1) img,
+.w_fourBox p:nth-child(2) img  {
+    width: 100%;
+    height: 100%;
 }
 
 /* footer */
 footer {
     text-align: center;
     padding: 20px 0;
+}
+
+@media screen and (max-width:768px){
+    .contents_2 {
+        flex-flow: row wrap;
+    }
+    .weare_1 {
+        width: 50%;
+    }
+    .w_box {
+        flex-flow: row wrap;
+    }
+    .w_firstBox {
+        display: flex;
+    }
+    .w_secondBox {
+        display: flex;
+    }
+    .w_thirdBox {
+        display: flex;
+    }
+    .w_fourBox {
+        display: flex;
+    }
+    
+    
+    
 }
