@@ -1214,3 +1214,24 @@ a에다가 값을 줄떄
 display: inline-block; 을 사용한다
 
 간격시스템 = 4의배수 8의배수 기준으로 잡아서 코딩한다
+
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+@23/02/17
+
+
+appearance = 브라우저에 기본적으로 설정되어있는 요소를 표현
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+/* 배경이미지로 화살표 넣기 */
+select {
+    background-image: url(../images/arrow_bot.jpg);
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+    background-position: 255px;
+}

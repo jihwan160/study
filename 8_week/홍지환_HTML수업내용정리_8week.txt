@@ -133,9 +133,40 @@ display: inline-block; 을 사용한다
 
 간격시스템 = 4의배수 8의배수 기준으로 잡아서 코딩한다
 
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+@23/02/17
+
+기획
+필드 + 문서작성능력
+
+어떠한 사이트 개발을 한다는 가정
+하드웨어
+기술적사항 
+
+HTML
+
+appearance = 브라우저에 기본적으로 설정되어있는 요소를 표현
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
 
 
+/* 배경이미지로 화살표 넣기 */
+select {
+    background-image: url(../images/arrow_bot.jpg);
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+    background-position: 255px;
+}
 
+JQ
+
+특정한 영역에 명시적으로 스타일을 주고 싶을떄 요소명.클래스를 사용한다 클래스 이름은 active나on을 사용할 것
+스크립트와 연동할 때만 나온다
+
+정가운데 오게 하려면 포지션을 쓴다음 transform: translateY(-50%);를 사용하면 된다
 
 
 
