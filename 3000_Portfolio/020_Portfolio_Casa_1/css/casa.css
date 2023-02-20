@@ -67,11 +67,7 @@ aside {
     padding-left: 536px;
     padding-top: 24px;
 }
-/* 추가 */
-.root_lnb h1 img {
-    width: 128px;
-    height: 40px;
-}
+
 
 .root_lnb .local .lnb {
     display: flex;
@@ -136,20 +132,13 @@ aside {
     flex-flow: row nowrap;
     margin-top: 142px;
 }
-/* 추가 */
-.md_pick h2 img {
-    width: 400px;
-    height: 450px;
-}
+
 
 .md_pick h3 {
     text-align: center;
     padding-top: 35px;
 }
 
-.md_pick h3+p {
-    font-size: 2.4rem;
-}
 
 .md_pick .md_pick_area {
     margin-top: 32px;
@@ -170,11 +159,13 @@ aside {
     width: 240px;
     height: 330px;
 }
-.md_pick .md_pick_area+p {
+
+/* 사진넣으면 안씀 */
+/* .md_pick .md_pick_area+p {
     padding-top: 28px;
     padding-right: 60px;
     text-align: right;
-}
+} */
 
 /* Section 02 */
 .real_title {
@@ -221,23 +212,17 @@ aside {
     margin-top: 124px;
     padding-left: 84px;
 }
-.caxa h2 {
+
+/* 사진넣어서 안씀 */
+/* .caxa h2 {
     text-align: center;
     margin-bottom: 44px;
-}
+} */
+
 .caxa .caxa_sns {
     display: flex;
 }
-/* 추가 */
-.caxa .caxa_sns ul li img {
-    width: 185px;
-    height: 185px;
-}
-/* 추가 */
-.caxa .caxa_sns ul:nth-child(2) li img {
-    width: 375px;
-    height: 375px;
-}
+
 .caxa .caxa_sns ul:first-child {
     display: flex;
     flex-flow: column wrap;
@@ -338,11 +323,57 @@ footer {
 
 
 
+/* 추가 */
+.root_lnb h1 img {
+    width: 128px;
+}
 
 
+/* 추가 */
+.md_pick h2 img {
+    width: 400px;
+    height: 450px;
+}
 
+/* 추가 */
+.caxa .caxa_sns ul li img {
+    width: 185px;
+    height: 185px;
+}
+/* 추가 */
+.caxa .caxa_sns ul:nth-child(2) li img {
+    width: 375px;
+    height: 375px;
+}
+.gnb_all .global h2 img {
+    width: 58px;
+    height: 54px;
+}
+.md_pick h3 p {
+    font-size: 2.4rem;
+}
 
+.real_time ul li:last-child {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
 
+.caxa h2 p {
+    text-align: center;
+    margin-bottom: 44px;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
 
+.caxa p a{
+    text-align: right;
+    padding-right: 40px;
+    margin-top: 28px;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
 
-
+.md_pick .md_pick_area+p {
+    padding-top: 28px;
+    text-align: right;
+}
