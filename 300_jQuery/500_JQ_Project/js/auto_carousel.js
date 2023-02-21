@@ -35,20 +35,6 @@ function autoSlide() {
     setTimeout(autoSlide,2000);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 

@@ -323,24 +323,24 @@ footer {
 
 
 
-/* 추가 */
+/* ------------------추가한 코드----------------------*/
 .root_lnb h1 img {
     width: 128px;
 }
 
 
-/* 추가 */
+
 .md_pick h2 img {
     width: 400px;
     height: 450px;
 }
 
-/* 추가 */
+
 .caxa .caxa_sns ul li img {
     width: 185px;
     height: 185px;
 }
-/* 추가 */
+
 .caxa .caxa_sns ul:nth-child(2) li img {
     width: 375px;
     height: 375px;
@@ -377,3 +377,13 @@ footer {
     padding-top: 28px;
     text-align: right;
 }
+/* .top_sub p:nth-child(3) img {
+    background-color: white !important;
+    width: 14px;
+    height: 14px;
+}
+.top_sub p:nth-child(2) img {
+    background-color: white !important;
+    width: 14px;
+    height: 14px;
+} */
