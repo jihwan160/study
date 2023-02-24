@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile 롤렉스실습</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/moblie_resume.css">
+    <script src="../js/calHeight.js"></script>
+</head>
+<style>
+    html {
+        font-size: 62.5%;
+    }
+    #wrap {
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px 16px;
+        font-family: 'Noto Sans', sans-serif;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 80px;
+    }
+    .header h2 {
+        font-weight: 900;
+        font-size: 2.7rem;
+    }
+    .header p {
+        font-weight: 900;
+        font-size: 2.4rem;
+    }
+    .first_box h2 {
+        font-weight: 900;
+        font-size: 3rem;
+        padding-bottom: 24px;
+    }
+    .first_box p:nth-child(2) {
+        padding-bottom: 24px;
+        font-weight: 900;
+        font-size: 2.4rem;
+    }
+    .first_box p:nth-child(3) {
+        padding-bottom: 28px;
+        font-weight: 900;
+        font-size: 1.6rem;
+    }
+
+    .info {
+        display: flex;
+        margin-bottom: 24px;
+        font-size: 1.6rem;
+    }
+    .info ul:nth-child(1) {
+        padding-right: 8px;
+        color: #949494;
+    }
+    .info ul:nth-child(2) li {
+        font-weight: 900;
+    }
+
+    .info ul li:nth-child(1) {
+        padding-bottom: 8px;
+    }
+    .sns {
+        margin-bottom: 40px;
+    }
+    .sns ul {
+        display: flex;
+    }
+    .sns li {
+        padding-right: 16px;
+    }
+    .sns ul li a i {
+        font-size: 3.4rem;
+    }
+    
+    .second_box .design {
+        margin-bottom: 24px;
+    }
+
+    .second_box {
+        font-size: 1.6rem;
+    }
+    .second_box .publishing {
+        margin-bottom: 24px;
+    }
+
+
+
+
+
+    footer {
+        position: relative;
+    }
+    footer p {
+        position: fixed;
+        left: 25%;
+        bottom: 0;
+        z-index: 1;
+        font-weight: 700;
+        margin-bottom: 36px;
+        color: #494949;
+    }
+
+
+
+
+
+
+
+
+    .design p {
+        color: #949494;
+    }
+    .publishing p {
+        color: #949494;
+    }
+
+    main {
+    }
+    .rolex {
+        position: relative;
+    }
+    .rolex h2 {
+        width: 200px;
+        height: 300px;
+        background-color: gray;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    .rolex a img {
+        width: 100%;
+        position: absolute;
+        left: 30%;
+        bottom: 50%;
+        z-index: -1;
+    }
+
+    
+</style>
+<body>
+    <div id="wrap">
+        <header class="header">
+            <h2>JHWAN</h2>
+            <p><a href="#">jihwan</a></p>
+        </header>
+        <main role="main">
+            <div class="first_box">
+                <h2>HONG&nbsp;JIHWAN</h2>
+                <p>jihwan</p>
+                <p><a href="#">https://github.com/jihwan160</a></p>
+                <div class="info">
+                    <ul>
+                        <li><a href="#">TEL</a></li>
+                        <li><a href="#">MAIL</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">010.2780.4469</a></li>
+                        <li><a href="#">dark160@naver.com</a></li>
+                    </ul>
+                </div>
+                <div class="sns">
+                    <ul>
+                        <li><a href="#" class="facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                        <li><a href="#" class="twitter"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                        <li><a href="#" class="insta"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rolex">
+                <h2><a href="#"><img src="../images/rolex.png" alt="롤렉스"></a></h2>
+            </div>
+
+
+
+            <div class="second_box">
+                <div class="design">
+                    <h2>WEB&nbsp;DESIGN&nbsp;:</h2>
+                    <p>ADOBE&nbsp;PHOTOSHOP&nbsp;|</p>
+                    <p>ADOBE&nbsp;ILLUSTRATOR&nbsp;|</p>
+                    <p>ADOBE&nbsp;XD</p>
+                </div>
+                <div class="publishing">
+                    <h2>WEB&nbsp;PUBLISHING&nbsp;:</h2>
+                    <p>HTML&nbsp;|</p>
+                    <p>CSS&nbsp;|</p>
+                    <p>JAVASCRIPT&nbsp;|</p>
+                    <p>JQUERY</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>
+                COPYRIGHT &copy; WEBADD ALL RIGHTS RESERVED.
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

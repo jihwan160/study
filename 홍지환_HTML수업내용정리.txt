@@ -1316,3 +1316,23 @@ input[id="menuicon"]:checked + label + nav{
 }
 
 검색창 같은 곳에 효과를 주려면 hover focus active를 사용
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+@23/02/24
+
+css속성을 변수에 넣고 속성명만 주면 분기를 할 수 있다
+초기값은 default값
+
+// 버튼을 누르면 더 많은 버튼들이 나오고 close를 누르면 닫히는 함수
+
+변수를 할당하고 display가 none이면 dots를 보이게 바꾸고 btnText를 
+text메서드를 사용하여 +MORE로 보여주고 moreButton을 안 보이게 display : none로 바꿔준다
+
+
+배경동영상 같은 것은 이벤트같은 이목을 집중시킬떄 사용
+
+//동영상 가운데 오게 하는 법
+$(window).height(); 로 전체 높이를 구한 뒤
+변수에 var halfHeight = bh/2; 를 하여 중간값을 구하고
+그 중간값 만큼 margin-top을 사용한다
+$('.youtube').css({'margin-top':halfHeight});
+그리고 css로 가서 transform: translateY(-100%);를 사용한다
