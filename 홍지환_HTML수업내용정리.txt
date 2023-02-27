@@ -1336,3 +1336,45 @@ $(window).height(); 로 전체 높이를 구한 뒤
 그 중간값 만큼 margin-top을 사용한다
 $('.youtube').css({'margin-top':halfHeight});
 그리고 css로 가서 transform: translateY(-100%);를 사용한다
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+@23/02/27
+
+video.get(0)
+비디오에서 제공하는 메서드
+비디오에 모든것을 가져오는 메서드
+
+if(video.get(0).paused){
+    만약 비디오의 모든것이 멈춰있으면
+                video.get(0).play();
+                비디오를 재생시켜라
+                btn.html('<i class="fa fa-pause-circle-o" aria-hidden="true"></i>');
+                그리고 일시정지버튼을 나타내라
+            }else {
+                그렇지않으면
+                video.get(0).pause();
+                비디오를 멈춰라
+                btn.html('<i class="fa fa-play-circle-o" aria-hidden="true"></i>');
+                그리고 재생버튼을 나타내라
+            }
+
+html(); => 제이쿼리에서 태그를 사용할 떄 쓰는 메서드
+
+가변 = 어딘가에 기준점이 있다
+단위가 v로 시작
+VW VH만 인지하면 된다
+
+viewport하면 무조건 브라우저
+PC => viewport가 의미가 없다 모니터 해상도에 따라 고정됨
+모바일은 meta에 있는 viewport값이 있다
+
+vw vh 를 %로 생각하면 된다
+
+object-fit: fill;
+비디오를 꽉차게 만드는 메서드
+그러나 원본을 사용하는 것이 좋다
+
+const 불변변수키워드
+
+// 사운드 무음으로 초기값 설정
+video.prop('muted',true);
