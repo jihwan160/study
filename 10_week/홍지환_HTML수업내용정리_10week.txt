@@ -46,7 +46,31 @@ video.prop('muted',true);
 기획
 핀터레스트 비핸스  = 스타일가이드 
 
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+@23/02/28
 
+HTML
+()가 붙는건 메서드 
+--text-color: #f0f4f5; => 이렇게 선언을하고
+color: var(--text-color); => var에 담아서 사용한다
+
+display flex에서 
+display none의 반대는 display flex이다
+
+
+JS
+defer = Document.ready 를 사용하지 않아도 로드가 된다
+
+class list 자바스크립트에서 active클래스가 있는 것을 가져온다
+
+// 화살표 함수 ()=>{} function name(){}
+ham_btn.addEventListener('click',()=>{
+    gnb.classList.toggle('active');
+    lnb.classList.toggle('active');
+});
+
+빈 hasClass()
+()안의 매개변수의 이름을 가진 클래스가 있는지 없는지 판단하는 메서드
 
 
 

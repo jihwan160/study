@@ -495,3 +495,18 @@ parentElement 부모의 요소를 찾아주는 메서드
 
 
 nextElementSibling 형제의 요소를 찾아주는 메서드
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+@23/02/28
+defer = Document.ready 를 사용하지 않아도 로드가 된다
+
+class list 자바스크립트에서 active클래스가 있는 것을 가져온다
+
+// 화살표 함수 ()=>{} function name(){}
+ham_btn.addEventListener('click',()=>{
+    gnb.classList.toggle('active');
+    lnb.classList.toggle('active');
+});
+
+빈 hasClass()
+()안의 매개변수의 이름을 가진 클래스가 있는지 없는지 판단하는 메서드

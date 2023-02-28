@@ -1378,3 +1378,23 @@ const 불변변수키워드
 
 // 사운드 무음으로 초기값 설정
 video.prop('muted',true);
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+@23/02/28
+
+HTML
+()가 붙는건 메서드 
+--text-color: #f0f4f5; => 이렇게 선언을하고
+color: var(--text-color); => var에 담아서 사용한다
+
+display flex에서 
+display none의 반대는 display flex이다
+
+
+
+
+
+
+
+
+
+
