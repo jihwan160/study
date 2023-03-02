@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="JiHwan">
+    <meta name="description" content="포트폴리오">
+    <title>반응형템플릿</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+    <link rel="shortcut icon" href="./images/fav/favjh32.png">
+    <link rel="apple-touch-icon=precomposed" href="./images/fav/favjh180.png">
+    <!-- 기본 코딩 JS 파일 -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <!-- 기본 코딩 CSS 파일 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/notosans_kr_CDN.css">
+    <!-- 페이지 CSS -->
+    <link rel="stylesheet" href="./css/rwd_template.css">
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+
+    <!-- 박스 슬라이더 CSS -->
+    <style>
+        article {
+            max-width: 1920px;
+            margin: 0 auto;
+        }
+        article #gallery_wrap {
+            max-width: 1920px;
+            
+        }
+        article #gallery_wrap img {
+            width: 100%;
+        }
+    </style>
+    <!-- 박스 슬라이더 JS -->
+
+
+    <!-- 모듈화스크립트 -->
+    <script>
+        $(function(){
+            // Header 페이지 추가
+            $('.header').load('./include/header.html',function(){
+                $('.menu_toggle_btn').click(function(){
+                    $('.gnb').stop().toggle();
+                });
+            });
+            
+            // Footer 페이지 추가
+            $('.footer').load('./include/footer.html');
+        })
+    </script>
+
+
+
+
+    <script src="./js/jquery.bxslider.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 1. Header -->
+        <header class="header cf">
+        
+        </header>
+        <!-- /1. Header -->
+
+        <!-- 2.Slider -->
+        <!-- <article class="slider">
+            <h2 class="slider_img">
+                <img src="./images/animal/animal-kingdom.jpg" alt="슬라이드 이미지">
+            </h2>
+        </article> -->
+
+        <!-- 2-2 슬라이드 제이쿼리 플러그인 작업 -->
+        <article class="slider">
+            <div id="gallery_wrap">
+                <!-- BxSlider 이미지 -->
+                <ul class="slide_gallery">
+                    <li><img src="./images/animal/animal-kingdom3.jpg" alt="슬라이드01"></li>
+                    <li><img src="./images/animal/animal-kingdom2.jpg" alt="슬라이드02"></li>
+                    <li><img src="./images/animal/animal-kingdom4.jpg" alt="슬라이드03"></li>
+                </ul>
+            </div>
+        </article>
+        <!-- 2-2 슬라이드 제이쿼리 플러그인 작업 -->
+        <!-- /2.Slider -->
+
+        <!-- 3. Contents -->
+        <main role="main">
+            <section class="content">
+                <!-- 3-1. Display -->
+                <section class="display_section container">
+                    <div class="cf">
+                        <h2 class="sec_title">Animal</h2>
+                        <p class="desc">
+                            동물보호와 자연의 소중함을 일깨워 줄<br>
+                            그리고 생태계의 신비를 느낄 수 있도록 한다
+                        </p>
+                    </div>
+                </section>
+                <!-- /3-1. Display -->
+    
+                <!-- 3-2. Promotion -->
+                <section class="promotion_section container">
+                    <h2>
+                        <ul class="promotion_list cf">
+                            <li>
+                                <a href="#">
+                                    <img src="./images/animal/tiger_icon.png" alt="호랑이 아이콘">
+                                    <h3>Tiger</h3>
+                                    <p>
+                                        아시아에 서식하는 식육목 고양잇과의 포유류.<br>
+                                        현존하는 모든 고양잇과 동물들 중 가장 큰 동물
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/animal/lion_icon.png" alt="사자 아이콘">
+                                    <h3>Lion</h3>
+                                    <p>
+                                        사자는 아프리카와 인도에 서식하는 식육목 <br>
+                                        고양이과 포유류이다.
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/animal/bear_icon.png" alt="곰 아이콘">
+                                    <h3>WORD</h3>
+                                    <p>
+                                        한반도에 사는 곰은 우수리불곰과<br>
+                                        아시아흑곰 2종류가 있다
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/animal/elephant_icon.png" alt="코끼리 아이콘">
+                                    <h3>Elephant</h3>
+                                    <p>
+                                        기다란 코와 큰 귀, 양 옆으로 튀어나온 상아가 특징이며<br>
+                                        지상에서 가장 크고 강한 동물이다.
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </h2>
+                </section>
+                <!-- /3-2. Promotion -->
+                
+                <hr class="divider">
+                    
+                <!-- 3-3. Work -->
+                <section class="work_section">
+                    <div>
+                        <h2 class="sec_title container">Gallery</h2>
+                        <ul class="work_list cf">
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <h3>독수리</h3>
+                                        <span>조류</span>
+                                    </div>
+                                    <img src="./images/animal/animal_1.jpg" alt="포트폴리오1">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <h3>비둘기</h3>
+                                        <span>조류</span>
+                                    </div>
+                                    <img src="./images/animal/animal_2.jpg" alt="포트폴리오2">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <h3>고슴도치</h3>
+                                        <span>포유류</span>
+                                    </div>
+                                    <img src="./images/animal/animal_3.jpg" alt="포트폴리오3">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <h3>고양이</h3>
+                                        <span>포유류</span>
+                                    </div>
+                                    <img src="./images/animal/animal_4.jpg" alt="포트폴리오4">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <h3>사자</h3>
+                                        <span>포유류</span>
+                                    </div>
+                                    <img src="./images/animal/animal_5.jpg" alt="포트폴리오5">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <h3>다람쥐</h3>
+                                        <span>포유류</span>
+                                    </div>
+                                    <img src="./images/animal/animal_6.jpg" alt="포트폴리오6">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <h3>펭귄</h3>
+                                        <span>조류</span>
+                                    </div>
+                                    <img src="./images/animal/animal_7.jpg" alt="포트폴리오7">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <h3>돌고래</h3>
+                                        <span>포유류</span>
+                                    </div>
+                                    <img src="./images/animal/animal_8.jpg" alt="포트폴리오8">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- /3-3. Work -->
+    
+                <hr class="m_divider">
+    
+                <!-- 3-4. Blog -->
+                <section class="blog_section container">
+                    <div class="cf">
+                        <h2 class="sec_title">Another Animal</h2>
+                        <ul class="blog_list cf">
+                            <li>
+                                <a href="#">
+                                    <img src="./images/animal/animal_9.jpg" alt="블로그 이미지01">
+                                </a>
+                                <time datetime="1982">1776</time>
+                                <a href="#">
+                                    <h3>
+                                        아시아와 아프리카에 서식하고 있는 대표적인 고양이과 맹수이다.
+                                    </h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/animal/animal_10.jpg" alt="블로그 이미지02">
+                                </a>
+                                <time datetime="1820">1820</time>
+                                <a href="#">
+                                    <h3>
+                                        소목 사슴과에 속하는 중대형의 초식동물이다
+                                    </h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/animal/animal_11.jpg" alt="블로그 이미지03">
+                                </a>
+                                <time datetime="1821">1821</time>
+                                <a href="#">
+                                    <h3>
+                                        동물계의 전차로 불리는 생물로, 아프리카와 아시아 등지에 서식한다
+                                    </h3>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- /3-4. Blog -->
+    
+                <!-- 3-5. Contact -->
+                <section class="contact_section container">
+                    <div class="cf">
+                        <h2 class="sec_title">CONTACT</h2>
+                        <form action="#" class="form_box">
+                            <fieldset class="cf">
+                                <legend class="blind">CONTACT&nbsp;US</legend>
+                                <!-- Input Form -->
+                                <div class="form">
+                                    <label for="name" class="blind">Name</label>
+                                    <input type="text" id="name" placeholder="Name">
+                                    <label for="phone" class="blind">Phone</label>
+                                    <input type="tel" id="phone" placeholder="Phone">
+                                    <label for="email" class="blind">E-Mail</label>
+                                    <input type="email" id="email" placeholder="Email Address">
+                                </div>
+                                <!-- /Input Form -->
+                                <!-- Textarea Form -->
+                                <div class="txta">
+                                    <label for="message" class="blind">Message</label>
+                                    <textarea id="message" placeholder="Message"></textarea>
+                                </div>
+                            </fieldset>
+                            <!-- /Textarea Form -->
+                            <!-- Button -->
+                            <div class="send_btn">
+                                <button>SEND MESSAGE</button>
+                            </div>
+                            <!-- /Button -->
+                        </form>
+                    </div>
+                </section>
+                <!-- /3-5. Contact -->
+            </section>
+        </main>
+        <!-- /3. Contents -->
+
+        <!-- 4.Footer -->
+        <footer class="footer">
+            
+        </footer>
+        <!-- /4.Footer -->
+    </div>
+</body>
+
+<script>
+    $('.menu_toggle_btn').click(function(){
+        $('.gnb').stop().toggle();
+    });
+
+        $(function() {
+            $('.slide_gallery').bxSlider({
+                auto: true,
+                // pager와 같이 못씀
+                // pagerCustom : '.slide_pager',
+                slideWidth: 1920,
+            });
+        });
+
+</script>
+</html>
