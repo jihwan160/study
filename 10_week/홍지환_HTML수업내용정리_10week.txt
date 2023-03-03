@@ -121,5 +121,13 @@ function showFooterMenu() {
     this.nextElementSibling.classList.toggle(CLICKED_CLASS);
     this.classList.toggle(MARKED_CLASS);
 }
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+@23/03/02
 
+트랜지션과 애니메이션에 차이는 
+트랜지션은 a -> b
+애니메이션은 a -> b -> c -> d
+애니메이션은 keyframe이 있어야 한다
+
+메모리에 처음 올리는 상태 = load(); = 동영상 처음상태로 돌리는 메서드
 
