@@ -510,3 +510,46 @@ ham_btn.addEventListener('click',()=>{
 
 빈 hasClass()
 ()안의 매개변수의 이름을 가진 클래스가 있는지 없는지 판단하는 메서드
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+@23/03/02
+
+// DOM 할당
+const plusBtn = document.querySelectorAll('.footer_title');
+console.log(plusBtn);
+
+// 리스너 연결
+for(let i = 0; i < plusBtn.length; i++) {
+    plusBtn[i].addEventListener('click',showFooterMenu);
+}
+
+// 상수에 할당
+const CLICKED_CLASS = 'clicked';
+const MARKED_CLASS = 'mark';
+
+
+// 이벤트 리스너 연결
+function showFooterMenu() {
+    this.nextElementSibling.classList.toggle(CLICKED_CLASS);
+    this.classList.toggle(MARKED_CLASS);
+}
+
+**`plusBtn`이라는 변수에 `querySelectorAll` 메서드로 타이틀의 값을 배열로 다 가져온다**
+
+**배열로 가져왔으니까 값이 여러개 일 것이다 그러므로 for문을 사용하여 0부터 `plusBtn`의 길이 까지 for문을 돌린다 `plusBtn`의 i만큼 `addEventListener`를 적용하고 클릭을 했을 때 `showFooterMenu`라는 함수가 실행이 되도록 리스너를 연결한다**
+
+**위에 css에 `.clicked`와 `.mark`를 만들어 놓았다**
+
+**`CLICKED_CLASS`에 `clicked`를 할당하고**
+
+**`MARKED_CLASS`에 `mark`를 할당한다**
+
+**위에 두개는 상수(변하지 않는 수)로 할당하는 것이라서 대문자로 변수 이름을 쓴다**
+
+**이벤트 리스너를 연결하면 되는데 `showFooterMenu`함수에 커서위치는 타이틀이다**
+
+**그래서 this를 사용하고 타이틀의 형제인 snb를 보여주기 위해 `nextElementsibling`을 사용하고**
+
+**`classList`라는  속성을 사용하여 그 안에 있는 `toggle`을 사용하고 `toggle`메서드로 `CLICKED_CLASS`를 불러와서 사용하면 된다**
+
+**`mark`도 마찬가지인데 +와-가 타이틀쪽에 있으므로`nextElementsibling`은 사용하지않고 `classlist`를 사용한다**
