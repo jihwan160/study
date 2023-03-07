@@ -24,28 +24,40 @@ p span {
 
 /* Header 박스 */
 header .wrapper {
-    background: url(../images/car1.jpg) 4.16667% center no-repeat;
+    background: url(../images/eagle.jpg) 4.16667% center no-repeat;
+    background-size: 33.33333333% auto;
+    padding: 10% 4.16667% 10% 41.6667%;
+    
+}
+header .wrapper p {
+    background: #3F9ACF;
+}
+/* 각 Section  */
+#store_1 .wrapper {
+    background: url(../images/owl.jpg) 4.16667% center no-repeat;
     background-size: 33.33333333% auto;
     padding: 10% 4.16667% 10% 41.6667%;
 }
-
-/* 각 Section  */
-#store_1 .wrapper {
-    background: url(../images/car2.jpg) 4.16667% center no-repeat;
-    background-size: 33.33333333% auto;
-    padding: 10% 4.16667% 10% 41.6667%;
+#store_1 .wrapper p {
+    background: #C8BC42;
 }
 
 #store_2 .wrapper {
-    background: url(../images/car3.jpg) 4.16667% center no-repeat;
+    background: url(../images/tiger.jpg) 4.16667% center no-repeat;
     background-size: 33.33333333% auto;
     padding: 10% 4.16667% 10% 41.6667%;
 }
+#store_2 .wrapper p {
+    background: #EEF7F6;
+}
 
 #store_3 .wrapper {
-    background: url(../images/car4.jpg) 4.16667% center no-repeat;
+    background: url(../images/fox.jpg) 4.16667% center no-repeat;
     background-size: 33.33333333% auto;
     padding: 10% 4.16667% 10% 41.6667%;
+}
+#store_3 .wrapper p {
+    background: #D6D6CA;
 }
 
 /* Footer */

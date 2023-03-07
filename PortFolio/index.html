@@ -5,45 +5,175 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PortFolio Index</title>
-    
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <!-- 스와이퍼 CSS -->
+    <link rel="stylesheet" href="./css/swiper-bundle.css">
+    <!-- 페이지 CSS -->
+    <link rel="stylesheet" href="./css/indexCustom.css">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
 </head>
-
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Hahmlet&display=swap');
-    body {
-        font-family: 'Hahmlet', serif;
-        padding-top: 30px;
-        padding-left: 30px;
-    }
-    ol li{
-        margin-bottom: 20px;
-        
-    }
-    ol li a {
-        text-decoration: none;
-        color: #000;
-    }
-    ol li a:hover {
-        color: red;
-    }
-</style>
 <body>
+    <div id="wrap">
+        <!-- 1. 스와이퍼 페이지 영역 -->
+        <div id="portfolio">
+            <!-- A. 스와이퍼 최상위 구조 클래스 -->
+            <div class="swiper-container">
+                <!-- B. 스와이퍼 될 Contents 부모 클래스 -->
+                <div class="swiper-wrapper">
 
-    <h2>포트폴리오</h2>
-    <ol>
-        <li><a href="https://jihwan160.cafe24.com/000_Portflio_MultiParrellax" target="_blank">멀티페럴렉스</a></li>
-        <li><a href="https://jihwan160.cafe24.com/010_Portfolio_Montblanc/" target="_blank">몽블랑</a></li>
-        <li><a href="https://jihwan160.cafe24.com/020_Portfolio_Casa/" target="_blank">카사</a></li>
-        <li><a href="https://jihwan160.cafe24.com/020_Portfolio_Casa-1/" target="_blank">카사(커스터마이징)</a></li>
-        <li><a href="https://jihwan160.cafe24.com/030_RWD_Template-1/" target="_blank">반응형템플릿(커스터마이징)</a></li>
-        <li><a href="https://jihwan160.cafe24.com/040_MobileWeb_Parasite" target="_blank">Parasite(Mobile)</a></li>
-        <li><a href="https://jihwan160.cafe24.com/040_MobileWeb_Parasite/mobile_img_iframe.html" target="_blank">Parasite(PC)</a></li>
-        <li><a href="https://jihwan160.cafe24.com/050_Nike_Event/" target="_blank">나이키 이벤트</a></li>
-        <li><a href="https://jihwan160.cafe24.com/060_Cartier_Event/" target="_blank">까르띠에 이벤트</a></li>
-        <li><a href="https://jihwan160.cafe24.com/070_Avengers_FullScroll_Plugin/" target="_blank">어벤져스 이벤트</a></li>
-        <li><a href="https://jihwan160.cafe24.com/080_Swatch_Event/" target="_blank">스워치 이벤트</a></li>
-        <li><a href="https://jihwan160.cafe24.com/050_FIFA_Event-PF/" target="_blank">나이키 이벤트(커스터마이징)</a></li>
-    </ol>
+                    <!-- C-1. 스와이퍼 될 Slider 각각 내용들 -->
+                    <div class="swiper-slide slide">
+                        <h3><em>MultiParrellax(Customizing)</em></h3>
+                        <div class="p_mockup">
+                            <img src="./images/parralleximg.jpg" width="500" alt="스와이퍼이미지01">
+                        </div>
+                        <div class="btn">
+                            <button><a href="https://jihwan160.cafe24.com/000_Portflio_MultiParrellax" target="_blank">바로가기</a></button>
+                        </div>
+                    </div>
+                    <!-- /C-1. 스와이퍼 될 Slider 각각 내용들 -->
 
+                    <!-- C-2. 스와이퍼 될 Slider 각각 내용들 -->
+                    <div class="swiper-slide slide">
+                        <h3><em>Montblanc</em></h3>
+                        <div class="p_mockup">
+                            <img src="./images/monblanc.jpg" width="500" alt="스와이퍼이미지02">
+                        </div>
+                        <div class="btn">
+                            <button><a href="https://jihwan160.cafe24.com/010_Portfolio_Montblanc/" target="_blank">바로가기</a></button>
+                        </div>
+                    </div>
+                    <!-- /C-2. 스와이퍼 될 Slider 각각 내용들 -->
+
+                    <!-- C-3. 스와이퍼 될 Slider 각각 내용들 -->
+                    <div class="swiper-slide slide">
+                        <h3><em>Casa</em></h3>
+                        <div class="p_mockup">
+                            <img src="./images/casa.png" width="500" alt="스와이퍼이미지03">
+                        </div>
+                        <div class="btn">
+                            <button><a href="https://jihwan160.cafe24.com/020_Portfolio_Casa/" target="_blank">바로가기</a></button>
+                        </div>
+                    </div>
+                    <!-- /C-3. 스와이퍼 될 Slider 각각 내용들 -->
+
+                    <!-- C-4. 스와이퍼 될 Slider 각각 내용들 -->
+                    <div class="swiper-slide slide">
+                        <h3><em>Casa(Customizing)</em></h3>
+                        <div class="p_mockup">
+                            <img src="./images/caseCustom.png" width="500" alt="스와이퍼이미지04">
+                        </div>
+                        <div class="btn">
+                            <button><a href="https://jihwan160.cafe24.com/020_Portfolio_Casa-1" target="_blank">바로가기</a></button>
+                        </div>
+                    </div>
+                    <!-- /C-4. 스와이퍼 될 Slider 각각 내용들 -->
+
+                    <!-- C-5. 스와이퍼 될 Slider 각각 내용들 -->
+                    <div class="swiper-slide slide">
+                        <h3><em>RWD_Template</em></h3>
+                        <div class="p_mockup">
+                            <img src="./images/template.png" width="500" alt="스와이퍼이미지05">
+                        </div>
+                        <div class="btn">
+                            <button><a href="https://jihwan160.cafe24.com/030_RWD_Template-1" target="_blank">바로가기</a></button>
+                        </div>
+                    </div>
+                    <!-- /C-5. 스와이퍼 될 Slider 각각 내용들 -->
+
+                    <!-- C-6. 스와이퍼 될 Slider 각각 내용들 -->
+                    <div class="swiper-slide slide">
+                        <h3><em>Parasite(Mobile)</em></h3>
+                        <div class="p_mockup">
+                            <img src="./images/parasiteMoblie.png" width="500" alt="스와이퍼이미지06">
+                        </div>
+                        <div class="btn">
+                            <button><a href="https://jihwan160.cafe24.com/040_MobileWeb_Parasite" target="_blank">바로가기</a></button>
+                        </div>
+                    </div>
+                    <!-- /C-6. 스와이퍼 될 Slider 각각 내용들 -->
+
+                    <!-- C-7. 스와이퍼 될 Slider 각각 내용들 -->
+                    <div class="swiper-slide slide">
+                        <h3><em>Parasite(PC)</em></h3>
+                        <div class="p_mockup">
+                            <img src="./images/parasitePC.png" width="500" alt="스와이퍼이미지07">
+                        </div>
+                        <div class="btn">
+                            <button><a href="https://jihwan160.cafe24.com/040_MobileWeb_Parasite/mobile_img_iframe.html" target="_blank">바로가기</a></button>
+                        </div>
+                    </div>
+                    <!-- /C-7. 스와이퍼 될 Slider 각각 내용들 -->
+
+                    <!-- C-8. 스와이퍼 될 Slider 각각 내용들 -->
+                    <div class="swiper-slide slide">
+                        <h3><em>나이키 이벤트</em></h3>
+                        <div class="p_mockup">
+                            <img src="./images/nike.png" width="500" alt="스와이퍼이미지08">
+                        </div>
+                        <div class="btn">
+                            <button><a href="https://jihwan160.cafe24.com/050_Nike_Event/" target="_blank">바로가기</a></button>
+                        </div>
+                    </div>
+                    <!-- /C-8. 스와이퍼 될 Slider 각각 내용들 -->
+
+                    <!-- C-9. 스와이퍼 될 Slider 각각 내용들 -->
+                    <div class="swiper-slide slide">
+                        <h3><em>까르띠에 이벤트</em></h3>
+                        <div class="p_mockup">
+                            <img src="./images/cartier.png" width="500" alt="스와이퍼이미지09">
+                        </div>
+                        <div class="btn">
+                            <button><a href="https://jihwan160.cafe24.com/060_Cartier_Event/" target="_blank">바로가기</a></button>
+                        </div>
+                    </div>
+                    <!-- /C-9. 스와이퍼 될 Slider 각각 내용들 -->
+
+                    <!-- C-10. 스와이퍼 될 Slider 각각 내용들 -->
+                    <div class="swiper-slide slide">
+                        <h3><em>스워치 이벤트</em></h3>
+                        <div class="p_mockup">
+                            <img src="./images/swatch.png" width="500" alt="스와이퍼이미지10">
+                        </div>
+                        <div class="btn">
+                            <button><a href="https://jihwan160.cafe24.com/080_Swatch_Event/" target="_blank">바로가기</a></button>
+                        </div>
+                    </div>
+                    <!-- /C-10. 스와이퍼 될 Slider 각각 내용들 -->
+
+                    <!-- C-11. 스와이퍼 될 Slider 각각 내용들 -->
+                    <div class="swiper-slide slide">
+                        <h3><em>Nike Event(Customizing)</em></h3>
+                        <div class="p_mockup">
+                            <img src="./images/fifa.png" width="500" alt="스와이퍼이미지11">
+                        </div>
+                        <div class="btn">
+                            <button><a href="https://jihwan160.cafe24.com/050_FIFA_Event-PF/" target="_blank">바로가기</a></button>
+                        </div>
+                    </div>
+                    <!-- /C-11. 스와이퍼 될 Slider 각각 내용들 -->
+
+
+                </div>
+                <!-- /B. 스와이퍼 될 Contents 부모 클래스 -->
+                <!-- D.  스와이퍼 넘버링 클래스 -->
+                <div class="swiper-pagination"></div>
+                <!-- /D.  스와이퍼 넘버링 클래스 -->
+                <!-- E. 스와이퍼 좌우 화살표 -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- /E. 스와이퍼 좌우 화살표 -->
+            </div>
+            <!-- /A. 스와이퍼 최상위 구조 클래스 -->
+        </div>
+        <!-- 1. /스와이퍼 페이지 영역 -->
+
+    </div>
 </body>
 </html>
+<!-- 스와이퍼 플러그인 -->
+<script src="./js/swiper-bundle.js"></script>
+<!-- 페이지 JS -->
+<script src="./js/indexCustom.js"></script>
