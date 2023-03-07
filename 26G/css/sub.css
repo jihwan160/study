@@ -1,0 +1,239 @@
+@charset "utf-8";
+html {
+    font-size: 62.5%;
+}
+
+#wrap {
+    width: 1920px;
+    margin: 0 auto;
+}
+
+.w1240 {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.contents {
+    padding-top: 60px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+/* header */
+#header {
+    margin-top: 16px;
+    margin-bottom: 26px;
+}
+.snb ul {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+.snb ul li {
+    float: left;
+}
+.snb ul li a {
+    font-family: var(--roboto);
+    margin-right: 18px;
+    line-height: 20px;
+}
+.snb ul li:nth-child(6) {
+    margin-right: 0;
+}
+.snb ul li i {
+    font-size: 1.6rem;
+}
+
+/* LOGO */
+.logo {
+    margin-bottom: 10px;
+}
+
+/* gnb */
+.gnb>li {
+    float: left;
+    font-size: 1.5rem;
+    line-height: 55px;
+    text-align: center;
+    margin-left: 34px;
+    font-family: var(--roboto);
+    cursor: pointer;
+}
+.eventColor a{
+    color: #61b2b3;
+}
+
+/* 2depth hover시 공통 */
+.gnb>li:nth-child(2) {
+    position: relative;
+}
+.gnb .sub_1 {
+    width: 110px;
+    display: block;
+    font-size: 1.4rem;
+    text-align: center;
+    position: absolute;
+    left: -12px;
+    line-height: 30px;
+    padding: 8px 0;
+    background: #f6f7f8;
+    display: none;
+    font-family: var(--roboto);
+}
+
+
+.gnb>li:nth-child(1) {
+    margin-left: 0;
+}
+
+.gnb>li:hover {
+    color: #ccc;
+}
+.gnb>li:nth-child(2):hover .sub_1{
+    border: 1px solid #ccc;
+    color: #000;
+    display: block;
+    left: -29px;
+}
+.gnb .sub_1 li:hover {
+    background: #e2e0de;
+}
+.gnb .sub_1 li:hover a {
+    opacity: 0.5;
+}
+
+/* FAN HOVER시 */
+
+.gnb>li:nth-child(5) {
+    position: relative;
+}
+.gnb>li:nth-child(5):hover .sub_1{
+    border: 1px solid #ccc;
+    color: #000;
+    display: block;
+}
+.fan_txt li:nth-child(2){
+    display: inline-block;
+}
+
+/* FURNUTURE HOVER시 */
+.gnb>li:nth-child(6) {
+    position: relative;
+}
+.gnb>li:nth-child(6):hover .sub_1{
+    border: 1px solid #ccc;
+    color: #000;
+    display: block;
+}
+
+/* LIGHTING HOVER시 */
+.gnb>li:nth-child(7) {
+    position: relative;
+}
+.gnb>li:nth-child(7):hover .sub_1{
+    border: 1px solid #ccc;
+    color: #000;
+    display: block;
+    left: -20px;
+}
+
+/* HOME DECO HOVER시 */
+.gnb>li:nth-child(8) {
+    position: relative;
+}
+.gnb>li:nth-child(8):hover .sub_1{
+    border: 1px solid #ccc;
+    color: #000;
+    display: block;
+    left: -10px;
+}
+
+/* COMMUNITY HOVER시 */
+.gnb>li:nth-child(11) {
+    position: relative;
+}
+.gnb>li:nth-child(11):hover .sub_1{
+    border: 1px solid #ccc;
+    color: #000;
+    display: block;
+    left: -10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* title  */
+.title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.title h2 {
+    font-size: 3.6rem;
+    font-weight: 500;
+    font-family: var(--roboto);
+}
+.title p {
+    margin: 5px 0 0 6px;
+    padding-left: 10px;
+    font-size: 1.4rem;
+    font-family: var(--nanum);
+}
+
+/* imgList */
+.imgList li {
+    width: 392px;
+    padding-bottom: 65px;
+    margin: 20px 32px 20px 0;
+    float: left;
+}
+.imgList li:nth-child(3),
+.imgList li:nth-child(6) {
+    margin-right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
