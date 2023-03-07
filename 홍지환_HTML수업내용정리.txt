@@ -1436,5 +1436,15 @@ setTimeout 함수 새로고침이랑 비슷하다 딱 한번만 작동
 preventDefault(); a태그의 있는 링크를 없앤다
 
 
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+@23/03/07
 
+scale = 무조건 가운데 기준으로 커짐
+background-attachment: fixed; 이미지 고정
 
+header #gnb li:nth-child(1):hover a {
+    color: #d4164c;
+    border-color: #d4164c;
+}
+
+헤더의 아이디가 gnb인 li의 첫번쨰 자식을 호버하면 a는 폰트색깔과 보더색깔이 바뀐다
