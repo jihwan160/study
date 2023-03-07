@@ -158,6 +158,7 @@ aside {
 .md_pick .md_pick_area ul li img {
     width: 240px;
     height: 330px;
+    border: 1px solid black;
 }
 
 /* 사진넣으면 안씀 */
