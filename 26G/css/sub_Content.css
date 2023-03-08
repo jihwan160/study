@@ -24,12 +24,58 @@ html {
 }
 
 
+/* HEADER */
+/* SNB */
+.snb ul {
+    /* 플롯 */
+    float: right;
+    padding: 10px 0;
+}
+.snb ul li {
+    margin-left: 18px;
+    /* 플롯 */
+    float: left;
+}
+.snb ul li:nth-child(1) {
+    margin-left: 0;
+}
 
+/* GNB */
+.gnb {
+    text-align: center;
+}
+.gnb li {
+    /* 플롯 */
+    float: left;
+    margin-right: 32px;
+    position: relative;
+}
+.gnb li:last-child a{
+    margin-right: 0;
+}
+.gnb li>a {
+    line-height: 55px;
+}
 
+/* 호버시 효과 */
+.gnb li>a:hover {
+    color: #ccc;
+}
+.gnb li:hover .subMenu{
+    border: 1px solid red;
+}
+.subMenu li:hover {
+    background: #ccc;
+}
 
-
-
-
+/* subMenu */
+.subMenu {
+    /* position: absolute; */
+    top: 55px;
+}
+.subMenu p {
+    padding: 8px 0;
+}
 
 
 
