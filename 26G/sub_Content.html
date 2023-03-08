@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>서브 콘텐츠</title>
+    <title>sub Contents</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="./images/favicon/fav32.png">
     <link rel="apple-touch-icon=precomposed" href="./images/favicon/fav180.png">
@@ -22,15 +22,14 @@
     <script src="./js/sub_Content.js"></script>
     <!-- 박스 슬라이더 JS -->
     <script src="./js/jquery.bxslider.js"></script>
+    <!-- 스크롤 스크립트 -->
+    <script src="./js/jquery.scrollTo.min.js"></script>
 </head>
 
 
 <body>
     <div id="wrap">
-
         
-        
-
         <header id="header" class="w1240"> <!-- Header -->
             <div class="snb cf">
                 <ul>
@@ -39,15 +38,16 @@
                     <li><a href="#">CART</a></li>
                     <li><a href="#">ORDER</a></li>
                     <li><a href="#">MY&nbsp;PAGE</a></li>
-                    <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                    <li class="search"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
                 </ul>
+                
             </div>
             <div class="logo">
                 <a href="#"><img src="./images/icons/logo.png" alt="로고"></a>
             </div>
             <nav>
                 <ul class="gnb">
-                    <li><a href="#">EVENT</a></li>
+                    <li class="event"><a href="#">EVENT</a></li>
                     <li><a href="#">BRAND</a>
                         <div class="subMenu">
                             <p><a href="#">블루무스</a></p>
@@ -123,6 +123,7 @@
             </div>
         </article>
         <!-- /boxSlider -->
+        
         <main role="main"> <!-- Main -->
             <div class="m_interior w1240">
                 <h2>Interior Object</h2>
@@ -145,7 +146,13 @@
                 <ul class="cf">
                     <!-- goods_1 -->
                     <li class="goods_1 common_code">
-                        <a href="#"><img src="./images/Sub/Submenu.2page/item1_1.jpg" alt="아이템1"></a>
+                        <a href="#">
+                            <div class="icon">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-shopping-cart no_mr" aria-hidden="true"></i>
+                            </div>
+                            <img src="./images/Sub/Submenu.2page/item1_1.jpg" alt="아이템1">
+                        </a>
                         <div class="nameColor">
                             <div class="nameArea">
                                 <p><a href="#">[BLOMUS]&nbsp;문&nbsp;트레이&nbsp;라지</a></p>
@@ -164,7 +171,13 @@
 
                     <!-- goods_2 -->
                     <li class="goods_2 common_code">
-                        <a href="#"><img src="./images/Sub/Submenu.2page/item1_2.jpg" alt="아이템2"></a>
+                        <a href="#">
+                            <div class="icon">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-shopping-cart no_mr" aria-hidden="true"></i>
+                            </div>
+                            <img src="./images/Sub/Submenu.2page/item1_2.jpg" alt="아이템2">
+                        </a>
                         <div class="nameColor">
                             <div class="nameArea">
                                 <p><a href="#">[LE&nbsp;FEU]&nbsp;그라운드&nbsp;로우&nbsp;화이트</a></p>
@@ -186,7 +199,13 @@
 
                     <!-- goods_3 -->
                     <li class="goods_3 common_code no_mr">
-                        <a href="#"><img src="./images/Sub/Submenu.2page/item1_3.jpg" alt="아이템3"></a>
+                        <a href="#">
+                            <div class="icon">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-shopping-cart no_mr" aria-hidden="true"></i>
+                            </div>
+                            <img src="./images/Sub/Submenu.2page/item1_3.jpg" alt="아이템3">
+                        </a>
                         <div class="nameColor">
                             <div class="nameArea">
                                 <p><a href="#">[BLOMUS]&nbsp;테라조&nbsp;트레이&nbsp;20X15</a></p>
@@ -205,7 +224,13 @@
 
                     <!-- goods_4 -->
                     <li class="goods_4 common_code">
-                        <a href="#"><img src="./images/Sub/Submenu.2page/item4_1.png" alt="아이템4"></a>
+                        <a href="#">
+                            <div class="icon">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-shopping-cart no_mr" aria-hidden="true"></i>
+                            </div>
+                            <img src="./images/Sub/Submenu.2page/item4_1.png" alt="아이템4">
+                        </a>
                         <div class="nameColor">
                             <div class="nameArea">
                                 <p><a href="#">[BLOMUS]&nbsp;글라스&nbsp;티라이트&nbsp;홀더&nbsp;라지</a></p>
@@ -227,7 +252,13 @@
 
                     <!-- goods_5 -->
                     <li class="goods_5 common_code">
-                        <a href="#"><img src="./images/Sub/Submenu.2page/item1_5.jpg" alt="아이템5"></a>
+                        <a href="#">
+                            <div class="icon">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-shopping-cart no_mr" aria-hidden="true"></i>
+                            </div>
+                            <img src="./images/Sub/Submenu.2page/item1_5.jpg" alt="아이템5">
+                        </a>
                         <div class="nameColor">
                             <div class="nameArea">
                                 <p><a href="#">[BLOMUS]&nbsp;까르마&nbsp;글라스&nbsp;티라이트&nbsp;홀더&nbsp;미디움</a></p>
@@ -247,7 +278,13 @@
 
                     <!-- goods_6 -->
                     <li class="goods_6 common_code no_mr">
-                        <a href="#"><img src="./images/Sub/Submenu.2page/item1_6.jpg" alt="아이템6"></a>
+                        <a href="#">
+                            <div class="icon">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-shopping-cart no_mr" aria-hidden="true"></i>
+                            </div>
+                            <img src="./images/Sub/Submenu.2page/item1_6.jpg" alt="아이템6">
+                        </a>
                         <div class="nameColor">
                             <div class="nameArea">
                                 <p><a href="#">[BLOMUS]&nbsp;캔들&nbsp;세트</a></p>
@@ -264,7 +301,13 @@
 
                     <!-- goods_7 -->
                     <li class="goods_7 common_code">
-                        <a href="#"><img src="./images/Sub/Submenu.2page/item1_7.jpg" alt="아이템7"></a>
+                        <a href="#">
+                            <div class="icon">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-shopping-cart no_mr" aria-hidden="true"></i>
+                            </div>
+                            <img src="./images/Sub/Submenu.2page/item1_7.jpg" alt="아이템7">
+                        </a>
                         <div class="nameColor">
                             <div class="nameArea">
                                 <p><a href="#">[BLOMUS]&nbsp;캔들&nbsp;엑스라지</a></p>
@@ -279,7 +322,13 @@
 
                     <!-- goods_8 -->
                     <li class="goods_8 common_code">
-                        <a href="#"><img src="./images/Sub/Submenu.2page/item1_8.jpg" alt="아이템8"></a>
+                        <a href="#">
+                            <div class="icon">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-shopping-cart no_mr" aria-hidden="true"></i>
+                            </div>
+                            <img src="./images/Sub/Submenu.2page/item1_8.jpg" alt="아이템8">
+                        </a>
                         <div class="nameColor">
                             <div class="nameArea">
                                 <p><a href="#">[BLOMUS]&nbsp;캔들&nbsp;라지</a></p>
@@ -295,7 +344,13 @@
 
                     <!-- goods_9 -->
                     <li class="goods_9 common_code no_mr">
-                        <a href="#"><img src="./images/Sub/Submenu.2page/item1_9.jpg" alt="아이템9"></a>
+                        <a href="#">
+                            <div class="icon">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-shopping-cart no_mr" aria-hidden="true"></i>
+                            </div>
+                            <img src="./images/Sub/Submenu.2page/item1_9.jpg" alt="아이템9">
+                        </a>
                         <div class="nameColor">
                             <div class="nameArea">
                                 <p><a href="#">[BLOMUS]&nbsp;캔들&nbsp;스몰</a></p>
@@ -310,7 +365,13 @@
 
                     <!-- goods_10 -->
                     <li class="goods_10 common_code">
-                        <a href="#"><img src="./images/Sub/Submenu.2page/item1_10.jpg" alt="아이템10"></a>
+                        <a href="#">
+                            <div class="icon">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-shopping-cart no_mr" aria-hidden="true"></i>
+                            </div>
+                            <img src="./images/Sub/Submenu.2page/item1_10.jpg" alt="아이템10">
+                        </a>
                         <div class="nameColor">
                             <div class="nameArea">
                                 <p><a href="#">[BLOMUS]&nbsp;리토&nbsp;랜턴&nbsp;미듐</a></p>
@@ -329,7 +390,13 @@
 
                     <!-- goods_11 -->
                     <li class="goods_11 common_code">
-                        <a href="#"><img src="./images/Sub/Submenu.2page/item1_11.jpg" alt="아이템11"></a>
+                        <a href="#">
+                            <div class="icon">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-shopping-cart no_mr" aria-hidden="true"></i>
+                            </div>
+                            <img src="./images/Sub/Submenu.2page/item1_11.jpg" alt="아이템11">
+                        </a>
                         <div class="nameColor">
                             <div class="nameArea">
                                 <p><a href="#">[BLOMUS]&nbsp;리토&nbsp;랜턴&nbsp;스몰</a></p>
@@ -349,7 +416,13 @@
 
                     <!-- goods_12 -->
                     <li class="goods_12 common_code no_mr">
-                        <a href="#"><img src="./images/Sub/Submenu.2page/item1_12.jpg" alt="아이템12"></a>
+                        <a href="#">
+                            <div class="icon">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-shopping-cart no_mr" aria-hidden="true"></i>
+                            </div>
+                            <img src="./images/Sub/Submenu.2page/item1_12.jpg" alt="아이템12">
+                        </a>
                         <div class="nameColor">
                             <div class="nameArea">
                                 <p><a href="#">[BLOMUS]&nbsp;니디아&nbsp;랜턴&nbsp;미듐</a></p>
@@ -369,7 +442,13 @@
 
                     <!-- goods_13 -->
                     <li class="goods_13 common_code">
-                        <a href="#"><img src="./images/Sub/Submenu.2page/item1_13.jpg" alt="아이템13"></a>
+                        <a href="#">
+                            <div class="icon">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-shopping-cart no_mr" aria-hidden="true"></i>
+                            </div>
+                            <img src="./images/Sub/Submenu.2page/item1_13.jpg" alt="아이템13">
+                        </a>
                         <div class="nameColor">
                             <div class="nameArea">
                                 <p><a href="#">[BLOMUS]&nbsp;니디아&nbsp;랜턴&nbsp;스몰</a></p>
@@ -389,7 +468,13 @@
 
                     <!-- goods_14 -->
                     <li class="goods_14 common_code">
-                        <a href="#"><img src="./images/Sub/Submenu.2page/item1_14.png" alt="아이템14"></a>
+                        <a href="#">
+                            <div class="icon">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-shopping-cart no_mr" aria-hidden="true"></i>
+                            </div>
+                            <img src="./images/Sub/Submenu.2page/item1_14.png" alt="아이템14">
+                        </a>
                         <div class="nameColor">
                             <div class="nameArea">
                                 <p><a href="#">[BLOMUS]&nbsp;글라스&nbsp;티라이트&nbsp;홀더&nbsp;스몰</a></p>
@@ -409,7 +494,13 @@
 
                     <!-- goods_15 -->
                     <li class="goods_15 common_code no_mr">
-                        <a href="#"><img src="./images/Sub/Submenu.2page/item1_15.jpg" alt="아이템15"></a>
+                        <a href="#">
+                            <div class="icon">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-shopping-cart no_mr" aria-hidden="true"></i>
+                            </div>
+                            <img src="./images/Sub/Submenu.2page/item1_15.jpg" alt="아이템15">
+                        </a>
                         <div class="nameColor">
                             <div class="nameArea">
                                 <p><a href="#">[BLOMUS]&nbsp;콜루나&nbsp;꽃병&nbsp;라지</a></p>
@@ -424,10 +515,7 @@
                             <dd>79,000원</dd>
                             <dd>COLUNA</dd>
                         </dl>
-                        <div class="icon">
-                            <p><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></p>
-                            <p><a href="#" class="no_pr"><i class="fa fa-heart" aria-hidden="true"></i></a></p>
-                        </div>
+                        
                     </li>
                     <!-- /goods_15 -->
 
@@ -452,7 +540,17 @@
 
         </main> <!-- /Main -->
 
-        
+        <!-- Asid(top버튼) -->
+        <aside>
+            <div>
+                <a href="#wrap" class="top">
+                    <i class="fa fa-angle-up" aria-hidden="true"></i>
+                </a>
+            </div>
+        </aside>
+        <!-- /Asid(top버튼) -->
+
+            
         
 
 
