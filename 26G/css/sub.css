@@ -1,7 +1,7 @@
 @charset "utf-8";
-html {
+/* html {
     font-size: 62.5%;
-}
+} */
 
 #wrap {
     width: 1920px;
@@ -66,14 +66,14 @@ body {
     margin-bottom: 50px;
 }
 .title h2 {
-    font-size: 3.6rem;
+    font-size: 36px;
     font-weight: 500;
     /* font-family: var(--roboto); */
 }
 .title p {
     margin: 5px 0 0 6px;
     padding-left: 10px;
-    font-size: 1.4rem;
+    font-size: 14px;
     /* font-family: var(--nanum); */
 }
 
@@ -90,24 +90,7 @@ body {
 }
 
 
-/* GOTO TOP버튼 */
-aside div {
-    width: 50px;
-    height: 50px;
-    line-height: 55px;
-    background-color: #ccc;
-    text-align: center;
-    /* 포지션 */
-    position: fixed;
-    right: 20px;
-    bottom: 40px;
-    z-index: 999;
-    display: none;
-}
-.top i {
-    font-size: 2.4rem;
-    color: #fff;
-}
+
 
 
 
