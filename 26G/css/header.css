@@ -1,0 +1,120 @@
+@charset "utf-8";
+@import url('./top.css');
+
+header {
+    padding-bottom: 30px;
+}
+
+/* login */
+.login ul{
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+.login ul li{
+    margin-right: 18px;
+    margin-top: 18px;
+    font-size: 10px;
+    font-weight: 400;
+}
+.login form {
+    font-size: 10px;
+}
+form {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+
+}
+form input {
+    width: 235px;
+    border-bottom: 1px solid #000;
+}
+form button i {
+    cursor: pointer;
+}
+
+.logo img{
+    /* 포지션 */
+    cursor: pointer;
+}
+/* GNB */
+.gnb>ul{
+    margin-top: 12px;
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row nowrap;
+    color: #000;
+}
+.gnb>ul>li>a{
+    width: 100%;
+    font-size: 15px;
+    margin: 0 18px;
+    position: relative;
+}
+
+.gnb>ul>li:first-child{
+    margin-left: -20px;
+    
+}
+.gnb>ul>li:first-child a{
+    color: #70C2B8;
+}
+
+/* SUB MENU */
+.sub_menu {
+    display: none;
+    border: 1px solid #000;
+    position: absolute;
+    z-index: 99999;
+}
+.gnb>ul>li:nth-child(5) .sub_menu{
+    width: 100px;
+    transform: translateX(12px);
+}
+.gnb>ul>li:nth-child(6) .sub_menu{
+    width: 90px;
+    transform: translateX(12px);
+}
+.gnb>ul>li:nth-child(7) .sub_menu{
+    width: 90px;
+    transform: translateX(8px);
+}
+.gnb>ul>li:nth-child(8) .sub_menu{
+    width: 100px;
+    transform: translateX(10px);
+}
+.gnb>ul>li:nth-child(11) .sub_menu{
+    width: 95px;
+    transform: translateX(15px);
+}
+
+
+
+.gnb>ul>li:hover .sub_menu{
+    display: block;
+    background-color: #fff; 
+}
+
+.sub_menu li{
+    color: #000;
+    font-size: 11px;
+    text-align: center;
+    padding: 5px 0;
+}
+.sub_menu li:hover {
+    background-color: #fffbfb;
+}
+
+
+.alert { 
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 4%;
+    z-index: 10%;
+    z-index: 999999;
+    /* 로딩시 안보이도록 코딩 */
+    display: none;
+}
