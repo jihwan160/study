@@ -15,9 +15,6 @@
 }
 .top a {
     line-height: 50px;
+    padding: 17px;
     cursor: pointer;
-}
-
-.top i {
-    margin-left: 3px;
 }

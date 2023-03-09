@@ -36,7 +36,6 @@ form button i {
 }
 
 .logo img{
-    /* 포지션 */
     cursor: pointer;
 }
 /* GNB */
@@ -55,7 +54,7 @@ form button i {
 }
 
 .gnb>ul>li:first-child{
-    margin-left: -20px;
+    margin-left: -18px;
     
 }
 .gnb>ul>li:first-child a{
