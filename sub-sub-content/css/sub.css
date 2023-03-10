@@ -25,18 +25,6 @@
     font-size: 14px;
 }
 
-/* imgList */
-/* .imgList li {
-    width: 392px;
-    padding-bottom: 65px;
-    margin: 20px 32px 20px 0;
-    float: left;
-}
-.imgList li:nth-child(3),
-.imgList li:nth-child(6) {
-    margin-right: 0;
-} */
-
 
 
 /* imgList */
@@ -74,7 +62,7 @@
     display: block;
     width: 100%;
     height: 100%;
-    background: red;
+    background: #f6f5f1;
     opacity: 0;
     position: absolute;
     left: 0;
