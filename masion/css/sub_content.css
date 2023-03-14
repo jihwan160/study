@@ -8,7 +8,7 @@
     margin-bottom: 50px;
 }
 .interior_head h2 {
-    font: 26px "Roboto",'Nanum gothic';
+    font-size: 26px;
     font-weight: 500;
     text-align: center;
     margin-bottom: 72px;
@@ -94,11 +94,11 @@ select {
     display: inline;
     color: #333;
 }
- .interior_object ul li .best img,
- .interior_object ul li .event img{
+.interior_object ul li .best img,
+.interior_object ul li .event img{
     width: 37px;
     height: 22px;
- }
+}
 .interior_object ul li:nth-child(2) {
     border-bottom: 1px solid #e8e8e8;
     width: 392px;
@@ -121,42 +121,38 @@ select {
     position: relative;
 }
 /* a. 셀로판지 효과 */
-.interior_object ul li:first-child>a::before {
-    content: "";
-    display: block;
+.interior_object ul li:first-child div.before {
     width: 392px;
     height: 392px;
     background-color: #E2E0DE;
     opacity: 0;
     /* 포지션 */
     position: absolute;
-    left: 0;
     top: 0;
-    z-index: 100;
-    transition: all 0.3s;
 }
+
 /* a-1. 셀로판지 호버시 효과 */
-.interior_object ul li:first-child a:hover::before {
-    opacity: 0.4;
+.interior_object ul li:first-child div.before:hover {
+    opacity: 0.7;
 }
 
 /* 정보 텍스트 CSS */
 
 /* b. 정보 텍스트 이동 효과 */
-.interior_object ul li .before a i{
+.interior_object ul li:first-child div.before i{
     /* 포지션 */
-    position: absolute;
-    left: 0;
-    top: -100px;
-    z-index: 200;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-75%,-50%);
     opacity: 0.5;
     font-size: 24px;
-    display: none;
-    /* color: #fff; */
+    padding-right: 20px;
+
 }
-.interior_object ul li .before a i:hover {
-    /* color: #000; */
-    opacity: 1;  
+
+.interior_object ul li:first-child div.before i:hover {
+    opacity: 1;
 }
 
 /* b-1. 정보 텍스트 이동 효과 구현*/
@@ -181,36 +177,8 @@ select {
     border-radius: 50%;
     cursor: pointer;
 }
-.interior_object .moon_tray .dots:nth-child(1) {background-color: #c0c0c0;}
-.interior_object .moon_tray .dots:nth-child(2) {background-color: #363636;}
-.interior_object .ground_row .dots:nth-child(1) {background-color: #675852;}
-.interior_object .ground_row .dots:nth-child(2) {background-color: #d0a783;}
-.interior_object .ground_row .dots:nth-child(3) {background-color: #2f1c15;}
-.interior_object .terrazzo_tray .dots:nth-child(1) {background-color: #f0f0f0;}
-.interior_object .terrazzo_tray .dots:nth-child(2) {background-color: #666666;}
-.interior_object .glass_tealight_large .dots:nth-child(1) {background-color: #ebebeb;}
-.interior_object .glass_tealight_large .dots:nth-child(2) {background-color: #c8b098;}
-.interior_object .glass_tealight_large .dots:nth-child(3) {background-color: #8d766e;}
-.interior_object .glass_tealight_large .dots:nth-child(4) {background-color: #af6769;}
-.interior_object .karma_glass_medium .dots:nth-child(1) {background-color: #c0c0c0;}
-.interior_object .karma_glass_medium .dots:nth-child(2) {background-color: #615a5a;}
-.interior_object .lito_lantern_medium .dots:nth-child(1) {background-color: #e2d9c8;}
-.interior_object .lito_lantern_medium .dots:nth-child(2) {background-color: #c0c0c0;}
-.interior_object .lito_lantern_small .dots:nth-child(1) {background-color: #e2d9c8;}
-.interior_object .lito_lantern_small .dots:nth-child(2) {background-color: #c0c0c0;}
-.interior_object .lito_lantern_small .dots:nth-child(3) {background-color: #333333;}
-.interior_object .nydia_lantern_medium .dots:nth-child(1) {background-color: #e2d9c8;}
-.interior_object .nydia_lantern_medium .dots:nth-child(2) {background-color: #c0c0c0;}
-.interior_object .nydia_lantern_medium .dots:nth-child(3) {background-color: #545454;}
-.interior_object .nydia_lantern_small .dots:nth-child(1) {background-color: #e2d9c8;}
-.interior_object .nydia_lantern_small .dots:nth-child(2) {background-color: #c0c0c0;}
-.interior_object .nydia_lantern_small .dots:nth-child(3) {background-color: #545454;}
-.interior_object .glass_tealight_small .dots:nth-child(1) {background-color: #ebebeb;}
-.interior_object .glass_tealight_small .dots:nth-child(2) {background-color: #c8b098;}
-.interior_object .glass_tealight_small .dots:nth-child(3) {background-color: #8d766e;}
-.interior_object .glass_tealight_small .dots:nth-child(4) {background-color: #af6769;}
-.interior_object .coluna_vase_large .dots:nth-child(1) {background-color: #dddddd;}
-.interior_object .coluna_vase_large .dots:nth-child(2) {background-color: #444444;}
+
+
 
 /* 04. Page_number CSS */
 .page_number {
@@ -253,4 +221,3 @@ select {
 .page_number ul li:hover a{
     color: #fff;
 }
-
