@@ -43,20 +43,6 @@ $('.page_number>ul>li').click(function(event){
 });
 
 
-/*====================================================================================== */
-
-var goodsList = document.querySelectorAll('.interior_object ul');
-
-
-
-$('#sorting_method').on('change',function(){
-    for(let i = 0; i < goodsList.length; i++) {
-        console.log(goodsList[i]);
-        goodsList[i];
-    }
-})
-
-
 
 
 
