@@ -20,6 +20,8 @@
 
 body {
     max-width: 1920px;
+    /* 수정 */
+    max-width: 100%;
     font-family: "Roboto",Nanum gothic;
 }
 
@@ -29,7 +31,10 @@ body {
 }
 /* safe Area */
 .w1240 {
+    /* 1240 / 1920 * 100 = 64.58333333333334 */
     width: 1240px;
+    /* 수정 */
+    width: 64.58333333333334%;
     margin: 0 auto;
 }
 
@@ -44,12 +49,17 @@ header {
 /* login */
 .login ul{
     /* 플렉스 */
+    /* 수정 */
+    width: 100%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
 }
 .login ul li{
-    margin-right: 18px;
+    /* 18 / 1240 * 100 = 1.4516129032258065 */
+    /* margin-right: 18px; */
+    /* 수정 */
+    margin-right: 1.4516129032258065%;
     margin-top: 18px;
     font-size: 11px;
 }
@@ -60,6 +70,10 @@ header {
 .search {
     /* 위치기준값 */
     position: relative;
+    /* 수정 */
+    width: 100%;
+    /* 수정 */
+    text-align: right;
     top: 10px;
 }
 .login form {
@@ -70,14 +84,25 @@ header {
     justify-content: flex-end;
 }
 .login form input {
+    /* 235 / 1240 * 100 = 18.951612903225808 */
     width: 235px;
+    /* 수정 */
+    width: 18.951612903225808%;
     border-bottom: 1px solid #000;
 }
 .login form button i {
     cursor: pointer;
 }
 
+/* 수정 */
+.logo h1 {
+    /* 276 /1240 * 100 = 22.258064516129032 */
+    width: 22.258064516129032%;
+}
+
 .logo img{
+    /* 수정 */
+    width: 100%;
     cursor: pointer;
     /* 포지션 */
     position: relative;
@@ -85,23 +110,35 @@ header {
 }
 /* GNB */
 .gnb>ul{
+    /* 수정 */
+    width: 100%;
     margin-top: 20px;
     color: #000;
     /* 플렉스 */
     display: flex;
     flex-flow: row nowrap;
 }
+
+/* 수정 */
+.gnb>ul li {
+    width: 100%;
+    text-align: center;
+}
+
 .gnb>ul>li>a{
     font-size: 15px;
+    /* 18 / 1240 * 100 = 1.4516129032258065 */
     margin: 0 18px;
+    /* 수정 */
+    margin: 0 1.4516129032258065%;
     letter-spacing: 0.1px;
 
     /* 포지션 위치기준값 */
     position: relative;
 }
-.gnb>ul>li:first-child{
+/* .gnb>ul>li:first-child{
     margin-left: -18px;
-}
+} */
 .gnb>ul>li:first-child a span{
     color: #70C2B8;
     font-size: 16px;
@@ -172,4 +209,67 @@ header {
     z-index: 999999;
     /* 로딩시 안보이도록 코딩 */
     display: none;
+}
+
+
+/* =========================미디어 쿼리==================================================== */
+
+
+
+@media screen and (max-width:410px){
+
+    header {
+        margin: 0 auto;
+        padding: 0 16px;
+    }
+    .w1240 {
+        /* 1240 / 1920 * 100 = 64.58333333333334 */
+        width: 1240px;
+        /* 수정 */
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+
+    .logo h1 {
+        /* 278 / 410 * 100 = 67.8048780487805 */
+        width: 67.8048780487805%;
+    }
+    
+    .logo img{
+        /* 수정 */
+        width: 100%;
+        cursor: pointer;
+        /* 포지션 */
+        position: relative;
+        top: 2px;
+    }
+
+    .login {
+        background-color: #ccc;
+    }
+
+    .login ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .login ul li{
+        margin-right: 0;
+        margin-top: 10px;
+        font-size: 11px;
+    }
+    .login ul li:last-child {
+        /* 30 / 410 * 100 = 7.317073170731707 */
+        width: 7.317073170731707%;
+        position: absolute;
+        right: 50px;
+        top: 40px;
+    }
+
+
+    .gnb {
+        display: none;
+    }
 }
